@@ -1,4 +1,4 @@
-import { playCorrectSound, playWrongSound } from "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/navigation/gp-sounds.js?v=20260921-1";
+import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1";
 const app=document.querySelector("[data-moon-activity]");
 const clueImageVersion="20260921-page4-hd-v2";
 if(app){const refreshClueImages=()=>app.querySelectorAll('img[src*="/page-04-clues/"]:not([data-hd-clue])').forEach(img=>{img.dataset.hdClue="true";const url=new URL(img.getAttribute("src"),window.location.href);url.searchParams.set("v",clueImageVersion);img.src=url.href});const clueObserver=new MutationObserver(refreshClueImages);clueObserver.observe(app,{childList:true,subtree:true});refreshClueImages()}

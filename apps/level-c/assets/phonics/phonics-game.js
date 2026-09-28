@@ -11,7 +11,7 @@ const week = getWeekNumber();
 const phonicsWords = phonicsSets[week];
 const focus = weekFocus[week];
 const focusTeams = [...new Set(phonicsWords.map((word) => word.team))];
-const iconRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/ui/game-list/phonics";
+const iconRoot = "/LevelC_M8/apps/level-c/assets/ui/game-list/phonics";
 const titles = {
   missing: [`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/${iconRoot}/missing-vowel-team.png`, "What's Missing?"],
   pop: [`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/${iconRoot}/listen-pop.png`, "Look and Pop"],

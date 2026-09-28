@@ -1,4 +1,4 @@
-import { revealNextAction, hideNextAction } from "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/navigation/gp-navigation.js?v=20260902-8";
+import { revealNextAction, hideNextAction } from "../../../assets/navigation/gp-navigation.js?v=20260902-8";
 
 const stops = [
   {
@@ -43,7 +43,7 @@ const stops = [
 const els={subtitle:document.querySelector("#stop-subtitle"),progressLabel:document.querySelector("#progress-label"),progressFill:document.querySelector("#progress-fill"),pageLabel:document.querySelector("#page-label"),bookPage:document.querySelector("#book-page"),pairToggle:document.querySelector("#paired-page-toggle"),missionIcon:document.querySelector("#mission-icon"),missionTitle:document.querySelector("#mission-title"),stage:document.querySelector("#activity-stage"),feedback:document.querySelector("#feedback"),next:document.querySelector("#next-action"),bookToggle:document.querySelector("#book-toggle"),bookPanel:document.querySelector(".book-panel")};
 const route=[...document.querySelectorAll(".route-stop")];
 let current=0;let unlocked=0;let completed=new Set();let pairedPageIndex=0;
-const assetBase="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/literacy/week-1/physical-page-";
+const assetBase="../../../assets/literacy/week-1/physical-page-";
 
 function render(){
   const stop=stops[current];const pageText=stop.pages.length===1?`Physical book page ${stop.pages[0]}`:`Physical book pages ${stop.pages.join("–")}`;

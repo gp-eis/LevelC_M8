@@ -1,5 +1,5 @@
-const readingRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-3/reading";
-const moonRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-05-choices";
+const readingRoot = "../../assets/literacy/week-3/reading";
+const moonRoot = "../../assets/literacy/week-2/page-05-choices";
 
 const decks = {
   literacy: [

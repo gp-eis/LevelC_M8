@@ -1,4 +1,4 @@
-const imageRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/flashcards/week-1";
+const imageRoot = "../../assets/flashcards/week-1";
 const reviewRoot = `${imageRoot}/review`;
 const speechRoot = `${imageRoot}/speech`;
 

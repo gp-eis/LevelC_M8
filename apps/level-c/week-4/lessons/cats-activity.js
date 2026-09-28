@@ -1,4 +1,4 @@
-import {playCorrectSound,playWrongSound} from 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/navigation/gp-sounds.js';
+import {playCorrectSound,playWrongSound} from '../../assets/navigation/gp-sounds.js';
 const animals=['tiger','cat','puma','cheetah'],img=name=>`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-4/cats/${name}-v1.png`;let stage=Math.min(3,Math.max(1,Number(new URLSearchParams(location.search).get('stage'))||1));const root=document.querySelector('[data-cat-game]');
 const speak=text=>{if(!('speechSynthesis'in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-US';u.rate=.82;u.pitch=1.06;speechSynthesis.speak(u)};
 const sound=correct=>correct?playCorrectSound():playWrongSound(),shuffle=array=>[...array].sort(()=>Math.random()-.5);

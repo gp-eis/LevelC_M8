@@ -1,9 +1,9 @@
-import { playCorrectSound, playWrongSound } from "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/navigation/gp-sounds.js?v=20260921-1";
-import { hideNextAction, revealNextAction } from "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/navigation/gp-navigation.js?v=20260921-sounds-tools";
+import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1";
+import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260921-sounds-tools";
 
 const app = document.querySelector("[data-moon-picture]");
 const nextAction = document.querySelector("#sequence-next");
-const assetRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-05-choices";
+const assetRoot = "../../assets/literacy/week-2/page-05-choices";
 const questions = [
   {
     answer: "new",

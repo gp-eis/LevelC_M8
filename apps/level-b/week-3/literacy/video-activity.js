@@ -14,7 +14,7 @@
   const completionSentence = completion?.querySelector('.b-completion-sentence');
   if (!video || !player || !playButton || !nowPlaying || !modal || !stage || !completion || !choices.length) return;
 
-  const root = 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/media/literacy/week-3-activities';
+  const root = '../../assets/media/literacy/week-3-activities/';
   const games = {
     toast: { title: 'Honey Toast Popper', prompt: 'Put in both bread slices, then push the lever!', sentence: 'We can make honey toast.' },
     tea: { title: 'Honey Drop Catch', prompt: 'Move the cup left and right to catch three honey drops!', sentence: 'We can make honey tea.' },

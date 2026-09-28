@@ -1,8 +1,8 @@
-const weekOneSpeechRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/flashcards/week-1/speech";
-const speechRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/flashcards/week-2/speech";
-const literacyRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/flashcards/week-2/literacy";
-const moonRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-05-choices";
-const timeRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-04-clues";
+const weekOneSpeechRoot = "../../assets/flashcards/week-1/speech";
+const speechRoot = "../../assets/flashcards/week-2/speech";
+const literacyRoot = "../../assets/flashcards/week-2/literacy";
+const moonRoot = "../../assets/literacy/week-2/page-05-choices";
+const timeRoot = "../../assets/literacy/week-2/page-04-clues";
 
 const decks = {
   literacy: [

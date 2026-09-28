@@ -1,5 +1,5 @@
-import 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/navigation/gp-navigation.js?v=20260916-mobile';
-import 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/navigation/gp-sounds.js';
+import '../../assets/navigation/gp-navigation.js?v=20260916-mobile';
+import '../../assets/navigation/gp-sounds.js';
 const pages=['page-01.html','video-activity.html','page-12.html','page-13.html','page-14.html','page-15.html'];
 const file=location.pathname.split('/').pop(), index=pages.indexOf(file), tool=['tpr.html','flashcards.html','conversation.html'].includes(file);
 const main=document.querySelector('main');

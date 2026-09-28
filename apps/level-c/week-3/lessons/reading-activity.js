@@ -8,7 +8,7 @@ const DATA = {
 };
 const cfg=DATA[page];
 const root=document.querySelector('[data-reading-app]');
-const asset='https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-3/reading';
+const asset='../../assets/literacy/week-3/reading/';
 const speech=(text,button)=>{if(!('speechSynthesis'in window))return;speechSynthesis.cancel();document.querySelectorAll('.is-speaking').forEach(x=>x.classList.remove('is-speaking'));if(button)button.classList.add('is-speaking');const u=new SpeechSynthesisUtterance(text);u.lang='en-US';u.rate=.82;u.pitch=1.08;u.onend=()=>button?.classList.remove('is-speaking');speechSynthesis.speak(u)};
 const wordMarkup=line=>line.split(/(\s+)/).map(token=>{if(/^\s+$/.test(token))return token;const spoken=token.replace(/[^A-Za-z']/g,'');return `<button class="read-word" type="button" data-say="${spoken.replaceAll('"','&quot;')}">${token}</button>`}).join('');
 const pages=Array.from({length:7},(_,i)=>`<a href="week-3-page-${String(i+1).padStart(2,'0')}.html#lesson-focus" ${i+1===page?'aria-current="page"':''}>${i+1}</a>`).join('');

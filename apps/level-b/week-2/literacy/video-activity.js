@@ -14,7 +14,7 @@
   const completionSentence = completion?.querySelector('.b-completion-sentence');
   if (!video || !player || !playButton || !nowPlaying || !modal || !stage || !completion || !choices.length) return;
 
-  const assetRoot = 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/media/literacy/week-2-activities';
+  const assetRoot = '../../assets/media/literacy/week-2-activities/';
   const assets = {
     jar: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/honey-jar-3d-v1.png', star: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/star-3d-v1.png', bowl: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/yogurt-bowl-3d-v1.png',
     strawberry: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/strawberry-3d-v1.png', blueberries: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/blueberries-3d-v1.png', banana: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/banana-3d-v1.png',

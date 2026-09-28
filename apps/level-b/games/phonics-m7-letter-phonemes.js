@@ -46,7 +46,7 @@ window._phonemeToken = 0;
 window._phonemeAudio = null;
 window._phonemeResolve = null;
 
-function getLetterRecordingBase() { return 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/audio/phonics-m7/letters'; }
+function getLetterRecordingBase() { return '../assets/audio/phonics-m7/letters/'; }
 
 function pickPhonemeVoice() {
   if (!('speechSynthesis' in window)) return;

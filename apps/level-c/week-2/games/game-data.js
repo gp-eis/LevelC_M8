@@ -1,5 +1,5 @@
 export const gameMeta = { week: 2, topic: "Insect Parts", review: "Bee and Butterfly Parts", wheelIcon: "🐝", completion: "Insect Parts Expert!" };
-const root = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/flashcards/week-2/speech";
+const root = "/LevelC_M8/apps/level-c/assets/flashcards/week-2/speech";
 export const gameItems = [
   { id: "bee-abdomen", memoryKey: "abdomen", label: "bee abdomen", sentence: "The bee has one abdomen.", group: "Bee", wheelIcon: "🐝", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/games/${root}/bee-abdomen-v2.png`, gameImage: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/games/cutouts/week-2/bee-abdomen.png?v=insect-rings-v3" },
   { id: "bee-antennae", memoryKey: "antennae", label: "bee antennae", sentence: "The bee has two antennae.", group: "Bee", wheelIcon: "🐝", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/games/${root}/bee-antennae-v2.png`, gameImage: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/games/cutouts/week-2/bee-antennae.png?v=insect-rings-v3" },

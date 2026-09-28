@@ -1,5 +1,5 @@
-import { hideNextAction, revealNextAction } from "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/navigation/gp-navigation.js?v=20260917-c";
-import { playCorrectSound, playWrongSound } from "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/navigation/gp-sounds.js?v=20260921-1";
+import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260917-c";
+import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1";
 
 const page = Number(document.body.dataset.page);
 const includedPages = [2, 4, 6, 8];

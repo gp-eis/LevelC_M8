@@ -1,4 +1,4 @@
-import { hideNextAction, revealNextAction } from "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/navigation/gp-navigation.js?v=20260917-c";
+import { hideNextAction, revealNextAction } from "../../../assets/navigation/gp-navigation.js?v=20260917-c";
 
 const stops = [
   { id:"park", icon:"🌳", title:"Park Patrol", pages:"2–3", image:"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/literacy/activity-1/physical-page-02.png", alt:"Book page 2 showing five numbered animals in a park", reading:"The children are walking in the park. They see many animals. Look at what each animal is doing.", questions:[

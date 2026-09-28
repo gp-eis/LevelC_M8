@@ -1,6 +1,6 @@
 import { setupActivities } from './activities.js?v=20260916-w3-ready';
-import 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/navigation/gp-navigation.js?v=20260916-mobile';
-import 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/navigation/gp-sounds.js';
+import '../../assets/navigation/gp-navigation.js?v=20260916-mobile';
+import '../../assets/navigation/gp-sounds.js';
 const pages=['page-01.html','video-activity.html','page-22.html','page-23.html','page-24.html','page-25.html'];
 const file=location.pathname.split('/').pop(), index=pages.indexOf(file), tool=['tpr.html','flashcards.html','conversation.html'].includes(file);
 const main=document.querySelector('main');
