@@ -224,7 +224,7 @@ function addLiteracyToolReturn() {
   link.className = 'primary literacy-tool-return';
   link.href = target.href;
   link.textContent = `← Back to Page ${pageNumber}`;
-  link.style.css?deploy=20260929-resource-fix-1Text = 'display:inline-flex;margin:0 0 22px;';
+  link.style.cssText = 'display:inline-flex;margin:0 0 22px;';
   document.querySelector('main')?.prepend(link);
 }
 

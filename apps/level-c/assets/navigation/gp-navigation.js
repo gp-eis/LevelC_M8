@@ -102,7 +102,7 @@ class GpNavigation extends HTMLElement {
         const centeringRoom = document.createElement("div");
         centeringRoom.className = "gp-centering-room";
         centeringRoom.setAttribute("aria-hidden", "true");
-        centeringRoom.style.css?deploy=20260929-resource-fix-1Text = "height:clamp(110px,28vh,260px);pointer-events:none";
+        centeringRoom.style.cssText = "height:clamp(110px,28vh,260px);pointer-events:none";
         document.body.append(centeringRoom);
       }
       const centerLesson = () => {

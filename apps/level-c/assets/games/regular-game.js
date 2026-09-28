@@ -182,7 +182,7 @@ if (app && titles[gameType]) {
       const label = document.createElement("span");
       label.innerHTML = `<b>${item.wheelIcon}</b>`;
       label.title = item.label; label.setAttribute("aria-hidden", "true");
-      label.style.css?deploy=20260929-resource-fix-1Text = `position:absolute;left:${50 + 36 * Math.sin(angle)}%;top:${50 - 36 * Math.cos(angle)}%;transform:translate(-50%,-50%);font-size:1.7rem;text-align:center`;
+      label.style.cssText = `position:absolute;left:${50 + 36 * Math.sin(angle)}%;top:${50 - 36 * Math.cos(angle)}%;transform:translate(-50%,-50%);font-size:1.7rem;text-align:center`;
       wheel.append(label);
     });
     spin.addEventListener("click", () => {
