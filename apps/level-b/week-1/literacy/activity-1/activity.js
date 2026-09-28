@@ -1,4 +1,4 @@
-import { revealNextAction, hideNextAction } from "../../../assets/navigation/gp-navigation.js?v=20260902-8&deploy=20260929-asset-fix-3";
+import { revealNextAction, hideNextAction } from "../../../assets/navigation/gp-navigation.js?v=20260902-8&deploy=20260929-asset-fix-4";
 
 const stops = [
   {

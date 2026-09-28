@@ -2,7 +2,7 @@
   'use strict';
   const modal=document.querySelector('#week4-game'),board=document.querySelector('#w4-game-board'),prompt=document.querySelector('#w4-game-prompt'),feedback=document.querySelector('#w4-game-feedback');
   const overlay=modal.querySelector('[data-week4-completion]'),goodJob=overlay.querySelector('video');
-  const base='../assets/media/literacy/week-4-games/';
+  const base='https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/literacy/week-4-games/';
   const definitions={
     sportswear:{label:'sportswear',zone:'body',colors:[['Blue','#268cdf'],['Red','#ed5664'],['Yellow','#f6c53e']],patterns:['Stripes','Zigzags']},
     swimsuit:{label:'swimsuit',zone:'body',colors:[['Turquoise','#25bfc4'],['Coral','#ef7d79'],['Purple','#a46ad6']],patterns:['Waves','Bubbles']},

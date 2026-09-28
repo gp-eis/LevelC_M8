@@ -1,7 +1,7 @@
 (() => {
  'use strict';
  const modal=document.querySelector('#week4-game'),board=modal.querySelector('#w4-game-board'),prompt=modal.querySelector('#w4-game-prompt'),feedback=modal.querySelector('#w4-game-feedback'),celebration=modal.querySelector('[data-week4-completion]'),goodJob=celebration.querySelector('video');
- const base='../assets/media/literacy/week-4-games/',gear='../assets/media/games/week-4/';
+ const base='https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/literacy/week-4-games/',gear='https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/games/week-4/';
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
  let game='sportswear',revision=0,done=false,selected=null,launch=null;const timers=new Set();
  function later(fn,delay){const stamp=revision,id=setTimeout(()=>{timers.delete(id);if(stamp===revision&&modal.open)fn()},delay);timers.add(id)}

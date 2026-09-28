@@ -6,7 +6,7 @@
   const prompt = modal.querySelector('#w3-game-prompt');
   const celebration = modal.querySelector('[data-week3-completion]');
   const goodJob = celebration.querySelector('video');
-  const base = '../assets/media/literacy/week-3-games/';
+  const base = 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/literacy/week-3-games/';
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let game = 'run', launch, done = false, revision = 0, frame = 0;
   const timers = new Set();

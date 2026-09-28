@@ -14,7 +14,7 @@
   const completionSentence = completion?.querySelector('.b-completion-sentence');
   if (!video || !player || !playButton || !nowPlaying || !modal || !stage || !completion || !choices.length) return;
 
-  const assetRoot = '../../assets/media/literacy/week-2-activities/';
+  const assetRoot = 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/media/literacy/week-2-activities/';
   const assets = {
     jar: 'honey-jar-3d-v1.png', star: 'star-3d-v1.png', bowl: 'yogurt-bowl-3d-v1.png',
     strawberry: 'strawberry-3d-v1.png', blueberries: 'blueberries-3d-v1.png', banana: 'banana-3d-v1.png',

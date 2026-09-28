@@ -1,9 +1,9 @@
 (function () {
   'use strict';
 
-  const A = '/LevelC_M8/apps/level-a/assets/media/';
-  const B = '/LevelC_M8/apps/level-b/assets/';
-  const C = '/LevelC_M8/apps/level-c/assets/';
+  const A = 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/';
+  const B = 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/';
+  const C = 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/';
   const item = (id, label, sentence, image) => ({ id, label, sentence, image });
   const lessons = {
     a: {

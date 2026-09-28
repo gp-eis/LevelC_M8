@@ -3,7 +3,7 @@
   const pathWeek = location.pathname.match(/week-([234])\.html$/)?.[1];
   const requested = Number(new URLSearchParams(location.search).get('week') || pathWeek || 1);
   const week = [1, 2, 3, 4].includes(requested) ? requested : 1;
-  const media = '../assets/media/';
+  const media = 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/';
   const item = (id, sentence, image, questionImage) => ({id, label:id, sentence, image:media+image, questionImage:questionImage ? media+questionImage : media+image});
   const lessons = {
     1: {title:'Which sports?', question:'Which sport do you like?', items:[

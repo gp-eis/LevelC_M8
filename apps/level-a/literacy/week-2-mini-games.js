@@ -6,7 +6,7 @@
   const lessonVideo = document.querySelector('#week2-video');
   const celebration = modal.querySelector('[data-week2-completion]');
   const goodJob = celebration.querySelector('video');
-  const base = '../assets/media/literacy/week-2-games/';
+  const base = 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/literacy/week-2-games/';
   const names = {bike:'Bike',dumbbells:'Dumbbells',barbell:'Barbell',bench:'Bench'};
   let selected = 'bike', game = 'bike', done = false, version = 0;
   const timers = new Set();
