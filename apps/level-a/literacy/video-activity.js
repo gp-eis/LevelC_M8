@@ -123,10 +123,10 @@
 
   function ballMarkup(kind) {
     const files = {
-      soccer: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/literacy/soccer-ball-3d-v2.png',
-      basketball: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/literacy/basketball-3d-v2.png',
-      baseball: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/literacy/baseball-3d-v2.png',
-      volleyball: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/literacy/volleyball-3d-v2.png'
+      soccer: 'soccer-ball-3d-v2.png',
+      basketball: 'basketball-3d-v2.png',
+      baseball: 'baseball-3d-v2.png',
+      volleyball: 'volleyball-3d-v2.png'
     };
     return `<img class="sport-ball-img ${kind}" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/games/week-1/${files[kind]}" alt="">`;
   }
@@ -258,7 +258,7 @@
 
   function gearMarkup(kind, shadow = false) {
     if (kind === 'ball') return ballMarkup('baseball');
-    const file = kind === 'bat' ? 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/literacy/baseball-bat-3d-v2.png' : 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/literacy/baseball-glove-3d-v2.png';
+    const file = kind === 'bat' ? 'baseball-bat-3d-v2.png' : 'baseball-glove-3d-v2.png';
     return `<img class="baseball-gear-img ${kind}${shadow ? ' shadow' : ''}" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/games/week-1/${file}" alt="">`;
   }
 

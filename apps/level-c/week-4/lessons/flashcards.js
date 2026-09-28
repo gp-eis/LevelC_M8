@@ -5,17 +5,17 @@ const weekTwoFlashRoot = "../../assets/flashcards/week-2/literacy";
 
 const decks = {
   literacy: [
-    { id: "tiger", page: "Pages 26–27", phrase: "tiger sleeps", sentence: "A tiger sleeps.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-4/lessons/${catsRoot}/tiger-sleeping-v2.png` },
-    { id: "koala", page: "Pages 26–27", phrase: "koala sleeps on the branches", sentence: "A koala sleeps on the branches.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-4/lessons/${readingRoot}/koala-landscape-v1.png` },
-    { id: "hamster", page: "Pages 26–27", phrase: "hamster sleeps underground", sentence: "A hamster sleeps underground.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-4/lessons/${readingRoot}/hamster-landscape-v1.png` },
-    { id: "panda", page: "Pages 26–27", phrase: "panda sleeps on the forest floor", sentence: "A panda sleeps on the forest floor.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-4/lessons/${readingRoot}/panda-landscape-v1.png` },
-    { id: "bear", page: "Pages 26–27", phrase: "bear sleeps in dens", sentence: "A bear sleeps in dens.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-4/lessons/${readingRoot}/bear-landscape-v1.png` }
+    { id: "tiger", page: "Pages 26–27", phrase: "tiger sleeps", sentence: "A tiger sleeps.", image: `${catsRoot}/tiger-sleeping-v2.png` },
+    { id: "koala", page: "Pages 26–27", phrase: "koala sleeps on the branches", sentence: "A koala sleeps on the branches.", image: `${readingRoot}/koala-landscape-v1.png` },
+    { id: "hamster", page: "Pages 26–27", phrase: "hamster sleeps underground", sentence: "A hamster sleeps underground.", image: `${readingRoot}/hamster-landscape-v1.png` },
+    { id: "panda", page: "Pages 26–27", phrase: "panda sleeps on the forest floor", sentence: "A panda sleeps on the forest floor.", image: `${readingRoot}/panda-landscape-v1.png` },
+    { id: "bear", page: "Pages 26–27", phrase: "bear sleeps in dens", sentence: "A bear sleeps in dens.", image: `${readingRoot}/bear-landscape-v1.png` }
   ],
   speech: [
-    { id: "sunrise", page: "Speech Book • Page 14", phrase: "sunrise", sentence: "When the sun rises in the morning, it is sunrise.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-4/lessons/${timeRoot}/sunrise.png` },
-    { id: "sunset", page: "Speech Book • Page 14", phrase: "sunset", sentence: "When the sun sets in the evening, it is sunset.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-4/lessons/${timeRoot}/evening.png` },
-    { id: "midday", page: "Speech Book • Page 16", phrase: "midday", sentence: "It is midday when it is twelve o’clock in the day.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-4/lessons/${weekTwoFlashRoot}/midday-v1.png` },
-    { id: "midnight", page: "Speech Book • Page 16", phrase: "midnight", sentence: "It is midnight when it is twelve o’clock at night.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-4/lessons/${weekTwoFlashRoot}/midnight-v1.png` }
+    { id: "sunrise", page: "Speech Book • Page 14", phrase: "sunrise", sentence: "When the sun rises in the morning, it is sunrise.", image: `${timeRoot}/sunrise.png` },
+    { id: "sunset", page: "Speech Book • Page 14", phrase: "sunset", sentence: "When the sun sets in the evening, it is sunset.", image: `${timeRoot}/evening.png` },
+    { id: "midday", page: "Speech Book • Page 16", phrase: "midday", sentence: "It is midday when it is twelve o’clock in the day.", image: `${weekTwoFlashRoot}/midday-v1.png` },
+    { id: "midnight", page: "Speech Book • Page 16", phrase: "midnight", sentence: "It is midnight when it is twelve o’clock at night.", image: `${weekTwoFlashRoot}/midnight-v1.png` }
   ]
 };
 

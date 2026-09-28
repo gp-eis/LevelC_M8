@@ -81,7 +81,7 @@ window.playLetterPhoneme = function playLetterPhoneme(letter) {
   }
   if ('speechSynthesis' in window) speechSynthesis.cancel();
 
-  const recording = new Audio(`${getLetterRecordingBase()https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/games/}${key}.mp3`);
+  const recording = new Audio(`${getLetterRecordingBase()}${key}.mp3`);
   window._phonemeAudio = recording;
   recording.preload = 'auto';
   recording.volume = 1;

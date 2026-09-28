@@ -1,11 +1,11 @@
-import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260917-c&deploy=20260929-resource-fix-2";
-import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20260929-resource-fix-2";
+import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260917-c&deploy=20260929-asset-fix-3";
+import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20260929-asset-fix-3";
 
 const page = Number(document.body.dataset.page);
 const pages = [2, 3, 4, 5];
 const activities = {
   2: {
-    icon: "🐝", title: "The Horse and the Bee", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/page-02-horse-bee-v1.png",
+    icon: "🐝", title: "The Horse and the Bee", image: "page-02-horse-bee-v1.png",
     reading: "Look closely at the horse and the bee. Choose the word that completes each sentence.",
     parts: ["Look, read, and circle", "Match the letters to make the words", "Cross out (X) the wrong words"],
     pictureText: [
@@ -25,7 +25,7 @@ const activities = {
     ]
   },
   3: {
-    icon: "🐴", title: "Parts of the Horse", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/page-03-horse-parts-v1.png",
+    icon: "🐴", title: "Parts of the Horse", image: "page-03-horse-parts-v1.png",
     reading: "Horses are amazing animals. Look at the horse and complete each sentence.",
     pictureText: [
       { title: "HORSE", lines: ["Horses are amazing animals.", "They have...", "a beautiful mane,", "strong hooves,", "a wide chest, and", "a handsome muzzle."] }
@@ -38,7 +38,7 @@ const activities = {
     ]
   },
   4: {
-    icon: "🌙", title: "The Moon and Time", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/page-04-moon-time-v1.png",
+    icon: "🌙", title: "The Moon and Time", image: "page-04-moon-time-v1.png",
     reading: "Look at the sky and notice how the light changes during the day and night.",
     pictureText: [
       { title: "THE MOON", lines: ["Wow! Look at that!!", "The Moon changes.", "That's a full Moon.", "That's a waxing Moon.", "That's a waning Moon.", "That's a new Moon."] },
@@ -50,7 +50,7 @@ const activities = {
     ]
   },
   5: {
-    icon: "🌘", title: "Moon Phases", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/page-05-moon-phases-v1.png",
+    icon: "🌘", title: "Moon Phases", image: "page-05-moon-phases-v1.png",
     reading: "Let's learn about the different moon phases. Choose the moon phase that matches each sentence.",
     pictureText: [
       { title: "THE MOON", lines: ["Let's learn about the different moon phases.", "That's a new moon. I see none of it.", "That's a waning moon. It gets smaller.", "That's a full moon. I see all of it.", "That's a waxing moon. It gets bigger."] }

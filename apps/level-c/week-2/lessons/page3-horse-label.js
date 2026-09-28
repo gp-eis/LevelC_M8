@@ -1,4 +1,4 @@
-import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20260929-resource-fix-2";
+import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20260929-asset-fix-3";
 
 const app = document.querySelector("[data-horse-label]");
 const words = ["mane", "hoof", "chest", "muzzle"];
@@ -151,9 +151,9 @@ if (app) {
     const edgeSize = Math.min(120, window.innerHeight * 0.22);
     let scrollAmount = 0;
 
-    if (https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/state.moved && state.lastY < edgeSize) {
+    if (state.moved && state.lastY < edgeSize) {
       scrollAmount = -Math.max(4, 20 * (1 - Math.max(0, state.lastY) / edgeSize));
-    } else if (https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/state.moved && state.lastY > window.innerHeight - edgeSize) {
+    } else if (state.moved && state.lastY > window.innerHeight - edgeSize) {
       const distanceIntoEdge = state.lastY - (window.innerHeight - edgeSize);
       scrollAmount = Math.max(4, 20 * Math.min(1, distanceIntoEdge / edgeSize));
     }
@@ -196,7 +196,7 @@ if (app) {
     });
     button.addEventListener("pointermove", event => {
       if (!dragState || dragState.pointerId !== event.pointerId) return;
-      https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/dragState.moved ||= Math.hypot(event.clientX - dragState.startX, event.clientY - dragState.startY) > 7;
+      dragState.moved ||= Math.hypot(event.clientX - dragState.startX, event.clientY - dragState.startY) > 7;
       dragState.lastX = event.clientX;
       dragState.lastY = event.clientY;
       dragState.ghost.style.left = `${event.clientX}px`; dragState.ghost.style.top = `${event.clientY}px`;
@@ -206,7 +206,7 @@ if (app) {
       if (!dragState || dragState.pointerId !== event.pointerId) return;
       const zone = zoneAtPoint(event.clientX, event.clientY);
       const state = clearDrag();
-      if (zone && https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/state.moved) placeWord(state.word, zone);
+      if (zone && state.moved) placeWord(state.word, zone);
       else selectWord(state.button);
     });
     button.addEventListener("pointercancel", event => {

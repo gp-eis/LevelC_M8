@@ -268,7 +268,7 @@ if(maze){
   maze.insertBefore(board,maze.firstChild);
   const directions={up:[0,-1],down:[0,1],left:[-1,0],right:[1,0]};
   stage.querySelectorAll('[data-move]').forEach(button=>{
-    const [dx,dy]=directions[https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/literacy/button.dataset.move];
+    const [dx,dy]=directions[button.dataset.move];
     button.addEventListener('pointerdown',event=>{if(!active||complete)return;event.preventDefault();button.setPointerCapture(event.pointerId);moveMaze(dx*10,dy*10);holdMove(dx,dy);});
     for(const name of ['pointerup','pointercancel','lostpointercapture'])button.addEventListener(name,stopMoving);
     button.addEventListener('click',event=>{if(event.detail===0)moveMaze(dx*15,dy*15);});

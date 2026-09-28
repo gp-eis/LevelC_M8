@@ -1,5 +1,5 @@
-import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20260929-resource-fix-2";
-import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260921-sounds-tools&deploy=20260929-resource-fix-2";
+import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20260929-asset-fix-3";
+import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260921-sounds-tools&deploy=20260929-asset-fix-3";
 
 const app = document.querySelector("[data-moon-picture]");
 const nextAction = document.querySelector("#sequence-next");
@@ -10,8 +10,8 @@ const questions = [
     html: "That’s a <strong>new moon</strong>. I see none of it.",
     speech: "That's a new moon. I see none of it.",
     choices: [
-      { id: "new", file: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/new-moon-v2.png", alt: "A new moon" },
-      { id: "car", file: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/car-v2.png", alt: "A blue car" }
+      { id: "new", file: "new-moon-v2.png", alt: "A new moon" },
+      { id: "car", file: "car-v2.png", alt: "A blue car" }
     ]
   },
   {
@@ -19,8 +19,8 @@ const questions = [
     html: "That’s a <strong>waning moon</strong>. It gets smaller.",
     speech: "That's a waning moon. It gets smaller.",
     choices: [
-      { id: "waning", file: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/waning-moon-v2.png", alt: "A waning moon" },
-      { id: "owl", file: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/owl-v2.png", alt: "A brown owl" }
+      { id: "waning", file: "waning-moon-v2.png", alt: "A waning moon" },
+      { id: "owl", file: "owl-v2.png", alt: "A brown owl" }
     ]
   },
   {
@@ -28,8 +28,8 @@ const questions = [
     html: "That’s a <strong>full moon</strong>. I see all of it.",
     speech: "That's a full moon. I see all of it.",
     choices: [
-      { id: "full", file: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/full-moon-v2.png", alt: "A full moon" },
-      { id: "scooter", file: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/scooter-v2.png", alt: "A pink scooter" }
+      { id: "full", file: "full-moon-v2.png", alt: "A full moon" },
+      { id: "scooter", file: "scooter-v2.png", alt: "A pink scooter" }
     ]
   },
   {
@@ -37,8 +37,8 @@ const questions = [
     html: "That’s a <strong>waxing moon</strong>. It gets bigger.",
     speech: "That's a waxing moon. It gets bigger.",
     choices: [
-      { id: "waxing", file: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/waxing-moon-v2.png", alt: "A waxing moon" },
-      { id: "cat", file: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/cat-v2.png", alt: "A black cat" }
+      { id: "waxing", file: "waxing-moon-v2.png", alt: "A waxing moon" },
+      { id: "cat", file: "cat-v2.png", alt: "A black cat" }
     ]
   }
 ];

@@ -7,30 +7,30 @@
   const item = (id, sentence, image, questionImage) => ({id, label:id, sentence, image:media+image, questionImage:questionImage ? media+questionImage : media+image});
   const lessons = {
     1: {title:'Which sports?', question:'Which sport do you like?', items:[
-      item('soccer','I like soccer.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-1/regular/soccer-kick-boy-v2.png'),
-      item('basketball','I like basketball.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-1/regular/basketball-dribble-girl-v1.png'),
-      item('baseball','I like baseball.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-1/regular/baseball-batter-boy-v1.png'),
-      item('volleyball','I like volleyball.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-1/regular/volleyball-bump-girl-v1.png')
+      item('soccer','I like soccer.','games/week-1/regular/soccer-kick-boy-v2.png'),
+      item('basketball','I like basketball.','games/week-1/regular/basketball-dribble-girl-v1.png'),
+      item('baseball','I like baseball.','games/week-1/regular/baseball-batter-boy-v1.png'),
+      item('volleyball','I like volleyball.','games/week-1/regular/volleyball-bump-girl-v1.png')
     ]},
     2: {title:'Where do you exercise?', question:'Where do you exercise?', items:[
-      item('bike','At the gym. I use a bike.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-2/bike-equipment-v1.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/literacy/week-2-games/bike-rider.png'),
-      item('dumbbells','At the gym. I use dumbbells.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-2/dumbbells-equipment-v1.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/literacy/week-2-games/dumbbell-curl.png'),
-      item('barbell','At the gym. I use a barbell.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-2/barbell-equipment-v1.png'),
-      item('bench','At the gym. I use a bench.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-2/bench-equipment-v1.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/literacy/week-2-games/bench-ready.png')
+      item('bike','At the gym. I use a bike.','games/week-2/bike-equipment-v1.png','literacy/week-2-games/bike-rider.png'),
+      item('dumbbells','At the gym. I use dumbbells.','games/week-2/dumbbells-equipment-v1.png','literacy/week-2-games/dumbbell-curl.png'),
+      item('barbell','At the gym. I use a barbell.','games/week-2/barbell-equipment-v1.png'),
+      item('bench','At the gym. I use a bench.','games/week-2/bench-equipment-v1.png','literacy/week-2-games/bench-ready.png')
     ]},
     3: {title:'What do soccer players do?', question:'What do soccer players do?', items:[
-      item('run','Soccer players run.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/literacy/week-3-games/run-a.png'),
-      item('pass','Soccer players pass.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-3/pass.png'),
-      item('tackle','Soccer players tackle.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-3/tackle.png'),
-      item('kick','Soccer players kick.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-3/kick-red-ball-v1.png'),
-      item('jump','Soccer players jump.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/literacy/week-3-games/jump.png')
+      item('run','Soccer players run.','literacy/week-3-games/run-a.png'),
+      item('pass','Soccer players pass.','games/week-3/pass.png'),
+      item('tackle','Soccer players tackle.','games/week-3/tackle.png'),
+      item('kick','Soccer players kick.','games/week-3/kick-red-ball-v1.png'),
+      item('jump','Soccer players jump.','literacy/week-3-games/jump.png')
     ]},
     4: {title:'What do you need?', question:'What do you need?', items:[
-      item('sportswear','I need sportswear.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-4/sportswear.png'),
-      item('sneakers','I need sneakers.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-4/sneakers.png'),
-      item('swimsuit','I need a swimsuit.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-4/swimsuit.png'),
-      item('helmet','I need a helmet.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-4/helmet.png'),
-      item('socks','I need socks.','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/games/games/week-4/socks.png')
+      item('sportswear','I need sportswear.','games/week-4/sportswear.png'),
+      item('sneakers','I need sneakers.','games/week-4/sneakers.png'),
+      item('swimsuit','I need a swimsuit.','games/week-4/swimsuit.png'),
+      item('helmet','I need a helmet.','games/week-4/helmet.png'),
+      item('socks','I need socks.','games/week-4/socks.png')
     ]}
   };
   const lesson = lessons[week];

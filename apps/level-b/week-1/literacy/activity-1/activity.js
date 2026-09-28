@@ -1,4 +1,4 @@
-import { revealNextAction, hideNextAction } from "../../../assets/navigation/gp-navigation.js?v=20260902-8&deploy=20260929-resource-fix-2";
+import { revealNextAction, hideNextAction } from "../../../assets/navigation/gp-navigation.js?v=20260902-8&deploy=20260929-asset-fix-3";
 
 const stops = [
   {
@@ -51,7 +51,7 @@ function render(){
   route.forEach((button,index)=>{button.classList.toggle("is-current",index===current);button.classList.toggle("is-complete",completed.has(index));button.disabled=index>unlocked});
   bindChoices(stop);
 }
-function renderVisibleBookPage(stop){const page=stop.pages[pairedPageIndex];els.bookPage.src=`${assetBase}${String(page).padStart(2,"0")https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-1/literacy/activity-1/}.png`;els.bookPage.alt=stop.pages.length>1?`Physical book page ${page} of paired pages ${stop.pages.join(" and ")}`:stop.alt;els.pairToggle.textContent=pairedPageIndex===0?`View page ${stop.pages[1]}`:`View page ${stop.pages[0]}`;els.pairToggle.setAttribute("aria-pressed",String(pairedPageIndex===1));}
+function renderVisibleBookPage(stop){const page=stop.pages[pairedPageIndex];els.bookPage.src=`${assetBase}${String(page).padStart(2,"0")}.png`;els.bookPage.alt=stop.pages.length>1?`Physical book page ${page} of paired pages ${stop.pages.join(" and ")}`:stop.alt;els.pairToggle.textContent=pairedPageIndex===0?`View page ${stop.pages[1]}`:`View page ${stop.pages[0]}`;els.pairToggle.setAttribute("aria-pressed",String(pairedPageIndex===1));}
 
 function bindChoices(stop){
   if(stop.multi){

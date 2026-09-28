@@ -1,10 +1,10 @@
 const weekOneSlides=[
-  {file:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/01-play-outside.png',alt:'The teacher and children arrive at the playground and cheer about playing outside.'},
-  {file:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/02-playground-things.png',alt:'The teacher shows the children the swings, slide, and sandbox.'},
-  {file:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/03-want-to-swing.png',alt:'The teacher asks what the children want to do, and a child says she wants to swing.'},
-  {file:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/04-go-down-slide.png',alt:'A child says he wants to go down the slide.'},
-  {file:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/05-play-in-sandbox.png',alt:'A child says she wants to play in the sandbox.'},
-  {file:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/06-clean-up.png',alt:'Playtime is over, so the teacher and children clean up and line up.'}
+  {file:'01-play-outside.png',alt:'The teacher and children arrive at the playground and cheer about playing outside.'},
+  {file:'02-playground-things.png',alt:'The teacher shows the children the swings, slide, and sandbox.'},
+  {file:'03-want-to-swing.png',alt:'The teacher asks what the children want to do, and a child says she wants to swing.'},
+  {file:'04-go-down-slide.png',alt:'A child says he wants to go down the slide.'},
+  {file:'05-play-in-sandbox.png',alt:'A child says she wants to play in the sandbox.'},
+  {file:'06-clean-up.png',alt:'Playtime is over, so the teacher and children clean up and line up.'}
 ];
 const root='/LevelC_M8/apps/conversation/week-1/';
 const pathWeek=location.pathname.match(/week-([1-4])/i)?.[1];

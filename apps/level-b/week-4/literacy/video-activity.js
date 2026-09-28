@@ -81,8 +81,8 @@
     const left = button('←', 'w4-health-arrow left'), right = button('→', 'w4-health-arrow right');
     left.setAttribute('aria-label', 'Move left'); right.setAttribute('aria-label', 'Move right'); stage.append(counter, catcher, left, right);
     const sequence = [
-      { asset:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-4/literacy/health-apple-v1.png', healthy:true, lane:18 }, { asset:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-4/literacy/health-lollipop-v1.png', healthy:false, lane:72 }, { asset:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-4/literacy/health-water-v1.png', healthy:true, lane:78 },
-      { asset:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-4/literacy/health-soda-v1.png', healthy:false, lane:30 }, { asset:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-4/literacy/health-carrot-v1.png', healthy:true, lane:36 }, { asset:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-4/literacy/health-broccoli-v1.png', healthy:true, lane:62 }
+      { asset:'health-apple-v1.png', healthy:true, lane:18 }, { asset:'health-lollipop-v1.png', healthy:false, lane:72 }, { asset:'health-water-v1.png', healthy:true, lane:78 },
+      { asset:'health-soda-v1.png', healthy:false, lane:30 }, { asset:'health-carrot-v1.png', healthy:true, lane:36 }, { asset:'health-broccoli-v1.png', healthy:true, lane:62 }
     ];
     let catcherX = 50, index = 0, caught = 0, current = null, running = true, dragging = false, frame = 0, last = performance.now();
     function setCatcher(x) { catcherX = Math.max(15, Math.min(85, x)); catcher.style.left = `${catcherX}%`; }

@@ -1,6 +1,6 @@
 Level B Week 1 phonics game assets part 1
 Generated 2026-09-16 using built-in image_gen.
-Reference source: https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/phonics/week-1/Month8/qa/b-phonics-source-2.png
+Reference source: Month8/qa/b-phonics-source-2.png
 Original generated RGBA PNGs copied without editing.
 
 https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/phonics/week-1/bug-3d-v1.png

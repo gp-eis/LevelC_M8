@@ -1,6 +1,6 @@
-import { setupActivities } from './activities.js?v=20260916-w3-ready&deploy=20260929-resource-fix-2';
-import '../../assets/navigation/gp-navigation.js?v=20260916-mobile&deploy=20260929-resource-fix-2';
-import '../../assets/navigation/gp-sounds.js?deploy=20260929-resource-fix-2';
+import { setupActivities } from './activities.js?v=20260916-w3-ready&deploy=20260929-asset-fix-3';
+import '../../assets/navigation/gp-navigation.js?v=20260916-mobile&deploy=20260929-asset-fix-3';
+import '../../assets/navigation/gp-sounds.js?deploy=20260929-asset-fix-3';
 const pages=['page-01.html','video-activity.html','page-22.html','page-23.html','page-24.html','page-25.html'];
 const file=location.pathname.split('/').pop(), index=pages.indexOf(file), tool=['tpr.html','flashcards.html','conversation.html'].includes(file);
 const main=document.querySelector('main');

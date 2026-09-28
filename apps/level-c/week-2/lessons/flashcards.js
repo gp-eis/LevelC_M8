@@ -6,35 +6,35 @@ const timeRoot = "../../assets/literacy/week-2/page-04-clues";
 
 const decks = {
   literacy: [
-    { id: "horse-mane", page: "Horse Parts", phrase: "beautiful mane", sentence: "The horse has a beautiful mane.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${weekOneSpeechRoot}/horse-mane-v1.png` },
-    { id: "horse-chest", page: "Horse Parts", phrase: "wide chest", sentence: "The horse has a wide chest.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${weekOneSpeechRoot}/horse-chest-v1.png` },
-    { id: "horse-muzzle", page: "Horse Parts", phrase: "handsome muzzle", sentence: "The horse has a handsome muzzle.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${weekOneSpeechRoot}/horse-muzzle-v1.png` },
-    { id: "horse-hooves", page: "Horse Parts", phrase: "strong hooves", sentence: "The horse has strong hooves.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${weekOneSpeechRoot}/horse-hooves-v1.png` },
-    { id: "bee-abdomen", page: "Bee Parts", phrase: "one abdomen", sentence: "The bee has one abdomen.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${speechRoot}/bee-abdomen-v2.png` },
-    { id: "bee-antennae", page: "Bee Parts", phrase: "two antennae", sentence: "The bee has two antennae.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${speechRoot}/bee-antennae-v2.png` },
-    { id: "bee-wings", page: "Bee Parts", phrase: "four wings", sentence: "The bee has four wings.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${speechRoot}/bee-wings-v2.png` },
-    { id: "bee-eyes", page: "Bee Parts", phrase: "five eyes", sentence: "The bee has five eyes.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${speechRoot}/bee-eyes-v2.png` },
-    { id: "bee-legs", page: "Bee Parts", phrase: "six legs", sentence: "The bee has six legs.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${speechRoot}/bee-legs-v2.png` },
-    { id: "new-moon", page: "Moon Phases", phrase: "new moon", sentence: "That is a new moon. I see none of it.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${moonRoot}/new-moon-v2.png` },
-    { id: "waxing-moon", page: "Moon Phases", phrase: "waxing moon", sentence: "That is a waxing moon. The bright part gets bigger.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${moonRoot}/waxing-moon-v2.png`, note: "BRIGHT SIDE GROWS →", noteClass: "is-waxing" },
-    { id: "full-moon", page: "Moon Phases", phrase: "full moon", sentence: "That is a full moon. I see all of it.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${moonRoot}/full-moon-v2.png` },
-    { id: "waning-moon", page: "Moon Phases", phrase: "waning moon", sentence: "That is a waning moon. The bright part gets smaller.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${moonRoot}/waning-moon-v2.png`, note: "← BRIGHT SIDE GETS SMALLER", noteClass: "is-waning" },
-    { id: "morning", page: "Time of Day", phrase: "morning sunrise", sentence: "It is morning. The sun is rising.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${timeRoot}/sunrise.png` },
-    { id: "midday", page: "Time of Day", phrase: "midday sunshine", sentence: "It is midday. The sun is high in the sky.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${literacyRoot}/midday-v1.png` },
-    { id: "evening", page: "Time of Day", phrase: "evening sunset", sentence: "It is evening. The sun is setting.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${timeRoot}/evening.png` },
-    { id: "midnight", page: "Time of Day", phrase: "midnight darkness", sentence: "It is midnight. The sky is dark and full of stars.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${literacyRoot}/midnight-v1.png` }
+    { id: "horse-mane", page: "Horse Parts", phrase: "beautiful mane", sentence: "The horse has a beautiful mane.", image: `${weekOneSpeechRoot}/horse-mane-v1.png` },
+    { id: "horse-chest", page: "Horse Parts", phrase: "wide chest", sentence: "The horse has a wide chest.", image: `${weekOneSpeechRoot}/horse-chest-v1.png` },
+    { id: "horse-muzzle", page: "Horse Parts", phrase: "handsome muzzle", sentence: "The horse has a handsome muzzle.", image: `${weekOneSpeechRoot}/horse-muzzle-v1.png` },
+    { id: "horse-hooves", page: "Horse Parts", phrase: "strong hooves", sentence: "The horse has strong hooves.", image: `${weekOneSpeechRoot}/horse-hooves-v1.png` },
+    { id: "bee-abdomen", page: "Bee Parts", phrase: "one abdomen", sentence: "The bee has one abdomen.", image: `${speechRoot}/bee-abdomen-v2.png` },
+    { id: "bee-antennae", page: "Bee Parts", phrase: "two antennae", sentence: "The bee has two antennae.", image: `${speechRoot}/bee-antennae-v2.png` },
+    { id: "bee-wings", page: "Bee Parts", phrase: "four wings", sentence: "The bee has four wings.", image: `${speechRoot}/bee-wings-v2.png` },
+    { id: "bee-eyes", page: "Bee Parts", phrase: "five eyes", sentence: "The bee has five eyes.", image: `${speechRoot}/bee-eyes-v2.png` },
+    { id: "bee-legs", page: "Bee Parts", phrase: "six legs", sentence: "The bee has six legs.", image: `${speechRoot}/bee-legs-v2.png` },
+    { id: "new-moon", page: "Moon Phases", phrase: "new moon", sentence: "That is a new moon. I see none of it.", image: `${moonRoot}/new-moon-v2.png` },
+    { id: "waxing-moon", page: "Moon Phases", phrase: "waxing moon", sentence: "That is a waxing moon. The bright part gets bigger.", image: `${moonRoot}/waxing-moon-v2.png`, note: "BRIGHT SIDE GROWS →", noteClass: "is-waxing" },
+    { id: "full-moon", page: "Moon Phases", phrase: "full moon", sentence: "That is a full moon. I see all of it.", image: `${moonRoot}/full-moon-v2.png` },
+    { id: "waning-moon", page: "Moon Phases", phrase: "waning moon", sentence: "That is a waning moon. The bright part gets smaller.", image: `${moonRoot}/waning-moon-v2.png`, note: "← BRIGHT SIDE GETS SMALLER", noteClass: "is-waning" },
+    { id: "morning", page: "Time of Day", phrase: "morning sunrise", sentence: "It is morning. The sun is rising.", image: `${timeRoot}/sunrise.png` },
+    { id: "midday", page: "Time of Day", phrase: "midday sunshine", sentence: "It is midday. The sun is high in the sky.", image: `${literacyRoot}/midday-v1.png` },
+    { id: "evening", page: "Time of Day", phrase: "evening sunset", sentence: "It is evening. The sun is setting.", image: `${timeRoot}/evening.png` },
+    { id: "midnight", page: "Time of Day", phrase: "midnight darkness", sentence: "It is midnight. The sky is dark and full of stars.", image: `${literacyRoot}/midnight-v1.png` }
   ],
   speech: [
-    { id: "speech-bee-antennae", page: "Bee Parts", phrase: "bee antennae", sentence: "The bee has antennae.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${speechRoot}/bee-antennae-v2.png` },
-    { id: "speech-bee-wings", page: "Bee Parts", phrase: "bee wings", sentence: "The bee has wings.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${speechRoot}/bee-wings-v2.png` },
-    { id: "speech-bee-eyes", page: "Bee Parts", phrase: "bee eyes", sentence: "The bee has eyes.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${speechRoot}/bee-eyes-v2.png` },
-    { id: "speech-bee-abdomen", page: "Bee Parts", phrase: "bee abdomen", sentence: "The bee has an abdomen.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${speechRoot}/bee-abdomen-v2.png` },
-    { id: "speech-bee-legs", page: "Bee Parts", phrase: "bee legs", sentence: "The bee has legs.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${speechRoot}/bee-legs-v2.png` },
-    { id: "speech-butterfly-antennae", page: "Butterfly Parts", phrase: "butterfly antennae", sentence: "The butterfly has antennae.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${speechRoot}/butterfly-antennae-v1.png` },
-    { id: "speech-butterfly-eyes", page: "Butterfly Parts", phrase: "butterfly eyes", sentence: "The butterfly has eyes.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${speechRoot}/butterfly-eyes-v1.png` },
-    { id: "speech-butterfly-wings", page: "Butterfly Parts", phrase: "butterfly wings", sentence: "The butterfly has wings.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${speechRoot}/butterfly-wings-v1.png` },
-    { id: "speech-butterfly-legs", page: "Butterfly Parts", phrase: "butterfly legs", sentence: "The butterfly has legs.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${speechRoot}/butterfly-legs-v1.png` },
-    { id: "speech-butterfly-abdomen", page: "Butterfly Parts", phrase: "butterfly abdomen", sentence: "The butterfly has an abdomen.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-2/lessons/${speechRoot}/butterfly-abdomen-v1.png` }
+    { id: "speech-bee-antennae", page: "Bee Parts", phrase: "bee antennae", sentence: "The bee has antennae.", image: `${speechRoot}/bee-antennae-v2.png` },
+    { id: "speech-bee-wings", page: "Bee Parts", phrase: "bee wings", sentence: "The bee has wings.", image: `${speechRoot}/bee-wings-v2.png` },
+    { id: "speech-bee-eyes", page: "Bee Parts", phrase: "bee eyes", sentence: "The bee has eyes.", image: `${speechRoot}/bee-eyes-v2.png` },
+    { id: "speech-bee-abdomen", page: "Bee Parts", phrase: "bee abdomen", sentence: "The bee has an abdomen.", image: `${speechRoot}/bee-abdomen-v2.png` },
+    { id: "speech-bee-legs", page: "Bee Parts", phrase: "bee legs", sentence: "The bee has legs.", image: `${speechRoot}/bee-legs-v2.png` },
+    { id: "speech-butterfly-antennae", page: "Butterfly Parts", phrase: "butterfly antennae", sentence: "The butterfly has antennae.", image: `${speechRoot}/butterfly-antennae-v1.png` },
+    { id: "speech-butterfly-eyes", page: "Butterfly Parts", phrase: "butterfly eyes", sentence: "The butterfly has eyes.", image: `${speechRoot}/butterfly-eyes-v1.png` },
+    { id: "speech-butterfly-wings", page: "Butterfly Parts", phrase: "butterfly wings", sentence: "The butterfly has wings.", image: `${speechRoot}/butterfly-wings-v1.png` },
+    { id: "speech-butterfly-legs", page: "Butterfly Parts", phrase: "butterfly legs", sentence: "The butterfly has legs.", image: `${speechRoot}/butterfly-legs-v1.png` },
+    { id: "speech-butterfly-abdomen", page: "Butterfly Parts", phrase: "butterfly abdomen", sentence: "The butterfly has an abdomen.", image: `${speechRoot}/butterfly-abdomen-v1.png` }
   ]
 };
 

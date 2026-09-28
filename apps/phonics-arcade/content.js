@@ -4,19 +4,19 @@ const C_ROOT = "/LevelC_M8/apps/level-c/assets/phonics/words";
 
 const makeA = (week, names) => names.map(word => ({
   word,
-  image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/phonics-arcade/${A_ROOT}/week-${week}/elements/${word}-3d-v1.png`,
+  image: `${A_ROOT}/week-${week}/elements/${word}-3d-v1.png`,
   sound: word[0],
 }));
 
 const makeB = names => names.map(word => ({
   word,
-  image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/phonics-arcade/${B_ROOT}/${word}-3d-v1.png`,
+  image: `${B_ROOT}/${word}-3d-v1.png`,
   sound: word.slice(-2),
 }));
 
 const makeC = entries => entries.map(([word, team]) => ({
   word,
-  image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/phonics-arcade/${C_ROOT}/${word}.png`,
+  image: `${C_ROOT}/${word}.png`,
   sound: team,
   team,
 }));

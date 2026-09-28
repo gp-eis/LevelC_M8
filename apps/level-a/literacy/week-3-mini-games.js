@@ -28,7 +28,7 @@
     utterance.voice = voices.find(voice => /^en[-_]US$/i.test(voice.lang || "")) || null;
     speech.speak(utterance);
   }
-  const art = (name, alt, classes = '') => `<img class="w3-art ${classes}" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/literacy/${base}${name}.png" alt="${alt}" draggable="false">`;
+  const art = (name, alt, classes = '') => `<img class="w3-art ${classes}" src="${base}${name}.png" alt="${alt}" draggable="false">`;
   function later(callback, ms) {
     const stamp = revision;
     const id = setTimeout(() => { timers.delete(id); if (stamp === revision && modal.open) callback(); }, ms);
@@ -76,7 +76,7 @@
     if (attributes) element.setAttribute('aria-label', attributes);
     element.addEventListener('click', action); parent.append(element); return element;
   }
-  function pose(image, name, alt) { image.src = `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/literacy/${base}${name}.png`; image.alt = alt; }
+  function pose(image, name, alt) { image.src = `${base}${name}.png`; image.alt = alt; }
 
   function runGame() {
     prompt.textContent = 'Drag the player along the blue path, around the cones. Collect five stars!';
@@ -85,7 +85,7 @@
     // Coordinates represent the player's feet, keeping his entire body in the field.
     const route = [{x:10,y:80},{x:25,y:39},{x:40,y:80},{x:55,y:39},{x:70,y:80},{x:86,y:39}];
     const points = route.map(point => `${point.x},${point.y}`).join(' ');
-    field.innerHTML = `<svg class="w3-route" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="${points}" class="w3-route-under"/><polyline points="${points}" class="w3-route-line"/></svg><div class="w3-course-cones">${route.slice(1).map((point,i) => `<img class="w3-art w3-course-cone" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/literacy/${base}cone.png" alt="Cone ${i+1}" style="left:${point.x}%;top:${point.y + (i % 2 ? -16 : 16)}%" draggable="false">`).join('')}</div><div class="w3-route-stars">${route.slice(1).map((point,i) => `<img class="w3-art w3-route-star" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/literacy/${base}star.png" alt="Waypoint ${i+1}" style="left:${point.x}%;top:${point.y}%" draggable="false">`).join('')}</div><button type="button" class="w3-trace-runner" aria-label="Drag soccer player along the path, or use arrow keys to move" aria-describedby="w3-run-keyboard">${art('run-a','Soccer player running')}</button>`;
+    field.innerHTML = `<svg class="w3-route" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="${points}" class="w3-route-under"/><polyline points="${points}" class="w3-route-line"/></svg><div class="w3-course-cones">${route.slice(1).map((point,i) => `<img class="w3-art w3-course-cone" src="${base}cone.png" alt="Cone ${i+1}" style="left:${point.x}%;top:${point.y + (i % 2 ? -16 : 16)}%" draggable="false">`).join('')}</div><div class="w3-route-stars">${route.slice(1).map((point,i) => `<img class="w3-art w3-route-star" src="${base}star.png" alt="Waypoint ${i+1}" style="left:${point.x}%;top:${point.y}%" draggable="false">`).join('')}</div><button type="button" class="w3-trace-runner" aria-label="Drag soccer player along the path, or use arrow keys to move" aria-describedby="w3-run-keyboard">${art('run-a','Soccer player running')}</button>`;
     const runner = field.querySelector('.w3-trace-runner');
     controls.id = 'w3-run-keyboard';
     controls.textContent = 'Keyboard: focus the player, then use ↑ ↓ ← → to follow the path.';

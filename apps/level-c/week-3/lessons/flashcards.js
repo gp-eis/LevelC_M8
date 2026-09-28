@@ -3,17 +3,17 @@ const moonRoot = "../../assets/literacy/week-2/page-05-choices";
 
 const decks = {
   literacy: [
-    { id: "eagle", page: "Pages 18–19", phrase: "eagle hunts and flies", sentence: "An eagle hunts and flies.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-3/lessons/${readingRoot}/eagle-landscape-v1.png` },
-    { id: "lion", page: "Pages 18–19", phrase: "lion hunts on land", sentence: "A lion hunts on land.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-3/lessons/${readingRoot}/lion-landscape-v1.png` },
-    { id: "falcon", page: "Pages 18–19", phrase: "falcon hunts from the sky", sentence: "A falcon hunts from the sky.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-3/lessons/${readingRoot}/falcon-landscape-v1.png` },
-    { id: "owl", page: "Pages 18–19", phrase: "owl flies in the dark", sentence: "An owl flies in the dark.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-3/lessons/${readingRoot}/owl-landscape-v1.png` },
-    { id: "butterfly", page: "Pages 18–19", phrase: "butterfly flies in the day", sentence: "A butterfly flies in the day.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-3/lessons/${readingRoot}/butterfly-landscape-v1.png` }
+    { id: "eagle", page: "Pages 18–19", phrase: "eagle hunts and flies", sentence: "An eagle hunts and flies.", image: `${readingRoot}/eagle-landscape-v1.png` },
+    { id: "lion", page: "Pages 18–19", phrase: "lion hunts on land", sentence: "A lion hunts on land.", image: `${readingRoot}/lion-landscape-v1.png` },
+    { id: "falcon", page: "Pages 18–19", phrase: "falcon hunts from the sky", sentence: "A falcon hunts from the sky.", image: `${readingRoot}/falcon-landscape-v1.png` },
+    { id: "owl", page: "Pages 18–19", phrase: "owl flies in the dark", sentence: "An owl flies in the dark.", image: `${readingRoot}/owl-landscape-v1.png` },
+    { id: "butterfly", page: "Pages 18–19", phrase: "butterfly flies in the day", sentence: "A butterfly flies in the day.", image: `${readingRoot}/butterfly-landscape-v1.png` }
   ],
   speech: [
-    { id: "full-moon", page: "Speech Book • Page 10", phrase: "full moon", sentence: "It is a full moon. It looks like a bright circle.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-3/lessons/${moonRoot}/full-moon-v2.png` },
-    { id: "new-moon", page: "Speech Book • Page 10", phrase: "new moon", sentence: "It is a new moon. We cannot see the moon.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-3/lessons/${moonRoot}/new-moon-v2.png` },
-    { id: "waxing-moon", page: "Speech Book • Page 12", phrase: "waxing moon", sentence: "It is a waxing moon. The bright part is getting bigger.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-3/lessons/${moonRoot}/waxing-moon-v2.png`, note: "BRIGHT SIDE GROWS →", noteClass: "is-waxing" },
-    { id: "waning-moon", page: "Speech Book • Page 12", phrase: "waning moon", sentence: "It is a waning moon. The bright part is getting smaller.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-3/lessons/${moonRoot}/waning-moon-v2.png`, note: "← BRIGHT SIDE GETS SMALLER", noteClass: "is-waning" }
+    { id: "full-moon", page: "Speech Book • Page 10", phrase: "full moon", sentence: "It is a full moon. It looks like a bright circle.", image: `${moonRoot}/full-moon-v2.png` },
+    { id: "new-moon", page: "Speech Book • Page 10", phrase: "new moon", sentence: "It is a new moon. We cannot see the moon.", image: `${moonRoot}/new-moon-v2.png` },
+    { id: "waxing-moon", page: "Speech Book • Page 12", phrase: "waxing moon", sentence: "It is a waxing moon. The bright part is getting bigger.", image: `${moonRoot}/waxing-moon-v2.png`, note: "BRIGHT SIDE GROWS →", noteClass: "is-waxing" },
+    { id: "waning-moon", page: "Speech Book • Page 12", phrase: "waning moon", sentence: "It is a waning moon. The bright part is getting smaller.", image: `${moonRoot}/waning-moon-v2.png`, note: "← BRIGHT SIDE GETS SMALLER", noteClass: "is-waning" }
   ]
 };
 

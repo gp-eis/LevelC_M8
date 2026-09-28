@@ -1,6 +1,6 @@
 Generated with built-in image_gen; five separate generation calls.
-Reference vocabulary: GP EES B8-1 page 3 (https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/flashcards/week-1/_6.png).
-Reference layout: Level A https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/flashcards/week-1/soccer-flashcard-v2.png.
+Reference vocabulary: GP EES B8-1 page 3 (_6.png).
+Reference layout: Level A soccer-flashcard-v2.png.
 
 flowers
 Use case: scientific-educational. Generate a finished landscape 16:9 children's English flashcard matching the supplied soccer card's layout. Reference 1 is only vocabulary subject source; reference 2 is flashcard layout. Upper 76% is a polished cute high-quality 3D animated-family-film style garden illustration (not flat 2D). Bottom 24% pure white horizontal band edge to edge, containing only the exact word "Flowers" in very large dark navy bold rounded school lettering with SINGLE-STOREY lowercase a if applicable. Subject: A lush close-up bed of colorful rounded tulips and daisies, distinct petals and green stems. Exactly three small friendly bees hovering near the flowers. Flowers fill main scene. No bench or lamp. Soft sunny lighting, rich friendly colors, tangible rounded 3D forms, accurate recognizable object. No speech bubbles, no extra text, no border, no watermark. Upper illustration fills full width. Target object remains clearly larger than bees. One complete card only.

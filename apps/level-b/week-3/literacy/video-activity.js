@@ -94,7 +94,7 @@
   }
 
   function setupToast() {
-    baseStage('toast-game'); const scene = sheet('https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-3/literacy/toast-stages-v2.png'); const dots = progress(3);
+    baseStage('toast-game'); const scene = sheet('toast-stages-v2.png'); const dots = progress(3);
     const breadOne = hit('bread-hit one', 'Put in the first bread slice');
     const breadTwo = hit('bread-hit two', 'Put in the second bread slice');
     const lever = hit('lever-hit', 'Push down the toaster lever');
@@ -120,7 +120,7 @@
     baseStage('tea-catch-game');
     const clouds = document.createElement('div'); clouds.className = 'tea-cloud'; stage.append(clouds);
     const counter = document.createElement('div'); counter.className = 'tea-caught'; counter.textContent = 'Honey drops: 0 of 3'; stage.append(counter);
-    const cup = document.createElement('button'); cup.type = 'button'; cup.className = 'tea-cup stage-0'; cup.setAttribute('aria-label', 'Move the cup to catch honey drops'); cup.style.setProperty('--cup-sheet', `url("https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-3/literacy/${root}tea-cup-stages-v2.png")`); stage.append(cup);
+    const cup = document.createElement('button'); cup.type = 'button'; cup.className = 'tea-cup stage-0'; cup.setAttribute('aria-label', 'Move the cup to catch honey drops'); cup.style.setProperty('--cup-sheet', `url("${root}tea-cup-stages-v2.png")`); stage.append(cup);
     const left = action('←', 'tea-arrow left'); left.setAttribute('aria-label', 'Move cup left');
     const right = action('→', 'tea-arrow right'); right.setAttribute('aria-label', 'Move cup right'); stage.append(left, right);
     let cupX = 50, caught = 0, running = true, dragging = false, frame = 0, last = performance.now();
@@ -160,7 +160,7 @@
   }
 
   function setupCake() {
-    baseStage('cake-game'); const scene = sheet('https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-3/literacy/cake-stages-v2.png'); const dots = progress(3);
+    baseStage('cake-game'); const scene = sheet('cake-stages-v2.png'); const dots = progress(3);
     const layerButtons = [1,2,3].map(number => {
       const button = hit(`cake-layer-hit ${number === 1 ? 'one' : number === 2 ? 'two' : 'three'}`, `Add cake layer ${number}`);
       button.dataset.layer = String(number); scene.board.append(button); return button;
@@ -178,9 +178,9 @@
   }
 
   function setupPancakes() {
-    baseStage('pancake-game'); const scene = sheet('https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-3/literacy/pancake-stages-v2.png'); const dots = progress(4);
+    baseStage('pancake-game'); const scene = sheet('pancake-stages-v2.png'); const dots = progress(4);
     const pan = hit('pan-hit', 'Flip a pancake in the pan'); const honey = hit('honey-hit', 'Add honey to the pancake stack');
-    honey.innerHTML = `<img src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-3/literacy/${root}honey-dipper-clean-v1.png" alt=""><span>Honey</span>`;
+    honey.innerHTML = `<img src="${root}honey-dipper-clean-v1.png" alt=""><span>Honey</span>`;
     let flips = 0, busy = false;
     pan.onclick = () => {
       if (busy || flips >= 3) return; busy = true; flips++; scene.set(1); lightProgress(dots, flips); sound(610 + flips * 70, .22); status.textContent = `Flip ${flips} of 3!`;
@@ -191,7 +191,7 @@
   }
 
   function setupChicken() {
-    baseStage('chicken-game'); const scene = sheet('https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-3/literacy/chicken-stages-v2.png'); const dots = progress(3);
+    baseStage('chicken-game'); const scene = sheet('chicken-stages-v2.png'); const dots = progress(3);
     const brush = action('🖌️ Brush', 'gold'), sesame = action('✨ Sprinkle', 'purple'), garnish = action('🌿 Garnish', 'green'); controls(brush, sesame, garnish); sesame.disabled = garnish.disabled = true;
     brush.onclick = () => { brush.disabled = true; sesame.disabled = false; scene.set(1); lightProgress(dots, 1); status.textContent = 'The drumsticks are shiny! Sprinkle the sesame.'; sound(590, .22); say('Sprinkle the sesame.'); };
     sesame.onclick = () => { sesame.disabled = true; garnish.disabled = false; scene.set(2); lightProgress(dots, 2); status.textContent = 'Sesame added! Finish with the green garnish.'; sound(700, .22); say('Add the green garnish.'); };

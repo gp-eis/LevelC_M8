@@ -1,7 +1,7 @@
-import { natureItems, shuffle } from "./game-data.js?deploy=20260929-resource-fix-2";
+import { natureItems, shuffle } from "./game-data.js?deploy=20260929-asset-fix-3";
 
 const app=document.querySelector("#game-app"),gameType=document.body.dataset.game;
-if(gameType==="wheel"&&!window.SpinWheelBonus){await new Promise(resolve=>{const script=document.createElement("script");script.src="/LevelC_M8/apps/level-b/games/spin-wheel-bonus.js?v=20260907-1&deploy=20260929-resource-fix-2";script.onload=script.onerror=resolve;document.head.append(script);});}
+if(gameType==="wheel"&&!window.SpinWheelBonus){await new Promise(resolve=>{const script=document.createElement("script");script.src="/LevelC_M8/apps/level-b/games/spin-wheel-bonus.js?v=20260907-1&deploy=20260929-asset-fix-3";script.onload=script.onerror=resolve;document.head.append(script);});}
 const titles={memory:["🧠","Memory Game"],wheel:["🎡","Spin the Wheel"],matching:["🧩","Picture Match"],pick:["☝️","Pick the Right One"]};
 if(app&&titles[gameType]){
   const [icon,title]=titles[gameType];

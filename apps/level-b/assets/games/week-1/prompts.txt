@@ -1,6 +1,6 @@
 Level B Week 1 individual game assets
 Generated 2026-09-16 using built-in image_gen (no CLI/API fallback).
-Reference: matching https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/games/week-1/assets/flashcards/week-1/{id}-flashcard-v1.png, subject and style only.
+Reference: matching assets/flashcards/week-1/{id}-flashcard-v1.png, subject and style only.
 Outputs preserved as original RGBA PNGs.
 
 https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/games/week-1/flowers-3d-v1.png

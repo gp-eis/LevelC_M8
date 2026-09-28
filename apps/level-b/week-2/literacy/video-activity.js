@@ -16,15 +16,15 @@
 
   const assetRoot = '../../assets/media/literacy/week-2-activities/';
   const assets = {
-    jar: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/honey-jar-3d-v1.png', star: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/star-3d-v1.png', bowl: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/yogurt-bowl-3d-v1.png',
-    strawberry: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/strawberry-3d-v1.png', blueberries: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/blueberries-3d-v1.png', banana: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/banana-3d-v1.png',
-    dipper: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/honey-dipper-3d-v1.png', bee: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/bee-3d-v1.png', nectar: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/nectar-drop-3d-v1.png',
-    pinkFlower: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/pink-flower-3d-v1.png', yellowFlower: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/yellow-flower-3d-v1.png', comb: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/honeycomb-3d-v1.png',
-    toast: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/toast-3d-v1.png', lemon: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/lemon-3d-v1.png', mug: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/mug-3d-v1.png', spoon: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/spoon-3d-v1.png',
-    healthyStrawberries: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/v2/strawberries-choice.png', healthyBlueberries: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/v2/blueberries-choice.png',
-    healthyBanana: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/v2/banana-choice.png', healthyHoney: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/v2/honey-dipper-choice.png', healthySpoon: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/v2/stirring-spoon.png',
-    warmWater: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/v2/water-choice.png', healingLemon: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/v2/lemon-choice.png',
-    goodStar: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/v2/star-choice.png', naturalBee: 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/v2/bee-choice.png'
+    jar: 'honey-jar-3d-v1.png', star: 'star-3d-v1.png', bowl: 'yogurt-bowl-3d-v1.png',
+    strawberry: 'strawberry-3d-v1.png', blueberries: 'blueberries-3d-v1.png', banana: 'banana-3d-v1.png',
+    dipper: 'honey-dipper-3d-v1.png', bee: 'bee-3d-v1.png', nectar: 'nectar-drop-3d-v1.png',
+    pinkFlower: 'pink-flower-3d-v1.png', yellowFlower: 'yellow-flower-3d-v1.png', comb: 'honeycomb-3d-v1.png',
+    toast: 'toast-3d-v1.png', lemon: 'lemon-3d-v1.png', mug: 'mug-3d-v1.png', spoon: 'spoon-3d-v1.png',
+    healthyStrawberries: 'v2/strawberries-choice.png', healthyBlueberries: 'v2/blueberries-choice.png',
+    healthyBanana: 'v2/banana-choice.png', healthyHoney: 'v2/honey-dipper-choice.png', healthySpoon: 'v2/stirring-spoon.png',
+    warmWater: 'v2/water-choice.png', healingLemon: 'v2/lemon-choice.png',
+    goodStar: 'v2/star-choice.png', naturalBee: 'v2/bee-choice.png'
   };
   const games = {
     good: { title: 'Honey Star Celebration', prompt: 'Put all three golden stars on the honey jar.', sentence: 'Yes! It’s good.' },
@@ -129,7 +129,7 @@
 
   function setupGood() {
     decorateStage('good-game good-scene-game');
-    const states=['https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/good-00-jar.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/good-01-star.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/good-02-stars.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/good-03-finished.png'];
+    const states=['good-00-jar.png','good-01-star.png','good-02-stars.png','good-03-finished.png'];
     const scene=document.createElement('img');scene.className='activity-state-scene';scene.src=`${assetRoot}v2/${states[0]}`;scene.alt='A complete honey jar in a sunny flower garden';stage.prepend(scene);
     const jarFill=document.createElement('span');jarFill.className='jar-fill-level';stage.append(jarFill);
     const jar=document.createElement('button');jar.type='button';jar.className='good-jar-drop';jar.setAttribute('aria-label','Put a golden star on the honey jar');stage.append(jar);
@@ -163,7 +163,7 @@
 
   function setupHealthy() {
     decorateStage('healthy-game healthy-ordered-game');
-    const states = ['https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/healthy-00-yogurt.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/healthy-01-strawberries.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/healthy-02-blueberries.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/healthy-03-banana.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/healthy-04-honey.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/healthy-05-finished.png'];
+    const states = ['healthy-00-yogurt.png','healthy-01-strawberries.png','healthy-02-blueberries.png','healthy-03-banana.png','healthy-04-honey.png','healthy-05-finished.png'];
     const scene = document.createElement('img'); scene.className = 'healthy-state-scene'; scene.src = `${assetRoot}v2/${states[0]}`; scene.alt = 'A bowl of plain yogurt in a sunny garden'; stage.prepend(scene);
     const bowl = document.createElement('button'); bowl.type = 'button'; bowl.className = 'healthy-bowl-drop'; bowl.setAttribute('aria-label','Add the next ingredient to the yogurt bowl'); stage.append(bowl);
     const ring = document.createElement('span'); ring.className = 'stir-ring'; stage.append(ring);
@@ -192,7 +192,7 @@
 
   function setupNatural() {
     decorateStage('natural-game natural-scene-game');
-    const scene=document.createElement('img');scene.className='activity-state-scene';scene.src=`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/${assetRoot}v2/natural-00-path.png`;scene.alt='A golden dotted nectar path through three garden flowers to a honeycomb';stage.prepend(scene);
+    const scene=document.createElement('img');scene.className='activity-state-scene';scene.src=`${assetRoot}v2/natural-00-path.png`;scene.alt='A golden dotted nectar path through three garden flowers to a honeycomb';stage.prepend(scene);
     // These coordinates follow the actual nectar drops painted into the scene,
     // rather than the centres of the surrounding flowers.
     const points=[[11,73],[24.2,50.2],[51.1,29.3],[73.5,50.1],[89,70]];
@@ -206,7 +206,7 @@
     }
     function advance() {
       if (step < 3) { drops[step].classList.add('is-collected'); step++; if (progress) progress.style.strokeDashoffset = String(100 - step * 25); status.textContent = `${step} of 3 nectar drops collected.`; chime(); refreshTargets(); if (step === 3) { status.textContent = 'Now take the bee to the honeycomb!'; say('Take the bee to the honeycomb.'); } }
-      else { completed = true; if (progress) progress.style.strokeDashoffset = '0'; bee.style.left = '89%'; bee.style.top = '70%';scene.src=`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/${assetRoot}v2/natural-01-finished.png`;scene.alt='The happy bee reached its honeycomb after collecting nectar';bee.style.opacity='0'; finish(); }
+      else { completed = true; if (progress) progress.style.strokeDashoffset = '0'; bee.style.left = '89%'; bee.style.top = '70%';scene.src=`${assetRoot}v2/natural-01-finished.png`;scene.alt='The happy bee reached its honeycomb after collecting nectar';bee.style.opacity='0'; finish(); }
     }
     function moveToNext() { const [x,y] = points[step+1]; bee.style.left = `${x}%`; bee.style.top = `${y}%`; advance(); }
     bee.addEventListener('click', () => { selected = true; bee.classList.add('is-selected'); status.textContent = step < 3 ? 'Tap the next glowing nectar drop.' : 'Tap the honeycomb.'; });
@@ -232,7 +232,7 @@
 
   function setupSweet() {
     decorateStage('sweet-game sweet-scene-game');
-    const states=['https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/sweet-00-toast.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/sweet-01-honey.png'];
+    const states=['sweet-00-toast.png','sweet-01-honey.png'];
     const scene=document.createElement('img');scene.className='activity-state-scene';scene.src=`${assetRoot}v2/${states[0]}`;scene.alt='A plain toast on a plate in a sunny garden';stage.prepend(scene);
     const honeyPath='M38 44 C46 46 53 42 54 46 C53 49 42 49 40 53 C42 57 57 49 60 53 C61 57 48 58 46 62 C49 66 59 60 64 63';
     stage.insertAdjacentHTML('beforeend',`<svg class="sweet-trace-svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path class="sweet-trace-base" d="${honeyPath}"/><path class="sweet-trace-progress" d="${honeyPath}"/></svg>`);
@@ -250,7 +250,7 @@
 
   function setupHealing() {
     decorateStage('healing-game healing-ordered-game');
-    const states=['https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/healing-00-empty.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/healing-01-water.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/healing-02-lemon.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/healing-03-honey.png','https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-2/literacy/healing-04-finished.png'];
+    const states=['healing-00-empty.png','healing-01-water.png','healing-02-lemon.png','healing-03-honey.png','healing-04-finished.png'];
     const scene=document.createElement('img');scene.className='healthy-state-scene';scene.src=`${assetRoot}v2/${states[0]}`;scene.alt='An empty blue mug in a sunny garden';stage.prepend(scene);
     const mug=document.createElement('button');mug.type='button';mug.className='healing-mug-drop';mug.setAttribute('aria-label','Add the next ingredient to the cozy mug');stage.append(mug);
     const ring=document.createElement('span');ring.className='stir-ring';stage.append(ring);

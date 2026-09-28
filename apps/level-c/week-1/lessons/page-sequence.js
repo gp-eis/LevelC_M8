@@ -1,30 +1,30 @@
-import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260917-c&deploy=20260929-resource-fix-2";
-import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20260929-resource-fix-2";
+import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260917-c&deploy=20260929-asset-fix-3";
+import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20260929-asset-fix-3";
 
 const page = Number(document.body.dataset.page);
 const includedPages = [2, 4, 6, 8];
 const activities = {
-  2: { icon: "🌳", title: "Explore the Park", landscapeImage: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/physical-page-02-landscape-trial-v1.png", reading: "The children are walking in the park. They see many animals. What are the animals doing?", focus: [[50,50],[50,50],[50,50],[50,50],[50,50]], questions: [
+  2: { icon: "🌳", title: "Explore the Park", landscapeImage: "physical-page-02-landscape-trial-v1.png", reading: "The children are walking in the park. They see many animals. What are the animals doing?", focus: [[50,50],[50,50],[50,50],[50,50],[50,50]], questions: [
     { article: "a", animals: ["dog", "swan"], animalCorrect: 0, actions: ["sitting", "hunting"], actionCorrect: 0, ending: "on the grass.", color: "#48bfa3" },
     { article: "a", animals: ["rabbit", "cat"], animalCorrect: 1, actions: ["jumping", "yawning"], actionCorrect: 1, ending: "on the path.", color: "#ff6464" },
     { article: "a", animals: ["squirrel", "bat"], animalCorrect: 0, actions: ["hunting", "playing"], actionCorrect: 1, ending: "by the tree.", color: "#ffa717" },
     { article: "a", animals: ["dog", "deer"], animalCorrect: 1, actions: ["walking", "sleeping"], actionCorrect: 0, ending: "on the grass.", color: "#d72687" },
     { article: "an", animals: ["cat", "eagle"], animalCorrect: 1, actions: ["swimming", "hunting"], actionCorrect: 1, ending: "in the sky.", color: "#5168c0" }
   ]},
-  4: { icon: "🌷", title: "Explore the Garden", landscapeImage: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/physical-page-04-landscape-v1.png", reading: "The children are planting flowers. They compare the colors and sizes of the things they see. What do they see?", focus: [[48,69],[42,62],[46,47],[56,34],[52,20]], questions: [
+  4: { icon: "🌷", title: "Explore the Garden", landscapeImage: "physical-page-04-landscape-v1.png", reading: "The children are planting flowers. They compare the colors and sizes of the things they see. What do they see?", focus: [[48,69],[42,62],[46,47],[56,34],[52,20]], questions: [
     { lead: "They see a", firstOptions: ["red", "green"], firstCorrect: 0, secondOptions: ["ladybug", "snail"], secondCorrect: 0, ending: "on the flower.", firstLabel: "Choose the color", secondLabel: "Choose the animal", color: "#48bfa3" },
     { lead: "They see a", firstOptions: ["pink", "brown"], firstCorrect: 1, secondOptions: ["cactus", "ant"], secondCorrect: 1, ending: "on the rain boots.", firstLabel: "Choose the color", secondLabel: "Choose the animal", color: "#ff6464" },
     { lead: "They see a", firstOptions: ["tall", "short"], firstCorrect: 0, secondOptions: ["fence", "ladybug"], secondCorrect: 0, ending: "in the garden.", firstLabel: "Choose the size", secondLabel: "Choose the thing", color: "#ffa717" },
     { lead: "They see a", firstOptions: ["green", "blue"], firstCorrect: 0, secondOptions: ["cactus", "ant"], secondCorrect: 0, ending: "by the fence.", firstLabel: "Choose the color", secondLabel: "Choose the thing", color: "#d72687" },
     { lead: "They see a", firstOptions: ["big", "small"], firstCorrect: 1, secondOptions: ["snail", "ladybug"], secondCorrect: 0, ending: "on the fence.", firstLabel: "Choose the size", secondLabel: "Choose the animal", color: "#5168c0" }
   ]},
-  6: { icon: "🌙", title: "Explore the Night Yard", landscapeImage: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/physical-page-06-landscape-v1.png", reading: "A dog barks in the yard at night. Dogs become more alert at night. What is the dog barking at?", focus: [[50,80],[62,63],[63,31],[36,25]], questions: [
+  6: { icon: "🌙", title: "Explore the Night Yard", landscapeImage: "physical-page-06-landscape-v1.png", reading: "A dog barks in the yard at night. Dogs become more alert at night. What is the dog barking at?", focus: [[50,80],[62,63],[63,31],[36,25]], questions: [
     { lead: "The dog is barking at the", firstOptions: ["white", "blue"], firstCorrect: 1, secondOptions: ["car", "scooter"], secondCorrect: 0, ending: ".", firstLabel: "Choose the color", secondLabel: "Choose the thing", color: "#48bfa3" },
     { lead: "The dog is barking at the", firstOptions: ["purple", "brown"], firstCorrect: 0, secondOptions: ["scooter", "owl"], secondCorrect: 0, ending: ".", firstLabel: "Choose the color", secondLabel: "Choose the thing", color: "#ff6464" },
     { lead: "The dog is barking at the", firstOptions: ["brown", "blue"], firstCorrect: 0, secondOptions: ["owl", "car"], secondCorrect: 0, ending: ".", firstLabel: "Choose the color", secondLabel: "Choose the animal", color: "#ffa717" },
     { lead: "The dog is barking at the", firstOptions: ["purple", "white"], firstCorrect: 1, secondOptions: ["moon", "scooter"], secondCorrect: 0, ending: ".", firstLabel: "Choose the color", secondLabel: "Choose the thing", color: "#d72687" }
   ]},
-  8: { icon: "🦇", title: "Explore the Cave", landscapeImage: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/physical-page-08-landscape-v1.png", reading: "In the cave, the children and the teacher see and hear many scary things. What is scary inside a cave?", focus: [[56,77],[69,50],[46,54],[36,24]], questions: [
+  8: { icon: "🦇", title: "Explore the Cave", landscapeImage: "physical-page-08-landscape-v1.png", reading: "In the cave, the children and the teacher see and hear many scary things. What is scary inside a cave?", focus: [[56,77],[69,50],[46,54],[36,24]], questions: [
     { lead: "The", firstOptions: ["two", "four"], firstCorrect: 0, secondOptions: ["spiders", "ghosts"], secondCorrect: 0, ending: "are scary.", firstLabel: "Choose the number", secondLabel: "Choose the creature", color: "#48bfa3" },
     { lead: "The", firstOptions: ["three", "one"], firstCorrect: 1, secondOptions: ["bats", "monster"], secondCorrect: 1, ending: "is scary.", firstLabel: "Choose the number", secondLabel: "Choose the creature", color: "#ff6464" },
     { lead: "The", firstOptions: ["one", "three"], firstCorrect: 1, secondOptions: ["spider", "ghosts"], secondCorrect: 1, ending: "are scary.", firstLabel: "Choose the number", secondLabel: "Choose the creature", color: "#ffa717" },
@@ -84,7 +84,7 @@ if ("speechSynthesis" in window) window.speechSynthesis.addEventListener("voices
 if (app && next && sequenceIndex !== -1) {
   const activity = activities[page];
   const progress = `<ol class="page-progress" aria-label="Literacy pages"><li><a href="week-1-page-01.html#lesson-focus">1</a></li>${includedPages.map((number, index) => `<li class="${number === page ? "is-current" : ""}">${index + 2}</li>`).join("")}</ol>`;
-  const imageFile = activity.landscapeImage || `physical-page-${String(page).padStart(2, "0")https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/}.png`;
+  const imageFile = activity.landscapeImage || `physical-page-${String(page).padStart(2, "0")}.png`;
   const imagePath = `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-1/${imageFile}`;
   const sceneClass = activity.landscapeImage ? "source-pair source-pair--generated-landscape" : "source-pair";
   app.innerHTML = `<header class="sequence-heading"><h1>${activity.icon} ${activity.title}</h1><p>Page ${sequenceIndex + 2} of 5</p></header>${progress}<section class="sequence-card sequence-card--landscape"><div class="sequence-layout"><div class="${sceneClass}"><img id="scene-page" src="${imagePath}" alt="${activity.title} picture scene"><span class="scene-badge">Find clue <b id="scene-clue-number">1</b></span><span class="scene-zoom-hint" aria-hidden="true">🔍 Move to magnify</span><span class="scene-magnifier" aria-hidden="true"></span></div><div class="sequence-copy"><span class="tag">Question <span id="question-number">1</span> of ${activity.questions.length}</span><h2>Look, listen, and answer</h2><p class="sequence-reading">${activity.reading}</p><button class="hear-question-btn" id="hear-question" type="button">🔊 Hear the question</button><p class="sequence-question" id="sequence-question"></p><div class="sequence-choices" id="sequence-choices"></div><p class="sequence-feedback" id="sequence-feedback" aria-live="polite"></p></div></div></section>`;

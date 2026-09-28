@@ -1,4 +1,4 @@
-import '../navigation/gp-sounds.js?deploy=20260929-resource-fix-2';
+import '../navigation/gp-sounds.js?deploy=20260929-asset-fix-3';
 
 const tone = (right) => {
   const AudioContext = window.AudioContext || window.webkitAudioContext;

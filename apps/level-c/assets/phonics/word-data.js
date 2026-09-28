@@ -8,7 +8,7 @@ const weeksOneAndTwo = [
     team: "ar",
     after: "",
     sentence: "The car is red.",
-    image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/${WORD_IMAGE_ROOT}/car.png`,
+    image: `${WORD_IMAGE_ROOT}/car.png`,
   },
   {
     id: "star",
@@ -17,7 +17,7 @@ const weeksOneAndTwo = [
     team: "ar",
     after: "",
     sentence: "The star is bright.",
-    image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/${WORD_IMAGE_ROOT}/star.png`,
+    image: `${WORD_IMAGE_ROOT}/star.png`,
   },
   {
     id: "fork",
@@ -26,7 +26,7 @@ const weeksOneAndTwo = [
     team: "or",
     after: "k",
     sentence: "This is a fork.",
-    image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/${WORD_IMAGE_ROOT}/fork.png`,
+    image: `${WORD_IMAGE_ROOT}/fork.png`,
   },
   {
     id: "horse",
@@ -35,7 +35,7 @@ const weeksOneAndTwo = [
     team: "or",
     after: "se",
     sentence: "The horse is brown.",
-    image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/${WORD_IMAGE_ROOT}/horse.png`,
+    image: `${WORD_IMAGE_ROOT}/horse.png`,
   },
 ];
 
@@ -47,7 +47,7 @@ const weeksThreeAndFour = [
     team: "er",
     after: "",
     sentence: "The children play soccer.",
-    image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/${WORD_IMAGE_ROOT}/soccer.png`,
+    image: `${WORD_IMAGE_ROOT}/soccer.png`,
   },
   {
     id: "water",
@@ -56,7 +56,7 @@ const weeksThreeAndFour = [
     team: "er",
     after: "",
     sentence: "The water is cold.",
-    image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/${WORD_IMAGE_ROOT}/water.png`,
+    image: `${WORD_IMAGE_ROOT}/water.png`,
   },
   {
     id: "bird",
@@ -65,7 +65,7 @@ const weeksThreeAndFour = [
     team: "ir",
     after: "d",
     sentence: "The bird can fly.",
-    image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/${WORD_IMAGE_ROOT}/bird.png`,
+    image: `${WORD_IMAGE_ROOT}/bird.png`,
   },
   {
     id: "girl",
@@ -74,7 +74,7 @@ const weeksThreeAndFour = [
     team: "ir",
     after: "l",
     sentence: "The girl is smiling.",
-    image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/${WORD_IMAGE_ROOT}/girl.png`,
+    image: `${WORD_IMAGE_ROOT}/girl.png`,
   },
 ];
 

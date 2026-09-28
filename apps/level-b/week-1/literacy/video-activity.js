@@ -209,7 +209,7 @@
   }
 
   function setupFlowers() {
-    board('https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-1/literacy/flowers-board-3d-v1.png', 'flowers-game');
+    board('flowers-board-3d-v1.png', 'flowers-game');
     const colors = ['pink', 'yellow', 'purple'];
     const starts = [[20, 12], [46, 9], [72, 13]];
     // Always scramble the bees away from the flower bed directly beneath them.
@@ -274,7 +274,7 @@
   }
 
   function setupLamp() {
-    board('https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-1/literacy/lamp-board-3d-v1.png', 'lamp-game is-off');
+    board('lamp-board-3d-v1.png', 'lamp-game is-off');
     const darkness = document.createElement('div');
     darkness.className = 'b-lamp-darkness';
     stage.append(darkness);
@@ -319,7 +319,7 @@
   }
 
   function setupTrees() {
-    board('https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-1/literacy/trees-board-3d-v1.png', 'trees-game');
+    board('trees-board-3d-v1.png', 'trees-game');
     const positions = [[17, 23], [49, 22], [80, 23]];
     const gatheredPositions = [[44, 75], [50, 71], [56, 75]];
     let found = 0;
@@ -407,7 +407,7 @@
   }
 
   function setupBench() {
-    board('https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-1/literacy/bench-board-3d-v1.png', 'bench-game');
+    board('bench-board-3d-v1.png', 'bench-game');
     const starts = [[17, 10], [45, 8], [73, 10]];
     const targets = [[27, 72], [50, 72], [73, 72]];
     const occupied = new Set();
@@ -467,7 +467,7 @@
   }
 
   function setupGrass() {
-    board('https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/week-1/literacy/grass-board-3d-v1.png', 'grass-game');
+    board('grass-board-3d-v1.png', 'grass-game');
     const points = [[16, 80], [29, 69], [42, 59], [58, 58], [73, 52], [79, 35], [86, 17]];
     let step = 0;
     const bee = beeButton('b-game-bee b-trail-bee', 'Bee on the dewdrop trail');

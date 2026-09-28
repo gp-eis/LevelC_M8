@@ -1,4 +1,4 @@
-import { getContent, shuffle } from "./content.js?deploy=20260929-resource-fix-2";
+import { getContent, shuffle } from "./content.js?deploy=20260929-asset-fix-3";
 
 const params = new URLSearchParams(location.search);
 const level = ["a", "b", "c"].includes(params.get("level")) ? params.get("level") : "a";
@@ -118,7 +118,7 @@ function speak(text, rate = .82) {
 function playSound(sound) {
   if (muted) return;
   if (/^[a-z]$/i.test(sound)) {
-    const audio = new Audio(`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/audio/phonics-m7/letters/${sound.toLowerCase()https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/phonics-arcade/}.mp3`);
+    const audio = new Audio(`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/audio/phonics-m7/letters/${sound.toLowerCase()}.mp3`);
     audio.volume = .95;
     audio.play().catch(() => speak(sound));
   } else speak(sound, .68);
@@ -127,7 +127,7 @@ function playSound(sound) {
 function playSoundFully(sound) {
   if (muted) return Promise.resolve();
   if (/^[a-z]$/i.test(sound)) {
-    const audio = new Audio(`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/audio/phonics-m7/letters/${sound.toLowerCase()https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/phonics-arcade/}.mp3`);
+    const audio = new Audio(`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/audio/phonics-m7/letters/${sound.toLowerCase()}.mp3`);
     audio.volume = .95;
     return new Promise(resolve => {
       let settled = false;

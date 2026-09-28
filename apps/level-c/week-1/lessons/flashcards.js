@@ -4,34 +4,34 @@ const speechRoot = `${imageRoot}/speech`;
 
 const decks = {
   literacy: [
-    { id: "dog-sitting", page: "Page 2", phrase: "dog sitting", sentence: "There is a dog sitting on the grass.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${imageRoot}/dog-sitting.webp` },
-    { id: "cat-yawning", page: "Page 2", phrase: "cat yawning", sentence: "There is a cat yawning on the path.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${imageRoot}/cat-yawning.webp` },
-    { id: "squirrel-playing", page: "Page 2", phrase: "squirrel playing", sentence: "There is a squirrel playing by the tree.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${imageRoot}/squirrel-playing.webp` },
-    { id: "deer-walking", page: "Page 2", phrase: "deer walking", sentence: "There is a deer walking on the grass.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${imageRoot}/deer-walking.webp` },
-    { id: "eagle-hunting", page: "Page 2", phrase: "eagle hunting", sentence: "There is an eagle hunting in the sky.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${imageRoot}/eagle-hunting.webp` },
-    { id: "red-ladybug", page: "Page 3", phrase: "red ladybug", sentence: "They see a red ladybug on the flower.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${reviewRoot}/red-ladybug.png` },
-    { id: "brown-ant", page: "Page 3", phrase: "brown ant", sentence: "They see a brown ant on the rain boots.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${reviewRoot}/brown-ant.png` },
-    { id: "tall-fence", page: "Page 3", phrase: "tall fence", sentence: "They see a tall fence in the garden.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${reviewRoot}/tall-fence.png` },
-    { id: "green-cactus", page: "Page 3", phrase: "green cactus", sentence: "They see a green cactus by the fence.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${reviewRoot}/green-cactus.png` },
-    { id: "small-snail", page: "Page 3", phrase: "small snail", sentence: "They see a small snail on the fence.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${reviewRoot}/small-snail.png` },
-    { id: "blue-car", page: "Page 4", phrase: "blue car", sentence: "The dog is barking at the blue car.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${reviewRoot}/blue-car.png` },
-    { id: "purple-scooter", page: "Page 4", phrase: "purple scooter", sentence: "The dog is barking at the purple scooter.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${reviewRoot}/purple-scooter.png` },
-    { id: "brown-owl", page: "Page 4", phrase: "brown owl", sentence: "The dog is barking at the brown owl.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${reviewRoot}/brown-owl.png` },
-    { id: "white-moon", page: "Page 4", phrase: "white moon", sentence: "The dog is barking at the white moon.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${reviewRoot}/white-moon.png` },
-    { id: "two-spiders", page: "Page 5", phrase: "two spiders", sentence: "The two spiders are scary.", images: Array(2).fill(`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${reviewRoot}/single-spider.png`) },
-    { id: "one-monster", page: "Page 5", phrase: "one monster", sentence: "The one monster is scary.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${reviewRoot}/one-monster.png` },
-    { id: "three-ghosts", page: "Page 5", phrase: "three ghosts", sentence: "The three ghosts are scary.", images: Array(3).fill(`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${reviewRoot}/white-ghost.png`) },
-    { id: "four-bats", page: "Page 5", phrase: "four bats", sentence: "The four bats are scary.", images: Array(4).fill(`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${reviewRoot}/single-bat.png`) }
+    { id: "dog-sitting", page: "Page 2", phrase: "dog sitting", sentence: "There is a dog sitting on the grass.", image: `${imageRoot}/dog-sitting.webp` },
+    { id: "cat-yawning", page: "Page 2", phrase: "cat yawning", sentence: "There is a cat yawning on the path.", image: `${imageRoot}/cat-yawning.webp` },
+    { id: "squirrel-playing", page: "Page 2", phrase: "squirrel playing", sentence: "There is a squirrel playing by the tree.", image: `${imageRoot}/squirrel-playing.webp` },
+    { id: "deer-walking", page: "Page 2", phrase: "deer walking", sentence: "There is a deer walking on the grass.", image: `${imageRoot}/deer-walking.webp` },
+    { id: "eagle-hunting", page: "Page 2", phrase: "eagle hunting", sentence: "There is an eagle hunting in the sky.", image: `${imageRoot}/eagle-hunting.webp` },
+    { id: "red-ladybug", page: "Page 3", phrase: "red ladybug", sentence: "They see a red ladybug on the flower.", image: `${reviewRoot}/red-ladybug.png` },
+    { id: "brown-ant", page: "Page 3", phrase: "brown ant", sentence: "They see a brown ant on the rain boots.", image: `${reviewRoot}/brown-ant.png` },
+    { id: "tall-fence", page: "Page 3", phrase: "tall fence", sentence: "They see a tall fence in the garden.", image: `${reviewRoot}/tall-fence.png` },
+    { id: "green-cactus", page: "Page 3", phrase: "green cactus", sentence: "They see a green cactus by the fence.", image: `${reviewRoot}/green-cactus.png` },
+    { id: "small-snail", page: "Page 3", phrase: "small snail", sentence: "They see a small snail on the fence.", image: `${reviewRoot}/small-snail.png` },
+    { id: "blue-car", page: "Page 4", phrase: "blue car", sentence: "The dog is barking at the blue car.", image: `${reviewRoot}/blue-car.png` },
+    { id: "purple-scooter", page: "Page 4", phrase: "purple scooter", sentence: "The dog is barking at the purple scooter.", image: `${reviewRoot}/purple-scooter.png` },
+    { id: "brown-owl", page: "Page 4", phrase: "brown owl", sentence: "The dog is barking at the brown owl.", image: `${reviewRoot}/brown-owl.png` },
+    { id: "white-moon", page: "Page 4", phrase: "white moon", sentence: "The dog is barking at the white moon.", image: `${reviewRoot}/white-moon.png` },
+    { id: "two-spiders", page: "Page 5", phrase: "two spiders", sentence: "The two spiders are scary.", images: Array(2).fill(`${reviewRoot}/single-spider.png`) },
+    { id: "one-monster", page: "Page 5", phrase: "one monster", sentence: "The one monster is scary.", image: `${reviewRoot}/one-monster.png` },
+    { id: "three-ghosts", page: "Page 5", phrase: "three ghosts", sentence: "The three ghosts are scary.", images: Array(3).fill(`${reviewRoot}/white-ghost.png`) },
+    { id: "four-bats", page: "Page 5", phrase: "four bats", sentence: "The four bats are scary.", images: Array(4).fill(`${reviewRoot}/single-bat.png`) }
   ],
   speech: [
-    { id: "speech-horse-chest", phrase: "horse chest", sentence: "The horse has a chest.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${speechRoot}/horse-chest-v1.png` },
-    { id: "speech-horse-mane", phrase: "horse mane", sentence: "The horse has a mane.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${speechRoot}/horse-mane-v1.png` },
-    { id: "speech-horse-hooves", phrase: "horse hooves", sentence: "The horse has hooves.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${speechRoot}/horse-hooves-v1.png` },
-    { id: "speech-horse-muzzle", phrase: "horse muzzle", sentence: "The horse has a muzzle.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${speechRoot}/horse-muzzle-v1.png` },
-    { id: "speech-eagle-chest", phrase: "eagle chest", sentence: "The eagle has a chest.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${speechRoot}/eagle-chest-v1.png` },
-    { id: "speech-lion-mane", phrase: "lion mane", sentence: "The lion has a mane.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${speechRoot}/lion-mane-v1.png` },
-    { id: "speech-bear-muzzle", phrase: "bear muzzle", sentence: "The bear has a muzzle.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${speechRoot}/bear-muzzle-v1.png` },
-    { id: "speech-deer-hooves", phrase: "deer hooves", sentence: "The deer has hooves.", image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/lessons/${speechRoot}/deer-hooves-v1.png` }
+    { id: "speech-horse-chest", phrase: "horse chest", sentence: "The horse has a chest.", image: `${speechRoot}/horse-chest-v1.png` },
+    { id: "speech-horse-mane", phrase: "horse mane", sentence: "The horse has a mane.", image: `${speechRoot}/horse-mane-v1.png` },
+    { id: "speech-horse-hooves", phrase: "horse hooves", sentence: "The horse has hooves.", image: `${speechRoot}/horse-hooves-v1.png` },
+    { id: "speech-horse-muzzle", phrase: "horse muzzle", sentence: "The horse has a muzzle.", image: `${speechRoot}/horse-muzzle-v1.png` },
+    { id: "speech-eagle-chest", phrase: "eagle chest", sentence: "The eagle has a chest.", image: `${speechRoot}/eagle-chest-v1.png` },
+    { id: "speech-lion-mane", phrase: "lion mane", sentence: "The lion has a mane.", image: `${speechRoot}/lion-mane-v1.png` },
+    { id: "speech-bear-muzzle", phrase: "bear muzzle", sentence: "The bear has a muzzle.", image: `${speechRoot}/bear-muzzle-v1.png` },
+    { id: "speech-deer-hooves", phrase: "deer hooves", sentence: "The deer has hooves.", image: `${speechRoot}/deer-hooves-v1.png` }
   ]
 };
 
