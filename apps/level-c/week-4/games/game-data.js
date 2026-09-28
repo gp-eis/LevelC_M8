@@ -1,6 +1,6 @@
 export const gameMeta = { week: 4, topic: "Animals That Sleep", review: "Where Animals Sleep", wheelIcon: "🌙", completion: "Sleeping Animals Expert!" };
-const animalRoot = "/LevelC_M8/apps/level-c/assets/literacy/week-4/reading";
-const catRoot = "/LevelC_M8/apps/level-c/assets/literacy/week-4/cats";
+const animalRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-4/reading";
+const catRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-4/cats";
 export const gameItems = [
   { id: "tiger", label: "tiger sleeps", sentence: "A tiger sleeps.", group: "Animal", wheelIcon: "🐯", image: `${catRoot}/tiger-sleeping-v2.png`, gameImage: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/games/cutouts/week-4/tiger.png" },
   { id: "koala", label: "koala sleeps on branches", sentence: "A koala sleeps on the branches.", group: "Animal", wheelIcon: "🐨", image: `${animalRoot}/koala-landscape-v1.png`, gameImage: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/games/cutouts/week-4/koala.png" },

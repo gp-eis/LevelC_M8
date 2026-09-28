@@ -1,4 +1,4 @@
-const WORD_IMAGE_ROOT = "/LevelC_M8/apps/level-c/assets/phonics/words";
+const WORD_IMAGE_ROOT = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/words";
 
 const weeksOneAndTwo = [
   {

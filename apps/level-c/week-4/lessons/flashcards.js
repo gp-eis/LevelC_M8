@@ -1,7 +1,7 @@
-const readingRoot = "../../assets/literacy/week-4/reading";
-const catsRoot = "../../assets/literacy/week-4/cats";
-const timeRoot = "../../assets/literacy/week-2/page-04-clues";
-const weekTwoFlashRoot = "../../assets/flashcards/week-2/literacy";
+const readingRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-4/reading";
+const catsRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-4/cats";
+const timeRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-04-clues";
+const weekTwoFlashRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/flashcards/week-2/literacy";
 
 const decks = {
   literacy: [

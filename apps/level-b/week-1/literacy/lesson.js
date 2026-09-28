@@ -1,5 +1,5 @@
-import '../../assets/navigation/gp-navigation.js?v=20260915-literacy&deploy=20260929-asset-fix-4';
-import '../../assets/navigation/gp-sounds.js?deploy=20260929-asset-fix-4';
+import '../../assets/navigation/gp-navigation.js?v=20260915-literacy&deploy=20260929-asset-fix-5';
+import '../../assets/navigation/gp-sounds.js?deploy=20260929-asset-fix-5';
 const pages=['page-01.html','video-activity.html','page-02.html','page-03.html','page-04.html','page-05.html'];
 const file=location.pathname.split('/').pop(), index=pages.indexOf(file), tool=['tpr.html','flashcards.html','conversation.html'].includes(file);
 const main=document.querySelector('main');

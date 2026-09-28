@@ -1,7 +1,7 @@
 export const gameMeta = { week: 1, topic: "Animals and Things We See", review: "Park, Garden, Yard, and Cave", wheelIcon: "🌳", completion: "Nature Expert!" };
-const flashcardRoot = "/LevelC_M8/apps/level-c/assets/flashcards/week-1";
+const flashcardRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/flashcards/week-1";
 const reviewRoot = `${flashcardRoot}/review`;
-const cutoutRoot = "/LevelC_M8/apps/level-c/assets/games/cutouts/week-1";
+const cutoutRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/games/cutouts/week-1";
 
 export const gameItems = [
   {id:"dog",label:"dog sitting",sentence:"There is a dog sitting on the grass.",group:"Park",image:`${flashcardRoot}/dog-sitting.webp`,gameImage:`${cutoutRoot}/dog.png`},

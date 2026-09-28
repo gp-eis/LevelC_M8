@@ -1,4 +1,4 @@
-import { revealNextAction, hideNextAction } from "../../assets/navigation/gp-navigation.js?v=20260902-8&deploy=20260929-asset-fix-4";
+import { revealNextAction, hideNextAction } from "../../assets/navigation/gp-navigation.js?v=20260902-8&deploy=20260929-asset-fix-5";
 
 const page = Number(document.body.dataset.page);
 const configs = {

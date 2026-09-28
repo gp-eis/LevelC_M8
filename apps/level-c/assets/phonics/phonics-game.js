@@ -3,7 +3,7 @@ import {
   phonicsSets,
   shuffle,
   weekFocus,
-} from "./word-data.js?deploy=20260929-asset-fix-4";
+} from "./word-data.js?deploy=20260929-asset-fix-5";
 
 const app = document.querySelector("#game-app");
 const gameType = document.body.dataset.game;
@@ -11,7 +11,7 @@ const week = getWeekNumber();
 const phonicsWords = phonicsSets[week];
 const focus = weekFocus[week];
 const focusTeams = [...new Set(phonicsWords.map((word) => word.team))];
-const iconRoot = "/LevelC_M8/apps/level-c/assets/ui/game-list/phonics";
+const iconRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/ui/game-list/phonics";
 const titles = {
   missing: [`${iconRoot}/missing-vowel-team.png`, "What's Missing?"],
   pop: [`${iconRoot}/listen-pop.png`, "Look and Pop"],

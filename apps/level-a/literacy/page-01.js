@@ -1,4 +1,4 @@
-import { PAGE_02_MEDIA } from './page-02-media-manifest.js?v=20260903-1&deploy=20260929-asset-fix-4';
+import { PAGE_02_MEDIA } from './page-02-media-manifest.js?v=20260903-1&deploy=20260929-asset-fix-5';
 
 const State = Object.freeze({
   WAITING_START: 'WAITING_START',

@@ -1,5 +1,5 @@
-@import url('../../week-3/literacy/lesson.css?v=20260916-w3-ready&deploy=20260929-asset-fix-4');
-@import url('./activities.css?v=20260916-w4-basket-size&deploy=20260929-asset-fix-4');
+@import url('../../week-3/literacy/lesson.css?v=20260916-w3-ready&deploy=20260929-asset-fix-5');
+@import url('./activities.css?v=20260916-w4-basket-size&deploy=20260929-asset-fix-5');
 
 /* Compact literacy page navigation: directly below the resource buttons. */
 .b-pages{display:flex;justify-content:center;align-items:center;gap:10px;width:min(100%,460px);margin:8px auto 14px;padding:7px 11px 9px;border:3px solid #ffffffeb;border-radius:999px;background:#ffffffd1;box-shadow:0 7px 0 #6b9ebe52,0 14px 28px #1e3a5f21}.b-pages strong{margin:0;font:900 .84rem/1 var(--font-display);white-space:nowrap}.b-pages div{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:nowrap}.b-pages a{width:35px;height:35px;border-width:2px;background:linear-gradient(#87dcff,#35aee7);color:#123f68;box-shadow:0 3px 0 #187bab;font-size:.9rem}.b-pages a[aria-current]{background:linear-gradient(#ffd75c,#ff9f1c);color:#633a00;box-shadow:0 3px 0 #c76a08;transform:translateY(-1px) scale(1.06)}

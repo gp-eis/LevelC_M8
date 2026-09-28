@@ -1,5 +1,5 @@
 export const gameMeta = { week: 3, topic: "Animals That Hunt and Fly", review: "Animals That Hunt and Fly", wheelIcon: "🦅", completion: "Wildlife Expert!" };
-const animalRoot = "/LevelC_M8/apps/level-c/assets/literacy/week-3/reading";
+const animalRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-3/reading";
 export const gameItems = [
   { id: "eagle", label: "eagle hunts and flies", sentence: "An eagle hunts and flies.", group: "Wildlife", wheelIcon: "🦅", image: `${animalRoot}/eagle-landscape-v1.png`, gameImage: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/games/cutouts/week-3/eagle.png" },
   { id: "lion", label: "lion hunts on land", sentence: "A lion hunts on land.", group: "Wildlife", wheelIcon: "🦁", image: `${animalRoot}/lion-landscape-v1.png`, gameImage: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/games/cutouts/week-3/lion.png" },

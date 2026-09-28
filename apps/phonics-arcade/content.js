@@ -1,6 +1,6 @@
-const A_ROOT = "/LevelC_M8/apps/level-a/assets/media/phonics";
-const B_ROOT = "/LevelC_M8/apps/level-b/assets/phonics/week-1";
-const C_ROOT = "/LevelC_M8/apps/level-c/assets/phonics/words";
+const A_ROOT = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/phonics";
+const B_ROOT = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/phonics/week-1";
+const C_ROOT = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/words";
 
 const makeA = (week, names) => names.map(word => ({
   word,
