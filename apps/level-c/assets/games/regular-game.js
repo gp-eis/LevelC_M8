@@ -1,6 +1,6 @@
 const app = document.querySelector("#game-app");
 const gameType = new URLSearchParams(location.search).get("game") || "memory";
-const dataUrl = new URL(document.body.dataset.gameData || "./game-data.js?deploy=20260929-resource-fix-1", document.baseURI);
+const dataUrl = new URL(document.body.dataset.gameData || "./game-data.js?deploy=20260929-resource-fix-2", document.baseURI);
 const { gameItems, gameMeta, shuffle } = await import(dataUrl.href);
 
 const titles = {

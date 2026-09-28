@@ -1,4 +1,4 @@
-import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260917-c&deploy=20260929-resource-fix-1";
+import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260917-c&deploy=20260929-resource-fix-2";
 
 const lessons = {
   park:{index:1,icon:"🌳",title:"Park",pages:[2,3],sceneAlt:"Physical book page 2 showing five numbered animals in a park",reading:"The children are walking in the park. They see many animals. Look at what each animal is doing.",questions:[["There is a ___ on the grass.",["dog sitting","swan hunting"],0],["There is a ___ on the path.",["rabbit jumping","cat yawning"],1],["There is a ___ by the tree.",["squirrel playing","bat hunting"],0],["There is a ___ on the grass.",["deer walking","dog sleeping"],0],["There is an ___ in the sky.",["cat swimming","eagle hunting"],1]],next:"week-1-page-02.html"},

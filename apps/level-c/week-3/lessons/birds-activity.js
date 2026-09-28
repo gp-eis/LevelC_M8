@@ -1,4 +1,4 @@
-import {playCorrectSound,playWrongSound} from '../../assets/navigation/gp-sounds.js?deploy=20260929-resource-fix-1';
+import {playCorrectSound,playWrongSound} from '../../assets/navigation/gp-sounds.js?deploy=20260929-resource-fix-2';
 const birds=['eagle','crow','hawk','owl'];const img=n=>`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-3/birds/${n}-v1.png`;let stage=Math.min(3,Math.max(1,Number(new URLSearchParams(location.search).get('stage'))||1)),index=0;const root=document.querySelector('[data-bird-game]');
 const speak=t=>{if(!('speechSynthesis'in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=.82;u.pitch=1.06;speechSynthesis.speak(u)};
 const sound=ok=>ok?playCorrectSound():playWrongSound();
