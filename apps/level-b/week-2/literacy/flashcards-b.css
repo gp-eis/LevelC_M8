@@ -1,0 +1,2 @@
+.flashcard-page{width:min(1220px,calc(100% - 28px));max-width:1220px}.fc-workbench.card{border:5px solid white;border-radius:34px;box-shadow:0 10px 0 #1e6fd91f,0 18px 30px #1e3a5f21}.fc-tabs{top:80px}.fc-sentence{font-family:var(--font-display)}.fc-blank{font-family:var(--font-display)}.flashcard-page .b-heading{margin-bottom:24px}
+@media(min-width:561px){.fc-thumbs{grid-template-columns:repeat(4,minmax(0,1fr))}}

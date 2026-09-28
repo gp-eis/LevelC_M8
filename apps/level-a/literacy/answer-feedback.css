@@ -1,0 +1,12 @@
+/* Shared workbook feedback: blue choices, green success, red retry. */
+.week2-stage .week2-target:not(.week2-word):not(.week2-endpoint):not(:disabled):not(.is-correct):not(.is-wrong){border:3px dashed #2689db;box-shadow:inset 0 0 0 2px #ffffffb3}
+:is(.week2-stage,.workbook-stage,.page-two-media-stage) :is(.week2-target,.letter-token,.letter-target,.team-target,.page-two-choice,.count-selector button,.w34-counter button,.w34-dpad button):not(:disabled){cursor:pointer;transition:box-shadow .15s,border-color .15s,background-color .15s}
+:is(.week2-stage,.workbook-stage,.page-two-media-stage) :is(.week2-target,.letter-token,.letter-target,.team-target,.page-two-choice,.count-selector button,.w34-counter button,.w34-dpad button):not(:disabled):not(.is-correct):not(.is-wrong):is(:hover,:focus-visible){outline:3px solid #2689db;outline-offset:-3px;border-color:#2689db;box-shadow:inset 0 0 0 3px #ffffffb3,0 0 10px #2689db80}
+.week2-stage .week2-target:not(.week2-word):not(.week2-endpoint):not(:disabled):not(.is-correct):not(.is-wrong):is(:hover,:focus-visible,:active){border-style:solid;background:rgba(38,137,219,.12)}
+.week2-stage .week2-endpoint:not(:disabled):not(.is-correct):not(.is-wrong):is(:hover,:focus-visible,:active){background:#2689db}
+:is(.week2-stage,.workbook-stage,.page-two-media-stage) :is(.week2-target,.letter-target,.team-target,.page-two-choice).is-wrong:not(.is-correct){outline:3px solid #e23546;outline-offset:-3px;border-color:#e23546;background:rgba(239,55,73,.24);box-shadow:inset 0 0 0 3px #fff8;animation:literacy-answer-shake .4s ease-in-out}
+.workbook-stage .team-target.is-wrong:not(.is-correct)::before{content:"×";border-color:#e23546;background:#ffe1e4;color:#b51929}
+:is(.week2-stage,.workbook-stage) :is(.w34-counter,.count-selector).is-wrong:not(.is-correct) output{border-color:#e23546;background:#ffe1e4;color:#b51929;animation:literacy-answer-shake .4s ease-in-out}
+.workbook-stage .team-target:not(.is-correct):not(.is-wrong)::before{border-color:#2689db}
+@keyframes literacy-answer-shake{0%,100%{translate:0}20%,60%{translate:-5px}40%,80%{translate:5px}}
+@media(prefers-reduced-motion:reduce){:is(.week2-stage,.workbook-stage,.page-two-media-stage) .is-wrong,:is(.week2-stage,.workbook-stage) .is-wrong output{animation:none!important}}

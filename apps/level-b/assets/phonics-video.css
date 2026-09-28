@@ -1,0 +1,20 @@
+.video-slot:has(.phonics-video){
+  min-height:0;
+  padding:12px;
+  border-style:solid;
+  background:#fff;
+}
+
+.phonics-video{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:min(64vh,720px);
+  border-radius:20px;
+  background:#000;
+}
+
+@media(max-width:560px){
+  .video-slot:has(.phonics-video){padding:7px}
+  .phonics-video{border-radius:15px}
+}

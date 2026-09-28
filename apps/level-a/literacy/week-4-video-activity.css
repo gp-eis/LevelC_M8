@@ -1,0 +1,4 @@
+.week4-video-page .ees-video{aspect-ratio:1264/720;object-fit:contain}
+.week4-video-page [hidden]{display:none!important}
+.week4-video-page .ees-sentence-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.week4-video-page .ees-sentence:first-child{grid-column:auto}
+@media(max-width:540px){.week4-video-page .ees-sentence{font-size:18px;padding:14px 10px}}

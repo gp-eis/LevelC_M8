@@ -1,0 +1,393 @@
+.animal-node img {
+  object-fit: contain;
+  background: #edf7f2;
+}
+
+.trace-card > .bird-listen {
+  margin: 8px auto 10px;
+}
+
+.trace-launch {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.bird-word-preview {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
+
+.word-trace-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2400;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: #1c3458bf;
+}
+
+.word-trace-dialog {
+  position: relative;
+  width: min(900px, 96vw);
+  padding: 24px;
+  border: 8px solid #fff;
+  border-radius: 30px;
+  background: linear-gradient(#fffdf1, #edf9ff);
+  box-shadow: 0 15px 0 #68a9c9, 0 28px 60px #10253c88;
+  text-align: center;
+}
+
+.word-trace-dialog h2 {
+  margin: 0;
+  color: #286e9f;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.word-trace-dialog p {
+  color: #607989;
+  font-weight: 800;
+}
+
+.word-trace-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 48px;
+  height: 48px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  background: #ef5858;
+  color: #fff;
+  box-shadow: 0 5px 0 #aa2f37;
+  font-size: 1.5rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.large-word-trace {
+  position: relative;
+  height: clamp(190px, 35vh, 300px);
+  overflow: hidden;
+  border: 5px dashed #77b8d5;
+  border-radius: 24px;
+  background: #fff;
+  touch-action: none;
+}
+
+.large-word-trace span {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #d2dce2;
+  font: 900 clamp(4rem, 14vw, 8.5rem)/1 var(--font-display);
+  letter-spacing: .04em;
+  pointer-events: none;
+  user-select: none;
+}
+
+.large-word-trace canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: crosshair;
+}
+
+.word-trace-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.word-trace-actions button {
+  min-width: 140px;
+  min-height: 54px;
+  border: 4px solid #fff;
+  border-radius: 999px;
+  color: #fff;
+  font: 900 1.05rem var(--font-display);
+  cursor: pointer;
+}
+
+.word-trace-reset { background: #ef7969; box-shadow: 0 5px 0 #a8463b; }
+.word-trace-go { background: #55b94e; box-shadow: 0 5px 0 #347e2d; }
+
+@media (max-width: 600px) {
+  .word-trace-dialog { padding: 18px 10px 14px; border-width: 5px; }
+  .word-trace-dialog p { margin-right: 40px; margin-left: 40px; }
+  .large-word-trace { height: 190px; }
+  .word-trace-actions button { min-width: 115px; }
+}
+
+/* Book-like spacing and a clearer phone layout for Part 1. */
+.game-progress.is-three { grid-template-columns: repeat(3, 1fr); }
+
+.write-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(940px, 100%);
+  margin: 22px auto 0;
+  gap: 26px;
+}
+
+.trace-card {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  gap: 8px 16px;
+  padding: 15px;
+}
+
+.trace-card > img:first-child {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  width: 150px;
+  height: 150px;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+
+.trace-card > .bird-listen {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0 auto;
+}
+
+.trace-card > .trace-launch {
+  grid-column: 2;
+  grid-row: 2;
+  height: 82px;
+}
+
+.trace-card > small {
+  grid-column: 2;
+  grid-row: 3;
+  margin: 0;
+}
+
+/* Keep the unframed bird photographs together in the center, like the book. */
+.book-match-board { gap: 6px; padding: 26px; }
+.match-side { gap: 42px; }
+.animal-node { padding: 0 0 28px; border: 0; background: transparent; box-shadow: none; }
+.animal-node img { width: 140px; max-width: 100%; height: 140px; margin: 0 auto; border-radius: 13px; background: transparent; }
+.animal-node.selected { border: 0; outline: 5px solid #ffb42f; outline-offset: 3px; background: transparent; }
+.animal-node.matched { border: 0; background: transparent; box-shadow: none; }
+.left .animal-node .node-dot { left: max(8px, calc(50% - 62px)); }
+.right .animal-node .node-dot { right: max(8px, calc(50% - 62px)); }
+.picture-name { bottom: 1px; }
+
+/* The retained Part 4 now includes a visual clue beside every sentence. */
+.blank-row {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+}
+
+.blank-scene {
+  position: relative;
+  overflow: hidden;
+  height: 125px;
+  border: 4px solid #a9d2e4;
+  border-radius: 17px;
+  background: #edf7f2;
+}
+
+.blank-scene img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.blank-content p { text-align: left; }
+
+@media (max-width: 750px) {
+  .game-progress span { font-size: .82rem; }
+  .write-grid { grid-template-columns: 1fr; width: 100%; gap: 16px; }
+  .trace-card { grid-template-columns: 112px minmax(0, 1fr); gap: 7px 12px; padding: 11px; }
+  .trace-card > img:first-child { width: 112px; height: 112px; }
+  .trace-card > .trace-launch { height: 68px; }
+  .trace-card > small { font-size: .78rem; }
+  .book-match-board { gap: 24px; padding: 14px; }
+  .match-side, .match-side.right { gap: 22px; }
+}
+
+@media (max-width: 430px) {
+  .trace-card { grid-template-columns: 96px minmax(0, 1fr); gap: 5px 9px; }
+  .trace-card > img:first-child { width: 96px; height: 96px; }
+  .trace-card > .bird-listen { width: 42px; height: 38px; }
+  .trace-card > .trace-launch { height: 60px; }
+  .trace-card > small { font-size: .7rem; }
+  .blank-row { grid-template-columns: 120px minmax(0, 1fr); gap: 10px; padding: 9px; }
+  .blank-scene { height: 105px; }
+  .blank-options { flex-wrap: wrap; gap: 6px; }
+  .blank-options button { min-width: 78px; padding: 7px; }
+}
+
+/* Part 3: one action and one object, with immediate visual and audio feedback. */
+.blank-content { min-width: 0; }
+.blank-sentence { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.blank-sentence p { flex: 1; margin: 0; font-size: clamp(1.15rem, 2.3vw, 1.55rem); }
+.sentence-listen,.blank-word-listen { flex: 0 0 auto; width: 46px; height: 43px; padding: 0; border: 3px solid #fff; border-radius: 14px; background: #ffb12e; color: #fff; box-shadow: 0 4px 0 #c37100; font-size: 1rem; cursor: pointer; }
+.blank-option-groups { display: grid; gap: 10px; margin-top: 12px; }
+.blank-choice-group { padding: 9px 11px 12px; border: 3px solid #cce2eb; border-radius: 16px; background: #f8fcff; }
+.blank-choice-group h3 { margin: 0 0 7px; color: #496b80; font: 900 .92rem var(--font-display); text-align: left; }
+.blank-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.blank-choice { display: grid; grid-template-columns: minmax(0, 1fr) 46px; align-items: center; gap: 6px; }
+.blank-options .blank-word { width: 100%; min-width: 0; min-height: 43px; padding: 7px 9px; border: 4px solid #b9dcea; border-radius: 14px; background: #fff; color: #315570; box-shadow: 0 4px 0 #98c2d4; font: 900 1rem var(--font-display); cursor: pointer; }
+.blank-options .blank-word.correct { border-color: #2387c7; background: #48a9e8; color: #fff; box-shadow: 0 4px 0 #176ca5; }
+.blank-options .blank-word.correct::after { content: " ✓"; }
+.blank-choice-group.answered { border-color: #62afe0; background: #eff9ff; }
+.blank-choice-group.answered h3 { color: #176ca5; }
+.blank-options .blank-word:disabled:not(.correct) { opacity: .5; cursor: default; }
+.blank-feedback { min-height: 1.3em; margin: 9px 0 0!important; color: #60798a; font: 800 .9rem var(--font-friendly)!important; text-align: left!important; }
+.blank-row.complete .blank-sentence p { color: #176ca5; }
+.blank-row.complete .blank-feedback { color: #247d35; }
+
+@media (max-width: 650px) {
+  .blank-row { grid-template-columns: 1fr; }
+  .blank-scene { height: auto; aspect-ratio: 3 / 2; }
+  .blank-options { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 430px) {
+  .blank-row { grid-template-columns: 1fr; gap: 12px; padding: 10px; }
+  .blank-choice { grid-template-columns: minmax(0, 1fr) 44px; }
+  .sentence-listen,.blank-word-listen { width: 44px; height: 41px; }
+}
+
+/* Shared Week 3/4 Part 3 layout. Keep every image, sentence, answer and
+   speaker in a predictable cell instead of letting audio buttons overlap. */
+.blank-list {
+  width: min(1040px, 100%);
+  gap: 18px;
+}
+
+.blank-row {
+  grid-template-columns: minmax(210px, 270px) minmax(0, 1fr);
+  align-items: start;
+  gap: 22px;
+  padding: 18px;
+  border-radius: 24px;
+}
+
+.blank-scene {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  align-self: center;
+}
+
+.blank-scene img {
+  display: block;
+  object-fit: cover;
+}
+
+.blank-content {
+  display: grid;
+  min-width: 0;
+  gap: 12px;
+}
+
+.blank-sentence {
+  min-height: 52px;
+  padding: 0 2px 7px;
+  border-bottom: 3px dashed #d4e7ee;
+}
+
+.blank-sentence p {
+  line-height: 1.3;
+}
+
+.blank-option-groups {
+  gap: 12px;
+  margin-top: 0;
+}
+
+.blank-choice-group {
+  padding: 10px 12px 13px;
+}
+
+.blank-options {
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.blank-choice {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 44px;
+  gap: 0;
+  min-width: 0;
+  overflow: hidden;
+  border: 4px solid #b9dcea;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 4px 0 #98c2d4;
+}
+
+.blank-options .blank-word {
+  min-height: 46px;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.blank-options .blank-word-listen {
+  width: 44px;
+  min-width: 0;
+  height: 100%;
+  min-height: 46px;
+  padding: 0;
+  border: 0;
+  border-left: 3px solid #ffe0a5;
+  border-radius: 0;
+  background: #ffb12e;
+  color: #fff;
+  box-shadow: none;
+}
+
+.blank-choice:has(.blank-word.correct) {
+  border-color: #2387c7;
+  background: #48a9e8;
+  box-shadow: 0 4px 0 #176ca5;
+}
+
+.blank-feedback {
+  margin-top: 0!important;
+}
+
+@media (max-width: 760px) {
+  .blank-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 12px;
+  }
+
+  .blank-scene {
+    width: min(430px, 100%);
+    margin-inline: auto;
+    aspect-ratio: 3 / 2;
+  }
+}
+
+@media (max-width: 520px) {
+  .blank-options {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .blank-sentence {
+    align-items: flex-start;
+  }
+}

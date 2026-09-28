@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en-US" translate="no">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en-US">
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Picture Match — Level B Month 8</title>
+  <link rel="stylesheet" href="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/navigation/gp-navigation.css?v=20260917-compact-pages">
+  <link rel="stylesheet" href="game-foundation.css?v=20260916-b1">
+  <link rel="stylesheet" href="month7-match-games.css?v=20260911-m7-layout">
+  <script type="module" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/navigation/gp-navigation.js?v=20260923-center-all-v9"></script>
+<script type="module" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/navigation/gp-sounds.js?v=20260916-b1"></script></head>
+<body data-match-game="picture">
+  <gp-navigation data-main-href="../index.html" data-week-href="../week-1/#card-games" data-section-href="index.html" data-trail="Level B · Week 1 · Games · Picture Match"></gp-navigation>
+  <div class="match-floaties" aria-hidden="true"><span>🧩</span><span>🐝</span></div>
+  <main class="match-page">
+    <header class="match-heading"><h1><img src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/ui/game-list/game-matching.webp" alt="">Picture Match</h1><p>Read the sentence, then pick the picture that matches!</p></header>
+    <div class="match-toolbar"><button class="match-pill match-pill--orange" id="new-round" type="button">🔄 New Round</button><span class="match-score">Correct: <span id="score">0</span></span></div>
+    <section class="match-board">
+      <div class="picture-choices" id="choices-row"></div>
+      <div class="sentence-box"><p id="sentence-text"></p><button class="listen-btn" id="sentence-listen" type="button" aria-label="Listen to the sentence">🔊</button></div>
+      <p class="match-live" id="game-status" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+  <div class="success-modal" id="success-modal" role="dialog" aria-modal="true" aria-labelledby="success-title" hidden><div class="success-card"><h2 id="success-title">Correct! 🎉</h2><div class="success-picture-review"><img id="review-image" src="" alt=""><p id="review-sentence"></p></div><button class="match-pill match-pill--green" id="continue-btn" type="button">✓ Continue</button></div></div>
+  <script src="weekly-game-data.js?v=20260916-b4"></script>
+<script src="month7-match-games.js?v=20260914-equipment"></script>
+</body>
+</html>

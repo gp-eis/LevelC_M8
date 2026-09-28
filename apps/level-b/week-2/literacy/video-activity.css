@@ -1,0 +1,89 @@
+.b-video-activity-page{width:min(1120px,calc(100% - 28px))}
+.b-week2-video{display:block;width:100%;aspect-ratio:71/50;object-fit:cover;background:#d7f4ff}
+.b-video-shell{aspect-ratio:71/50}
+.b-video-choices{margin-bottom:clamp(30px,5vw,60px)}
+
+.honey-game{background:
+  radial-gradient(circle at 14% 18%,#fff8 0 5%,transparent 5.5%),
+  radial-gradient(circle at 86% 20%,#fff8 0 6%,transparent 6.5%),
+  linear-gradient(#8edcff 0 56%,#8de375 56% 100%)}
+.honey-game::before,.honey-game::after{content:"";position:absolute;z-index:0;border-radius:50%;pointer-events:none}
+.honey-game::before{left:-7%;bottom:-22%;width:55%;height:50%;background:#52bd55;box-shadow:420px -8px 0 #64ca5f}
+.honey-game::after{right:5%;top:8%;width:17%;aspect-ratio:1;background:#ffe674;box-shadow:0 0 0 14px #fff49a55,0 0 45px #fff}
+.honey-game>*{position:absolute;z-index:2}
+.honey-game .b-game-sparkles{inset:0;z-index:20}
+
+.honey-object,.honey-target{border:0;background:transparent;cursor:grab;touch-action:none;transform:translate(-50%,-50%);transition:transform .18s ease,filter .18s ease,left .35s ease,top .35s ease,opacity .25s ease}
+.honey-object img,.honey-target img{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none;filter:drop-shadow(0 8px 7px #21435b55)}
+.honey-object:hover,.honey-object:focus-visible,.honey-object.is-selected{outline:none;transform:translate(-50%,-50%) scale(1.12);filter:drop-shadow(0 0 11px #fff)}
+.honey-object.is-dragging{z-index:30;cursor:grabbing;transition:none;transform:translate(-50%,-50%) scale(1.14)}
+.honey-object.is-used{pointer-events:none;opacity:.18;transform:translate(-50%,-50%) scale(.5)}
+.honey-target{cursor:pointer}
+.honey-target:hover,.honey-target:focus-visible{outline:none;filter:drop-shadow(0 0 14px #fff)}
+.honey-target::after{content:"";position:absolute;inset:8%;border:6px dashed #fff;border-radius:50%;box-shadow:0 0 0 7px #ffdc5a66;pointer-events:none;animation:honey-target-pulse 1.2s infinite alternate}
+.is-wrong{animation:honey-shake .4s!important;filter:drop-shadow(0 0 10px #ff3b46)!important}
+
+.activity-state-scene{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;pointer-events:none;transition:opacity .2s ease}
+.good-scene-game,.natural-scene-game,.sweet-scene-game{background:#d8f4ff}.good-scene-game::before,.good-scene-game::after,.natural-scene-game::before,.natural-scene-game::after,.sweet-scene-game::before,.sweet-scene-game::after{display:none}
+.good-jar-drop{position:absolute;z-index:7;left:50%;top:64%;width:38%;height:56%;transform:translate(-50%,-50%);border:6px dashed #fff;border-radius:38%;background:#fff1;box-shadow:0 0 0 8px #ffcf4666;cursor:pointer;animation:honey-target-pulse 1.2s infinite alternate}
+.jar-fill-level{position:absolute;z-index:5;left:50%;top:58%;width:25%;height:46%;transform:translate(-50%,-50%);border-radius:38% 38% 44% 44%;background:#dff7f4e8;opacity:.78;box-shadow:inset 0 7px 12px #fff8,0 0 18px #ffd84d55;pointer-events:none;transition:background .45s ease,opacity .3s ease}.jar-fill-level::before{content:"";position:absolute;left:3%;right:3%;top:0;height:10%;border-radius:50%;background:#fff7b9;box-shadow:0 0 8px #fff}.jar-fill-level[data-level="1"]{opacity:.74;background:linear-gradient(to bottom,#c7edf1dd 0 69%,#ffd84d 69% 72%,#f19a13 72% 100%)}.jar-fill-level[data-level="2"]{opacity:.78;background:linear-gradient(to bottom,#c7edf1dd 0 44%,#ffd84d 44% 47%,#f19a13 47% 100%)}.jar-fill-level[data-level="3"]{opacity:.82;background:linear-gradient(to bottom,#c7edf1dd 0 18%,#ffd84d 18% 21%,#f19a13 21% 100%)}
+.good-scene-game .jar-fill-level{display:none}
+.good-game .honey-jar{left:50%;top:58%;width:27%;height:48%}.good-game .honey-star{width:15%;height:26%;z-index:12;border-radius:26px;background:#ffffffdf;box-shadow:0 6px 0 #e0a423,0 10px 22px #5c410055;padding:1%}
+.good-game .honey-star:nth-of-type(1){left:19%;top:31%}.good-game .honey-star:nth-of-type(2){left:80%;top:31%}.good-game .honey-star:nth-of-type(3){left:50%;top:20%}
+.good-game .honey-jar.is-glowing{animation:honey-jar-glow .65s infinite alternate}
+.jar-badge{left:50%;top:61%;transform:translate(-50%,-50%) scale(0);color:white;text-shadow:0 3px #ad6700;font:900 clamp(1.3rem,4vw,2.7rem) var(--font-display);transition:transform .35s}.jar-badge.is-visible{transform:translate(-50%,-50%) scale(1)}
+
+.healthy-game{background:radial-gradient(circle at 50% 64%,#fff9d8 0 25%,transparent 25.5%),linear-gradient(#91ddff 0 54%,#f5b869 54%)}
+.healthy-game .healthy-bowl{left:50%;top:65%;width:32%;height:42%}.healthy-game .ingredient{width:15%;height:25%}
+.healthy-game .ingredient.i1{left:16%;top:29%}.healthy-game .ingredient.i2{left:36%;top:20%}.healthy-game .ingredient.i3{left:64%;top:20%}.healthy-game .ingredient.i4{left:84%;top:29%}
+.stir-spoon{left:50%;top:59%;width:14%;height:30%;z-index:18!important;display:none}.stir-spoon.is-ready{display:block;animation:honey-pop .45s}
+.stir-ring{left:50%;top:64%;width:32%;height:36%;transform:translate(-50%,-50%);border:7px dashed #ffb91b;border-radius:50%;pointer-events:none;opacity:0}.stir-ring.is-ready{opacity:.75;animation:honey-spin 6s linear infinite}
+.healthy-ordered-game,.healing-ordered-game{background:#d8f4ff}
+.healthy-ordered-game::before,.healthy-ordered-game::after,.healing-ordered-game::before,.healing-ordered-game::after{display:none}
+.healthy-state-scene{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;pointer-events:none;transition:opacity .2s ease}
+.healthy-bowl-drop{position:absolute;z-index:6;left:50%;top:65%;width:40%;height:48%;transform:translate(-50%,-50%);border:6px dashed #fff;border-radius:50%;background:#fff1;box-shadow:0 0 0 8px #ffcf4666;cursor:pointer;animation:honey-target-pulse 1.2s infinite alternate}
+.healthy-bowl-drop:focus-visible{outline:6px solid #238dec;outline-offset:4px}
+.healing-mug-drop{position:absolute;z-index:6;left:50%;top:69%;width:29%;height:29%;transform:translate(-50%,-50%);border:5px dashed #fff;border-radius:42%;background:#fff1;box-shadow:0 0 0 6px #ffcf4666;cursor:pointer;animation:honey-target-pulse 1.2s infinite alternate}
+.healing-mug-drop:focus-visible{outline:6px solid #238dec;outline-offset:4px}
+.healthy-ordered-game .ordered-ingredient,.healing-ordered-game .ordered-ingredient{z-index:12;width:15%!important;height:25%!important;border-radius:24px;background:#ffffffdb;box-shadow:0 6px 0 #86b7cd,0 9px 18px #2a597544;padding:1.2%}
+.healthy-ordered-game .ordered-ingredient.is-next,.healing-ordered-game .ordered-ingredient.is-next{box-shadow:0 0 0 6px #ffb317,0 7px 0 #c87000,0 12px 25px #67400055;animation:ordered-choice-pulse .8s infinite alternate}
+.healthy-ordered-game .ordered-ingredient.is-locked,.healing-ordered-game .ordered-ingredient.is-locked{filter:grayscale(.62);opacity:.6;cursor:not-allowed}
+.healthy-ordered-game .ordered-ingredient.is-used,.healing-ordered-game .ordered-ingredient.is-used{opacity:0;transform:translate(-50%,-50%) scale(.45)}
+.healthy-ordered-game .stir-ring,.healing-ordered-game .stir-ring{z-index:8}.healthy-ordered-game .ordered-spoon,.healing-ordered-game .ordered-spoon{z-index:15!important;width:22%!important;height:38%!important}
+.healing-ordered-game .stir-ring{left:50%;top:69%;height:19%;width:19%;border-width:4px}.sweet-game .honey-pen{background:transparent;box-shadow:none;padding:0}
+@keyframes ordered-choice-pulse{to{transform:translate(-50%,-50%) scale(1.08);filter:brightness(1.08)}}
+
+.natural-game{background:linear-gradient(#80d7ff 0 56%,#69cc5a 56%)}
+.natural-game .trail-svg,.sweet-game .trail-svg{inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.natural-scene-game .trail-svg{display:none}
+.trail-base{fill:none;stroke:#fff9;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:2.2 2.5}.trail-progress{fill:none;stroke:#fff56b;stroke-width:3.1;stroke-linecap:round;stroke-dasharray:100;stroke-dashoffset:100;filter:drop-shadow(0 0 5px #fff);transition:stroke-dashoffset .25s}
+.natural-game .journey-bee{left:11%;top:73%;width:15%;height:26%;z-index:12}.natural-checkpoint{position:absolute;z-index:8;width:8%;aspect-ratio:1;transform:translate(-50%,-50%);border:4px dashed #fff;border-radius:50%;background:#ffd83b26;box-shadow:0 0 0 4px #ffb20f66,0 0 13px #fff;cursor:pointer;opacity:.62;transition:opacity .2s,filter .2s,transform .2s}.natural-checkpoint.is-next{opacity:1;background:#ffe05266;box-shadow:0 0 0 7px #ff9d00aa,0 0 24px #fff;animation:ordered-choice-pulse .8s infinite alternate}.natural-checkpoint.is-collected{opacity:0;pointer-events:none}.natural-finish{width:15%;border-color:#fff389}
+.natural-game .nectar{width:8%;height:15%;pointer-events:none}.natural-game .n1{left:31%;top:35%}.natural-game .n2{left:53%;top:68%}.natural-game .n3{left:71%;top:30%}
+.natural-game .flower{width:16%;height:28%;pointer-events:none}.natural-game .f1{left:31%;top:45%}.natural-game .f2{left:53%;top:78%}.natural-game .f3{left:71%;top:40%}.natural-game .comb{left:89%;top:68%;width:18%;height:32%}
+.natural-game .nectar.is-collected{opacity:0;transform:translate(-50%,-80%) scale(.25)}
+
+.sweet-game{background:radial-gradient(circle at 50% 60%,#fff7d7 0 31%,transparent 31.5%),linear-gradient(#f9c47e,#ee9364)}
+.sweet-game .toast-target{left:50%;top:60%;width:36%;height:55%}.sweet-game .honey-pen{left:15%;top:30%;width:18%!important;height:29%!important;z-index:15;border-radius:24px;background:#ffffffdf;box-shadow:0 6px 0 #d79820,0 9px 18px #5d3c0055;padding:1.2%}
+.sweet-game .honey-dot{width:5.5%;aspect-ratio:1;border:4px solid #fff;border-radius:50%;background:#ffbd1c;box-shadow:0 4px 0 #b56d00,0 0 12px #fff;transform:translate(-50%,-50%);cursor:pointer;opacity:.42}.sweet-game .honey-dot.is-passed{background:#fff46d;box-shadow:0 0 18px #fff,0 4px 0 #b56d00;pointer-events:none;opacity:.9}
+.sweet-game .honey-dot.is-next{animation:ordered-choice-pulse .65s infinite alternate;box-shadow:0 0 0 6px #ff8a00,0 0 18px #fff}
+.sweet-trace-svg{position:absolute;inset:0;width:100%;height:100%;z-index:4;pointer-events:none}.sweet-trace-base{fill:none;stroke:#fff2b8;stroke-width:3.4;stroke-linecap:round;stroke-dasharray:2.4 2.4;opacity:.95;filter:drop-shadow(0 0 3px #9c5b00)}.sweet-trace-progress{fill:none;stroke:#f7a40f;stroke-width:4.5;stroke-linecap:round;stroke-dasharray:100;stroke-dashoffset:100;filter:drop-shadow(0 0 4px #fff);transition:stroke-dashoffset .25s}
+.fruit-choice{display:none;width:13%;height:22%}.fruit-choice.is-ready{display:block;animation:honey-pop .4s}.fruit-choice.fc1{left:26%;top:21%}.fruit-choice.fc2{left:50%;top:17%}.fruit-choice.fc3{left:74%;top:21%}
+.sweet-scene-game .ordered-fruit{z-index:12;width:15%!important;height:25%!important;border-radius:24px;background:#ffffffdf;box-shadow:0 6px 0 #86b7cd,0 9px 18px #2a597544;padding:1.1%}.sweet-scene-game .ordered-fruit.is-next{box-shadow:0 0 0 6px #ffb317,0 7px 0 #c87000,0 12px 25px #67400055;animation:ordered-choice-pulse .8s infinite alternate}.sweet-scene-game .ordered-fruit.is-locked{filter:grayscale(.62);opacity:.6;cursor:not-allowed}.sweet-scene-game .ordered-fruit.is-used{opacity:0}
+.sweet-scene-game .honey-pen{background:transparent;box-shadow:none;padding:0;border-radius:0}
+.toast-decoration{pointer-events:none;animation:honey-pop .4s}
+
+.healing-game{background:radial-gradient(circle at 50% 63%,#fff5d9 0 29%,transparent 29.5%),linear-gradient(#a6e3ff 0 54%,#dfa367 54%)}
+.healing-game .cup-target{left:50%;top:63%;width:30%;height:46%}.healing-game .cup-item{width:15%;height:26%}.healing-game .c1{left:20%;top:29%}.healing-game .c2{left:50%;top:18%}.healing-game .c3{left:80%;top:29%}.water-drop img{filter:hue-rotate(165deg) saturate(1.3) drop-shadow(0 8px 7px #21435b55)}
+.heart-steam{left:50%;top:34%;transform:translate(-50%,-50%) scale(0);font-size:clamp(3rem,9vw,6rem);filter:drop-shadow(0 5px 5px #bf6c6c55);transition:transform .45s}.heart-steam.is-visible{transform:translate(-50%,-50%) scale(1);animation:steam-float 1.2s infinite alternate}
+
+@keyframes honey-target-pulse{to{transform:translate(-50%,-50%) scale(1.05);box-shadow:0 0 0 11px #ffdc5a88}}
+@keyframes honey-shake{25%,75%{transform:translate(-50%,-50%) translateX(-8px)}50%{transform:translate(-50%,-50%) translateX(8px)}}
+@keyframes honey-jar-glow{to{filter:drop-shadow(0 0 24px #fff36b);transform:translate(-50%,-50%) scale(1.06)}}
+@keyframes honey-pop{0%{transform:translate(-50%,-50%) scale(.2)}70%{transform:translate(-50%,-50%) scale(1.15)}100%{transform:translate(-50%,-50%) scale(1)}}
+@keyframes honey-spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes steam-float{to{transform:translate(-50%,-62%) scale(1.08)}}
+
+@media(max-width:720px){
+  .b-video-activity-page{width:calc(100% - 14px)}.b-video-choice{min-height:48px;border-width:3px;border-radius:16px}.b-video-choices{gap:7px}
+  .honey-target::after{border-width:3px}.honey-game .honey-object{min-width:42px;min-height:42px}
+}

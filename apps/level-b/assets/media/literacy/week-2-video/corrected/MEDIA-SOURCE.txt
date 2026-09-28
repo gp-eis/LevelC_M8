@@ -1,0 +1,27 @@
+Level B, Month 8, Week 2 literacy Page 2 corrected video set
+
+Part 1 source:
+- Grok conversation: 838a2e17-1ffc-4db5-804a-08bfbdc04430
+- Post: cda07d92-dce5-464c-a314-7ff478ab0874
+- Trimmed at 4.15 seconds, immediately after the woman's line, "Bees make honey."
+
+Approved Part 2 sources:
+- good: 3c9a1845-0c9d-4223-a862-37dac796546a
+- healthy: 1e5146f3-4acc-4566-b840-aa9bb5566c23
+- natural: ef41df8d-a770-4683-99bd-07f3a79df497
+- sweet: 6971f0b1-57f7-4e45-a24f-88031927024e
+- healing: d14955ed-2646-46b1-a9d7-ee424e701352 (the second-to-last generation)
+
+Rejected and not used:
+- 58800afb-7de6-4f93-9f90-7b1d3c0d4992 (the final generation)
+
+Background music:
+- Happy Kids Background Music by BombinSound
+- https://pixabay.com/music/happy-childrens-tunes-happy-kids-background-music-499554/
+- Mixed at low volume beneath the original dialogue.
+
+Output specification:
+- 1136 x 800, 24 fps, H.264 video, AAC stereo audio
+- Approximate duration: 14.21 seconds per variation
+
+The original Grok downloads remain in Downloads. Project copies are stored in corrected/raw.

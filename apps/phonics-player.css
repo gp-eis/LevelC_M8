@@ -1,0 +1,61 @@
+.phonics-video-focus{
+  position:relative;
+  overflow:hidden;
+  min-height:0!important;
+  padding:6px!important;
+}
+
+.phonics-video-focus .phonics-video,
+.phonics-video-focus>video{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:none;
+  object-fit:contain;
+}
+
+.phonics-center-play{
+  position:absolute;
+  left:50%;
+  top:50%;
+  z-index:8;
+  display:grid;
+  width:clamp(78px,11vw,112px);
+  aspect-ratio:1;
+  place-items:center;
+  padding:0 0 0 .14em;
+  transform:translate(-50%,-50%);
+  border:7px solid #fff;
+  border-radius:50%;
+  background:linear-gradient(180deg,#ffc94b,#ef8f13);
+  box-shadow:0 8px 0 #a95b0a,0 15px 28px rgba(0,0,0,.34);
+  color:#fff;
+  font:900 clamp(2rem,5vw,3.2rem)/1 system-ui,sans-serif;
+  cursor:pointer;
+  transition:transform .15s ease,filter .15s ease,opacity .15s ease;
+}
+
+.phonics-center-play:hover{
+  filter:brightness(1.06);
+  transform:translate(-50%,calc(-50% - 4px));
+}
+
+.phonics-center-play:active{
+  transform:translate(-50%,calc(-50% + 3px));
+}
+
+.phonics-center-play:focus-visible{
+  outline:6px solid #238fd0;
+  outline-offset:5px;
+}
+
+.phonics-center-play[hidden]{display:none}
+
+@media(max-width:560px){
+  .phonics-video-focus{padding:4px!important}
+  .phonics-center-play{width:72px;border-width:5px;font-size:2rem}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .phonics-center-play{transition:none}
+}

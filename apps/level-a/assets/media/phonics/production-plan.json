@@ -1,0 +1,30 @@
+{
+  "format": {
+    "width": 1264,
+    "height": 720,
+    "fps": 24,
+    "targetDurationSeconds": 28.5,
+    "videoCodec": "H.264",
+    "audioCodec": "AAC 48 kHz stereo"
+  },
+  "visualContinuity": {
+    "reference": "Level A Month 7 phonics",
+    "setting": "warm 3D classroom with a fixed camera",
+    "characters": "same recurring boy and girl proportions",
+    "uppercaseColor": "blue",
+    "lowercaseColor": "orange",
+    "embeddedTextInGeneratedMedia": false
+  },
+  "weeks": [
+    { "week": 1, "letter": "O/o", "words": ["octopus", "olive", "omelet"], "status": "awaiting paid-generation approval" },
+    { "week": 2, "letter": "O/o", "words": ["orange", "otter", "ox"], "status": "planned" },
+    { "week": 3, "letter": "P/p", "words": ["paint", "pen", "pencil"], "status": "planned" },
+    { "week": 4, "letter": "P/p", "words": ["penguin", "piano", "pig"], "status": "planned" }
+  ],
+  "timeline": [
+    { "start": 0, "end": 10, "content": "shared letter introduction" },
+    { "start": 10, "end": 16, "content": "word 1 and I see the... sentence" },
+    { "start": 16, "end": 22, "content": "word 2 and I see the... sentence" },
+    { "start": 22, "end": 28.5, "content": "word 3 and I see the... sentence" }
+  ]
+}

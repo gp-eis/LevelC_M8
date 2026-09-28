@@ -1,0 +1,15 @@
+/* Keep the lesson-to-games entry consistent with the current Level A. */
+.track-card { text-align: center; }
+.section-action.phonics {
+  min-height: 68px;
+  margin: 28px auto 12px;
+  padding: 16px 34px;
+  background: linear-gradient(#ffe66b, #ffc629);
+  box-shadow: 0 7px 0 #d99000;
+  color: #614300;
+  font-size: clamp(1.2rem, 3vw, 1.65rem);
+}
+.section-action.phonics:hover { transform: translateY(-2px); }
+@media (max-width: 560px) {
+  .section-action.phonics { width: 100%; padding-inline: 12px; }
+}

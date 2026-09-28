@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Level A Week 1 Literacy — Page 2 of 6</title>
+  <link rel="stylesheet" href="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/navigation/gp-navigation.css?v=20260917-nav-spacing3">
+  <link rel="stylesheet" href="../styles.css?v=20260907-8">
+  <script type="module" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/navigation/gp-navigation.js?v=20260923-center-all-v9"></script>
+  <script defer src="video-activity.js?v=20260907-2"></script>
+</head>
+<body>
+  <gp-navigation
+    data-main-href="../index.html"
+    data-week-href="../week-1.html#card-literacy"
+    data-section-href="video.html#lesson-focus"
+    data-previous-href="video.html#lesson-focus"
+    data-next-href="page-01.html#lesson-focus"
+    data-trail="Level A · Week 1 · Literacy · Which sports?"
+  ></gp-navigation>
+
+  <main class="shell ees-video-page">
+    <header class="hero center ees-video-heading">
+      <h1 class="title">Which sports?</h1>
+    </header>
+
+    <section id="lesson-focus" class="card ees-player-card" aria-label="Which sports video">
+      <div class="ees-video-shell">
+        <video
+          id="ees-video"
+          class="ees-video"
+          controls
+          playsinline
+          preload="metadata"
+          src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/literacy/week-1-video/ball-sports.mp4?v=20260903-2"
+          aria-label="I like ball sports video"
+        ></video>
+        <button id="ees-play" class="ees-center-play" type="button" aria-label="Play I like ball sports video">▶</button>
+      </div>
+      <p id="ees-now-playing" class="ees-now-playing" aria-live="polite">I like ball sports.</p>
+    </section>
+
+    <section class="card ees-choice-card" aria-label="Choose a sentence">
+      <div class="ees-sentence-grid">
+        <button class="ees-sentence is-active" type="button" data-game="ball-sports" data-video="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/literacy/week-1-video/ball-sports.mp4?v=20260903-2" data-label="I like ball sports.">I like ball sports.</button>
+        <button class="ees-sentence orange" type="button" data-game="soccer" data-video="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/literacy/week-1-video/soccer.mp4?v=20260903-2" data-label="I like soccer.">I like soccer.</button>
+        <button class="ees-sentence blue" type="button" data-game="basketball" data-video="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/literacy/week-1-video/basketball.mp4?v=20260903-2" data-label="I like basketball.">I like basketball.</button>
+        <button class="ees-sentence green" type="button" data-game="baseball" data-video="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/literacy/week-1-video/baseball.mp4?v=20260903-2" data-label="I like baseball.">I like baseball.</button>
+        <button class="ees-sentence purple" type="button" data-game="volleyball" data-video="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/literacy/week-1-video/volleyball.mp4?v=20260903-2" data-label="I like volleyball.">I like volleyball.</button>
+      </div>
+    </section>
+
+    <div class="ees-continue">
+      <a class="primary" href="page-01.html#lesson-focus">Next Activity →</a>
+    </div>
+  </main>
+
+  <div id="ees-game-modal" class="ees-game-modal" hidden>
+    <section class="ees-game-dialog" role="dialog" aria-modal="true" aria-labelledby="ees-game-title">
+      <header class="ees-game-header">
+        <div>
+          <span class="ees-game-kicker">Quick Challenge</span>
+          <h2 id="ees-game-title"></h2>
+        </div>
+        <div class="ees-game-header-actions">
+          <button class="ees-game-watch" type="button" data-watch-video>Watch Video ▶</button>
+          <button class="ees-game-close" type="button" data-close-game aria-label="Close activity">×</button>
+        </div>
+      </header>
+      <div class="ees-game-prompt-row">
+        <p class="ees-game-prompt"></p>
+        <button class="ees-game-hear" type="button" data-hear-prompt aria-label="Hear the instruction">🔊</button>
+      </div>
+      <div class="ees-game-stage"></div>
+      <p class="ees-game-status-live" data-game-status-live aria-live="polite" aria-atomic="true"></p>
+      <div class="ees-game-result" hidden>
+        <div class="ees-game-result-card">
+          <img src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/ui/sport-trophy-3d.webp" alt="Sports trophy">
+          <h3>Great job!</h3>
+          <p class="ees-game-result-sentence"></p>
+          <div class="ees-game-result-actions">
+            <button type="button" class="ees-game-again" data-play-again>Play Again ↻</button>
+            <button type="button" class="ees-game-watch primary" data-watch-video>Watch Conversation ▶</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

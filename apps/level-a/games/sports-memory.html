@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en-US" translate="no"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google" content="notranslate">
+<title>Memory Game — Level A Month 8</title>
+<link rel="stylesheet" href="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/navigation/gp-navigation.css?v=20260917-compact-pages"><link rel="stylesheet" href="../styles.css?v=20260907-1"><link rel="stylesheet" href="memory-wheel.css?v=20260911-m7-layout">
+<script type="module" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/navigation/gp-navigation.js?v=20260923-center-all-v9"></script></head>
+<body class="m7-game memory-game"><gp-navigation data-main-href="../index.html" data-week-href="../week-1.html" data-section-href="index.html" data-previous-href="index.html" data-trail="Level A · Week 1 · Games · Memory"></gp-navigation>
+<div class="game-floaties" aria-hidden="true"><span>🃏</span><span>⚽</span></div>
+<main class="m7-game-page">
+<header class="m7-game-header"><h1><img src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/ui/game-list/game-memory.webp" alt="">Memory Game</h1><p>Look carefully, then find the 4 matching pairs!</p></header>
+<div class="m7-actions"><button class="m7-pill blue" id="preview" type="button">👀 Look for 3 Seconds</button><button class="m7-pill orange" id="restart" type="button">🔄 New Arrangement</button></div>
+<div class="memory-board" id="board" aria-label="Memory card board"></div><div class="memory-status" aria-live="polite"><span>Moves: <span id="moves">0</span></span><span>Pairs: <span id="pairs">0</span> / 4</span></div></main>
+<div class="match-modal" id="match-modal" role="dialog" aria-modal="true" aria-labelledby="match-title" hidden><div class="match-card"><h2 id="match-title">Great match!</h2><img id="match-image" src="" alt=""><p id="match-sentence"></p><button class="m7-pill green" id="match-continue" type="button">✓ Continue</button></div></div>
+<div class="game-celebration" id="celebration" role="dialog" aria-modal="true" aria-labelledby="celebration-title" hidden><div id="confetti" aria-hidden="true"></div><div class="celebration-card"><div class="celebration-emoji" aria-hidden="true">🎉🏆🎉</div><h2 id="celebration-title">Yay! You found all the pairs!</h2><button class="m7-pill green" id="play-again" type="button">🔄 Play Again</button></div></div>
+<script src="weekly-game-data.js?v=20260914-kick"></script>
+<script src="sports-memory.js?v=20260914-weekly"></script></body></html>

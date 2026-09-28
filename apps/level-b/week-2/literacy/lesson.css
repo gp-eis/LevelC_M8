@@ -1,0 +1,20 @@
+@import url('../../week-1/literacy/lesson.css?v=20260916-taller');
+.b-stage{aspect-ratio:1061/834;overflow:clip}.b-stage .b-status{left:0;top:0;margin:0}
+.b-word-choice{border-radius:2.5cqw;background:transparent}
+.b-honey-answer{position:absolute;left:44.8%;top:38%;width:11.7%;height:5.5%;display:grid;place-items:center;color:#1757a1;background:#fff;font:600 4.1cqw/1 var(--font-friendly)}.b-honey-answer:empty{background:transparent}
+.b-match-dot{border-radius:50%;border:2px dashed #3499ed;background:#3499ed0d;min-width:26px;min-height:26px;z-index:3;transform:translate(-50%,-50%)}
+.b-match-dot.is-linking{border-style:solid;background:#3499ed44;box-shadow:0 0 0 4px #3499ed44}
+.b-match-dot[data-side="left"].bee-part::after{content:'';position:absolute;left:50%;top:50%;width:40%;aspect-ratio:1;background:#050505;border-radius:50%;transform:translate(-50%,-50%);pointer-events:none}
+.b-match-dot.is-wrong{animation:b-dot-shake .35s}@keyframes b-dot-shake{25%,75%{transform:translate(-50%,-50%) translateX(-5px)}50%{transform:translate(-50%,-50%) translateX(5px)}}
+.b-match-line,.b-match-preview{stroke:#238dec;stroke-width:.65;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.b-match-line{stroke:#219b48;stroke-width:5px}.b-match-preview{stroke-width:4px;stroke-dasharray:8 5}
+.b-letter-choice{border-radius:50%;background:transparent}.b-letter-choice:disabled.is-correct{opacity:1}
+.b-flowers-word{position:absolute;left:36.7%;top:73.6%;width:13.1%;height:5.45%;display:flex;align-items:center;justify-content:center;background:#fff;color:#f72573;border-bottom:.45cqw solid #111;box-sizing:border-box;font:700 3.35cqw/1 var(--font-friendly);letter-spacing:-.13cqw;pointer-events:none}
+.b-flowers-word span{transition:color .15s}.b-flowers-word .is-found{color:#168842}
+.b-trace{z-index:2}.b-video-pending{scroll-margin-top:90px}
+.b-letter-link{stroke:#238dec;stroke-width:4px;stroke-linecap:round;vector-effect:non-scaling-stroke}.b-letter-trace{pointer-events:none}
+@media(max-width:650px){.b-match-dot{border-width:1.5px}.b-match-line{stroke-width:3px}.b-match-preview{stroke-width:2.5px}}
+
+/* Compact literacy page navigation: directly below the resource buttons. */
+.b-pages{display:flex;justify-content:center;align-items:center;gap:10px;width:min(100%,460px);margin:8px auto 14px;padding:7px 11px 9px;border:3px solid #ffffffeb;border-radius:999px;background:#ffffffd1;box-shadow:0 7px 0 #6b9ebe52,0 14px 28px #1e3a5f21}.b-pages strong{margin:0;font:900 .84rem/1 var(--font-display);white-space:nowrap}.b-pages div{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:nowrap}.b-pages a{width:35px;height:35px;border-width:2px;background:linear-gradient(#87dcff,#35aee7);color:#123f68;box-shadow:0 3px 0 #187bab;font-size:.9rem}.b-pages a[aria-current]{background:linear-gradient(#ffd75c,#ff9f1c);color:#633a00;box-shadow:0 3px 0 #c76a08;transform:translateY(-1px) scale(1.06)}
+@media(max-width:650px){.b-pages{gap:7px;width:calc(100% - 12px);padding:6px 7px 8px;border-radius:24px}.b-pages strong{font-size:.76rem}.b-pages div{gap:4px}.b-pages a{width:31px;height:31px;font-size:.82rem}}

@@ -1,0 +1,6 @@
+.fc-feature img,.fc-thumb img,.fc-mini img,.fc-fast-stage,.fc-spot-stage{aspect-ratio:1200/948}
+.fc-feature,.fc-fast-stage,.fc-spot-stage{max-width:620px}
+.fc-feature{cursor:default}
+.fc-tab:focus-visible,.fc-action:focus-visible,.fc-thumb:focus-visible,.fc-mini:focus-visible,.fc-spot-stage:focus-visible{outline:4px solid #152f6c;outline-offset:4px}
+.fc-spot-stage{touch-action:none}
+@media(prefers-reduced-motion:reduce){.fc-spot-stage.is-revealed:after{transition:none}}

@@ -1,0 +1,40 @@
+export const gameMeta = { week: 1, topic: "Animals and Things We See", review: "Park, Garden, Yard, and Cave", wheelIcon: "🌳", completion: "Nature Expert!" };
+const flashcardRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/flashcards/week-1";
+const reviewRoot = `${flashcardRoot}/review`;
+const cutoutRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/games/cutouts/week-1";
+
+export const gameItems = [
+  {id:"dog",label:"dog sitting",sentence:"There is a dog sitting on the grass.",group:"Park",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${flashcardRoot}/dog-sitting.webp`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/dog.png`},
+  {id:"cat",label:"cat yawning",sentence:"There is a cat yawning on the path.",group:"Park",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${flashcardRoot}/cat-yawning.webp`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/cat.png`},
+  {id:"squirrel",label:"squirrel playing",sentence:"There is a squirrel playing by the tree.",group:"Park",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${flashcardRoot}/squirrel-playing.webp`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/squirrel.png`},
+  {id:"deer",label:"deer walking",sentence:"There is a deer walking on the grass.",group:"Park",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${flashcardRoot}/deer-walking.webp`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/deer.png`},
+  {id:"eagle",label:"eagle hunting",sentence:"There is an eagle hunting in the sky.",group:"Park",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${flashcardRoot}/eagle-hunting.webp`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/eagle.png`},
+  {id:"ladybug",label:"red ladybug",sentence:"They see a red ladybug on the flower.",group:"Garden",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${reviewRoot}/red-ladybug.png`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/red-ladybug.png`},
+  {id:"ant",label:"brown ant",sentence:"They see a brown ant on the rain boots.",group:"Garden",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${reviewRoot}/brown-ant.png`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/brown-ant.png`},
+  {id:"fence",label:"tall fence",sentence:"They see a tall fence in the garden.",group:"Garden",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${reviewRoot}/tall-fence.png`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/tall-fence.png`},
+  {id:"cactus",label:"green cactus",sentence:"They see a green cactus by the fence.",group:"Garden",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${reviewRoot}/green-cactus.png`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/green-cactus.png`},
+  {id:"snail",label:"small snail",sentence:"They see a small snail on the fence.",group:"Garden",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${reviewRoot}/small-snail.png`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/small-snail.png`},
+  {id:"car",label:"blue car",sentence:"The dog is barking at the blue car.",group:"Yard",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${reviewRoot}/blue-car.png`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/blue-car.png`},
+  {id:"scooter",label:"purple scooter",sentence:"The dog is barking at the purple scooter.",group:"Yard",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${reviewRoot}/purple-scooter.png`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/purple-scooter.png`},
+  {id:"owl",label:"brown owl",sentence:"The dog is barking at the brown owl.",group:"Yard",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${reviewRoot}/brown-owl.png`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/brown-owl.png`},
+  {id:"moon",label:"white moon",sentence:"The dog is barking at the white moon.",group:"Yard",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${reviewRoot}/white-moon.png`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/white-moon.png`},
+  {id:"spiders",label:"two spiders",sentence:"The two spiders are scary.",group:"Cave",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${reviewRoot}/two-spiders.png`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/two-spiders.png`},
+  {id:"monster",label:"one monster",sentence:"The one monster is scary.",group:"Cave",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${reviewRoot}/one-monster.png`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/one-monster.png`},
+  {id:"ghosts",label:"three ghosts",sentence:"The three ghosts are scary.",group:"Cave",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/three-ghosts.png`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/three-ghosts.png`},
+  {id:"bats",label:"four bats",sentence:"The four bats are scary.",group:"Cave",image:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${reviewRoot}/four-bats.png`,gameImage:`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/week-1/games/${cutoutRoot}/four-bats.png`}
+];
+
+export const natureItems = gameItems.map(item => ({ ...item, icon: "⭐", place: item.group }));
+
+export const phonicsWords = [
+  {id:"car",word:"car",before:"c",team:"ar",after:"",image:"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/words/car.png",sentence:"The car is red."},
+  {id:"star",word:"star",before:"st",team:"ar",after:"",image:"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/words/star.png",sentence:"The star is bright."},
+  {id:"fork",word:"fork",before:"f",team:"or",after:"k",image:"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/words/fork.png",sentence:"This is a fork."},
+  {id:"horse",word:"horse",before:"h",team:"or",after:"se",image:"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/words/horse.png",sentence:"The horse is brown."}
+];
+
+export function shuffle(items){
+  const copy=[...items];
+  for(let index=copy.length-1;index>0;index-=1){const other=Math.floor(Math.random()*(index+1));[copy[index],copy[other]]=[copy[other],copy[index]];}
+  return copy;
+}

@@ -1,0 +1,1 @@
+const label=document.body.dataset.game||"Game";document.querySelector("#game-title").textContent=label;document.title=`${label} — Level C Week 1`;document.querySelector("#game-copy").textContent=`${label} has its own route. Approved prompts, artwork, sounds, and answer keys have not been supplied, so no game content has been invented.`;

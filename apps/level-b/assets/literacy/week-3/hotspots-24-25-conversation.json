@@ -1,0 +1,150 @@
+{
+  "units": "percent of full image; visually verified on generated outputs",
+  "page24": {
+    "size": [
+      1414,
+      1112
+    ],
+    "letters": [
+      {
+        "text": "c",
+        "x": 49.8,
+        "y": 45.9,
+        "radiusX": 4.8,
+        "radiusY": 6.1
+      },
+      {
+        "text": "s",
+        "x": 49.8,
+        "y": 58.9,
+        "radiusX": 4.8,
+        "radiusY": 6.1
+      },
+      {
+        "text": "p",
+        "x": 49.8,
+        "y": 71.6,
+        "radiusX": 4.8,
+        "radiusY": 6.1
+      },
+      {
+        "text": "t",
+        "x": 49.8,
+        "y": 85.1,
+        "radiusX": 4.8,
+        "radiusY": 6.1
+      }
+    ],
+    "words": [
+      {
+        "word": "pancakes",
+        "x": 20.7,
+        "y": 61.1,
+        "w": 23.2,
+        "h": 6,
+        "blankX": 14.8,
+        "blankY": 61.4
+      },
+      {
+        "word": "sweet tea",
+        "x": 20.7,
+        "y": 88.9,
+        "w": 23.2,
+        "h": 6,
+        "blankX": 14.8,
+        "blankY": 89.3
+      },
+      {
+        "word": "cake",
+        "x": 79.4,
+        "y": 61.1,
+        "w": 23.2,
+        "h": 6,
+        "blankX": 76.7,
+        "blankY": 61.4
+      },
+      {
+        "word": "toast",
+        "x": 79.4,
+        "y": 88.9,
+        "w": 23.2,
+        "h": 6,
+        "blankX": 76.7,
+        "blankY": 89.3
+      }
+    ],
+    "titleBlank": {
+      "x": 72.2,
+      "y": 8.5,
+      "w": 13.3,
+      "h": 5
+    }
+  },
+  "page25": {
+    "size": [
+      1414,
+      1113
+    ],
+    "answerBlank": {
+      "x": 52.7,
+      "y": 89.3,
+      "w": 5.7,
+      "h": 7.5
+    },
+    "controlRoom": {
+      "x": 85.9,
+      "y": 88.7,
+      "w": 19.2,
+      "h": 9.5
+    },
+    "drinkCenters": [
+      {
+        "x": 47.5,
+        "y": 47
+      },
+      {
+        "x": 61.5,
+        "y": 47.5
+      },
+      {
+        "x": 76.5,
+        "y": 47
+      },
+      {
+        "x": 90.2,
+        "y": 47
+      },
+      {
+        "x": 45.9,
+        "y": 71.5
+      },
+      {
+        "x": 59.8,
+        "y": 71.7
+      },
+      {
+        "x": 72.2,
+        "y": 71.7
+      },
+      {
+        "x": 86.7,
+        "y": 71.7
+      }
+    ]
+  },
+  "conversation": {
+    "size": [
+      1501,
+      1048
+    ],
+    "woman": {
+      "x": 31.3,
+      "y": 31
+    },
+    "girl": {
+      "x": 64,
+      "y": 43
+    },
+    "notes": "Both white chef hats and heads fully visible; no text or bubbles. Use upper-right background if overlays required; do not obscure faces."
+  }
+}

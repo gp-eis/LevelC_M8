@@ -1,0 +1,72 @@
+@import url("../../week-3/lessons/reading-activity.css?v=20260927-outline-overlay-v2");
+
+/* Week 4 has longer reading passages than Week 3. Give the copy enough
+   desktop width to keep sentence endings with the rest of their line. */
+@media (min-width: 801px) {
+  .reading-grid {
+    grid-template-columns: minmax(0, .86fr) minmax(560px, 1.14fr);
+  }
+
+  .reading-copy {
+    padding-inline: 22px;
+  }
+
+  .reading-copy h2 {
+    font-size: clamp(1.55rem, 2.3vw, 2rem);
+  }
+
+  .reading-lines {
+    gap: 7px;
+  }
+
+  .reading-line {
+    line-height: 1.58;
+  }
+
+  .read-word {
+    margin-inline: 1px;
+    padding-inline: 3px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .reading-copy h2,
+  .reading-line {
+    white-space: nowrap;
+  }
+}
+
+/* Page 2 has a short passage, so retain the original image-led composition. */
+@media (min-width: 801px) {
+  body[data-page="2"] .reading-grid {
+    grid-template-columns: minmax(0, 1.18fr) minmax(330px, .82fr);
+  }
+
+  body[data-page="2"] .reading-copy {
+    padding: 18px;
+  }
+
+  body[data-page="2"] .reading-copy h2 {
+    font-size: clamp(1.55rem, 2.7vw, 2.2rem);
+  }
+
+  body[data-page="2"] .reading-lines {
+    gap: 10px;
+  }
+
+  body[data-page="2"] .reading-line {
+    line-height: 1.75;
+  }
+
+  body[data-page="2"] .read-word {
+    margin: 2px;
+    padding: 3px 4px;
+  }
+}
+
+@media (min-width: 1100px) {
+  body[data-page="2"] .reading-copy h2,
+  body[data-page="2"] .reading-line {
+    white-space: normal;
+  }
+}

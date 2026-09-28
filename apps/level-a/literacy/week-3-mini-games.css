@@ -1,0 +1,43 @@
+.w3-game{width:min(980px,96vw);max-width:96vw;height:min(760px,94dvh);max-height:94dvh;padding:0;border:6px solid white;border-radius:30px;background:#dcf7ff;color:#173c58;box-shadow:0 12px 0 #3999af;font-family:var(--font-friendly,'Quicksand',sans-serif);overflow:hidden}
+.w3-game::backdrop{background:#143147b8}.w3-game[open]{display:flex}
+.w3-game-frame{position:relative;display:flex;flex-direction:column;width:100%;height:100%;padding:14px;box-sizing:border-box;background:linear-gradient(#e9fbffcc,#dbf9ffd9)}
+.w3-game-header,.w3-game-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-shrink:0}.w3-game h2{font-family:var(--font-display,'Comfortaa',sans-serif);font-size:clamp(20px,3vw,30px);margin:0;color:#1979bc}
+.w3-game button:where(:not([data-game-done]):not([data-game-again])){font:800 1rem var(--font-friendly,'Quicksand',sans-serif);cursor:pointer;border:3px solid white;border-radius:18px;background:linear-gradient(#4ccafa,#1686d2);color:white;box-shadow:0 5px 0 #0d6099;padding:10px 18px;touch-action:manipulation}
+.w3-game button:where(:not([data-game-done]):not([data-game-again])):hover:not(:disabled){filter:brightness(1.08)}.w3-game button:focus-visible{outline:4px solid #146ce0;outline-offset:3px}.w3-game button:disabled{cursor:default}
+.w3-game-header button{font-size:28px;line-height:1;padding:6px 13px;background:#ef635d;box-shadow:0 4px 0 #ab3f39}
+#w3-game-prompt{margin:8px 0;text-align:center;font-size:clamp(13px,1.7vw,17px);line-height:1.35;flex-shrink:0}
+#w3-game-board{flex:1;min-height:0;display:flex;flex-direction:column;gap:6px;overflow:hidden}
+.w3-game-footer{min-height:48px;margin-top:10px}.w3-game-footer p{margin:0;text-align:center;font-size:clamp(12px,1.8vw,16px);font-weight:800}.w3-game-footer button{background:linear-gradient(#ffbd3d,#ef8b00);box-shadow:0 5px 0 #aa6600;white-space:nowrap}
+.w3-art{object-fit:contain;filter:drop-shadow(0 7px 5px #153b472d);pointer-events:none;user-select:none}
+.w3-stars{height:38px;display:flex;justify-content:center;gap:12px;flex-shrink:0}.w3-stars img{height:100%;width:38px;filter:grayscale(1);opacity:.4}.w3-stars img.earned{filter:drop-shadow(0 3px 2px #c17f3f);opacity:1}
+.w3-field{position:relative;flex:1;min-height:0;width:100%;border:4px solid white;border-radius:22px;box-sizing:border-box;overflow:hidden;background:#9fdc8d url('https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/literacy/week-3-games/field.png') center/cover;isolation:isolate}
+.w3-controls{height:52px;flex-shrink:0;display:flex;align-items:center;justify-content:center;gap:18px;font-weight:800}.w3-controls button{min-width:110px}
+.w3-cones{position:absolute;display:flex;justify-content:space-around;left:10%;right:6%;bottom:2%;height:22%}.w3-cones img{width:14%;height:100%;transition:filter .2s}.w3-cones img.passed{filter:drop-shadow(0 0 12px #ffec57)}
+.w3-runner{position:absolute;left:8%;bottom:15%;height:76%;width:23%;transform:translateX(-20%);transition:left .18s}
+.w3-passer{position:absolute;left:0;bottom:0;width:27%;height:68%;z-index:2}
+.w3-game .w3-ball-button,.w3-game .w3-shot-ball{position:absolute;left:12%;top:76%;width:9%;aspect-ratio:1;padding:0;background:transparent;border:0;box-shadow:none;transform:translate(-50%,-50%);transition:left .65s ease-out,top .65s ease-out;touch-action:none;z-index:5;border-radius:50%}.w3-ball-button img,.w3-shot-ball img{width:100%;height:100%}
+.w3-receivers{position:absolute;left:28%;right:2%;top:5%;height:60%;display:flex;gap:5%}
+.w3-game .w3-receiver{position:relative;flex:1;min-width:0;padding:0;background:#d8f8ff30;border:3px dashed #2787d8;box-shadow:none;border-radius:20px;transition:translate .8s}.w3-receiver>img{width:100%;height:100%;object-fit:contain}.w3-receiver .w3-blocker{position:absolute;left:35%;top:15%;height:95%;width:90%;z-index:2}.w3-receiver span{position:absolute;bottom:0;left:50%;transform:translateX(-50%);color:#0a5b38;background:#d6ffb8;border-radius:15px;padding:4px 10px;font-weight:900;white-space:nowrap}
+.w3-game .selected{outline:4px solid #2495e5;outline-offset:2px;background-color:#b6e7ff7a}.w3-receiver.w3-receiving-run{translate:0 -13%}.w3-game .w3-ball-follow{translate:0 -35px}
+.w3-lane-lines{position:absolute;inset:0;background:linear-gradient(to right,transparent 33%,#fff8 33%,#fff8 33.5%,transparent 33.5%,transparent 66%,#fff8 66%,#fff8 66.5%,transparent 66.5%)}
+.w3-opponent{position:absolute;top:4%;height:55%;width:24%;transform:translateX(-50%);transition:left .35s,translate .4s}
+.w3-defender{position:absolute;bottom:0;height:60%;width:26%;transform:translateX(-50%);transition:left .3s,translate .4s;z-index:3}
+.w3-tackle-ball{position:absolute;top:43%;width:10%;height:16%;transform:translateX(-50%);transition:left .4s,top .65s;z-index:4;border-radius:50%}.w3-tackle-ball.exposed{background:#8ae0ff9c;box-shadow:0 0 0 5px #239aea,0 0 22px 8px #caf5ff}.w3-tackle-ball.w3-possession{box-shadow:0 0 0 5px #76de62}
+.w3-contest{translate:0 -14%}.w3-contest-opponent{translate:0 12%}.w3-cue{position:absolute;top:6px;left:50%;transform:translateX(-50%);background:#fffdf0eb;border-radius:12px;padding:5px 12px;color:#126997;font-weight:900;white-space:nowrap;z-index:6}.w3-game .w3-cue-ready{border-color:#55d9ff;box-shadow:0 5px 0 #0d6099,0 0 14px #46d8ff}
+.w3-goal{position:absolute;left:12%;top:1%;height:67%;width:76%}.w3-goal-targets{position:absolute;left:23%;right:23%;top:18%;height:20%;display:flex;justify-content:space-between;z-index:2}.w3-game .w3-goal-targets button{width:25%;max-width:90px;padding:3px;background:#eefeff82;border:3px dashed #2199da;box-shadow:none}.w3-goal-targets img{width:100%;height:100%;object-fit:contain}.w3-goal-targets .hit{opacity:.35;background:#a2ec8e}
+.w3-kicker{position:absolute;left:14%;bottom:0;width:32%;height:65%;z-index:3}.w3-game .w3-shot-ball{left:50%;top:82%;width:10%;transition:left .7s ease-out,top .7s ease-out,scale .7s}.w3-shot-ball.w3-shot{scale:.65}
+.w3-jumper{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:72%;width:40%;transition:translate .3s}.w3-jumper.jumping{translate:0 -13%}.w3-jump-track{position:absolute;top:7%;left:10%;right:10%;height:18%;background:#ffffffad;border:3px solid white;border-radius:22px}.w3-jump-zone{position:absolute;left:28%;right:28%;top:0;bottom:0;background:#57beff77;border:3px dashed #168cda;border-radius:16px;box-sizing:border-box}.w3-moving-star{position:absolute;left:50%;top:0;height:100%;width:15%;transform:translateX(-50%)}.w3-moving-star.collected{opacity:0}
+.w3-game .w3-wrong{animation:w3-shake .3s;border-color:#f02c40!important;background-color:#ff7777!important;box-shadow:0 0 0 4px #ed354a!important}
+#week3-game .activity-completion-frame{max-width:100%;box-sizing:border-box}
+@keyframes w3-shake{25%,75%{translate:-5px}50%{translate:5px}}
+@media(max-width:550px){.w3-game-frame{padding:8px}.w3-game{border-width:4px;border-radius:22px}.w3-game button:where(:not([data-game-done]):not([data-game-again])){padding:8px 10px;font-size:13px}.w3-game-header h2{font-size:19px}.w3-controls{gap:8px}.w3-controls button{min-width:85px}.w3-game-footer{gap:6px}.w3-game-footer button{padding:8px 7px}.w3-game-footer p{max-width:110px}.w3-game .w3-receiver{padding:0}.w3-receiver span{font-size:11px;padding:3px 5px}.w3-stars{height:30px}}
+
+@media(max-height:540px){.w3-game{height:96dvh;max-height:96dvh}.w3-game-frame{padding:6px}.w3-game-header h2{font-size:18px}#w3-game-prompt{margin:3px 0;font-size:12px}.w3-stars{height:23px}.w3-controls{height:38px}.w3-controls button,.w3-game-footer button{padding:5px 10px;font-size:12px}.w3-game-footer{margin-top:4px;min-height:34px}}
+@media(prefers-reduced-motion:reduce){.w3-game *{animation:none!important;transition:none!important}}
+.w3-runner{width:32%;bottom:8%}
+.w3-goal-targets{left:32%;right:32%}
+.w3-field .w3-kicker{width:auto;max-width:none;height:65%;object-fit:contain;object-position:bottom;left:14%;bottom:0}
+/* Match visible head-to-foot height and ground anchor across differently padded sprites. */
+.w3-field .w3-kicker[src$="/kick.png"]{height:60%;bottom:3%}
+.w3-game .w3-goal-targets button{min-width:44px}
+@media(max-width:550px){.w3-runner{width:42%;height:66%;bottom:5%}.w3-passer{width:37%}.w3-defender{width:38%}.w3-opponent{width:34%}.w3-kicker{width:44%;left:8%}.w3-jumper{width:65%}.w3-game .w3-ball-button,.w3-game .w3-shot-ball{min-width:44px;min-height:44px}}

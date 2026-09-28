@@ -1,0 +1,18 @@
+{
+  "units": "percentage of full uncropped image; positions measured visually",
+  "page34": {
+    "answerDigitCenters": [[41.2, 93.1], [88.2, 93.1]],
+    "answerDigitSize": [4.5, 5.8],
+    "totals": [5, 4],
+    "prices": {"sugar":3,"soda":1,"candy":1,"donut":2},
+    "leftPanel": [4,60.5,44.9,27],
+    "rightPanel": [51.2,60.5,44.8,27]
+  },
+  "page35": {
+    "topDots": [[14.56,48],[38.16,48],[61.7,48],[85.44,48]],
+    "bottomDots": [[14.56,67.2],[38.16,67.2],[61.7,67.2],[85.44,67.2]],
+    "topFoods": ["honey toast","honey candy","honey spread","honey tea"],
+    "bottomCaptions": ["I had honey candy.","I had honey tea.","I had honey toast.","We had honey spread."],
+    "correctBottomIndexByTop": [2,0,3,1]
+  }
+}

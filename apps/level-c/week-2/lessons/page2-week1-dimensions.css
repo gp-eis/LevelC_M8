@@ -1,0 +1,158 @@
+/* Page 2 uses the same full-size desktop proportions as Week 1 literacy. */
+@media (min-width: 901px) {
+  .sequence-shell[data-word-app] {
+    width: min(1200px, calc(100% - 32px));
+    margin: 0 auto !important;
+    padding: 24px 0 72px;
+  }
+
+  .sequence-shell[data-word-app] .sequence-heading h1 {
+    margin: 12px 0 14px;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 1.05;
+  }
+
+  .sequence-shell[data-word-app] .c-page-count {
+    margin: 18px auto;
+    font-size: 1.15rem;
+  }
+
+  .sequence-shell[data-word-app] .week-tools {
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .sequence-shell[data-word-app] .week-tools .pill-btn {
+    min-width: 190px;
+    min-height: 54px;
+    padding: 10px 24px;
+  }
+
+  .sequence-shell[data-word-app] .c-pagination {
+    gap: 10px;
+    margin: 28px auto;
+  }
+
+  .sequence-shell[data-word-app] .c-pagination a {
+    min-width: 46px;
+    min-height: 46px;
+  }
+
+  .sequence-shell[data-word-app] .word-book-board {
+    gap: 30px;
+    padding: clamp(16px, 3vw, 30px);
+    border-width: 7px;
+  }
+
+  .sequence-shell[data-word-app] .book-task {
+    padding: clamp(16px, 3vw, 28px);
+  }
+
+  .sequence-shell[data-word-app] .book-task__heading {
+    margin-bottom: 18px;
+  }
+
+  .sequence-shell[data-word-app] .book-task__heading h2 {
+    font-size: clamp(1.55rem, 3vw, 2.35rem);
+  }
+
+  .sequence-shell[data-word-app] .book-task__heading p {
+    margin: 3px 0 0;
+    font-size: 1rem;
+  }
+
+  .sequence-shell[data-word-app] .book-task__heading > span {
+    width: 48px;
+    height: 48px;
+    font-size: 1.4rem;
+  }
+
+  .sequence-shell[data-word-app] .hear-question-btn {
+    min-height: 52px;
+    padding: 10px 20px;
+  }
+
+  .sequence-shell[data-word-app] .match-layout {
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  .sequence-shell[data-word-app] .chunk-board {
+    align-self: stretch;
+    gap: clamp(18px, 6vw, 86px);
+    padding: 12px;
+  }
+
+  .sequence-shell[data-word-app] .chunk-column { gap: 18px; }
+
+  .sequence-shell[data-word-app] .letter-chunk {
+    min-height: 82px;
+    border-width: 5px;
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+  }
+
+  .sequence-shell[data-word-app] .match-clue-strip {
+    height: auto;
+    gap: 10px;
+    padding: 22px 13px 14px;
+  }
+
+  .sequence-shell[data-word-app] .match-clue-strip figure { border-width: 5px; }
+  .sequence-shell[data-word-app] .match-clue-strip img { aspect-ratio: 4 / 3; }
+
+  .sequence-shell[data-word-app] .word-build-feedback {
+    min-height: 28px;
+    margin: 20px 0 0;
+  }
+
+  .sequence-shell[data-word-app] .cross-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .sequence-shell[data-word-app] .cross-row {
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 15px;
+    padding: 12px;
+  }
+
+  .sequence-shell[data-word-app] .cross-clue {
+    width: 120px;
+    height: 94px;
+  }
+
+  .sequence-shell[data-word-app] .cross-row > div { gap: 10px; }
+  .sequence-shell[data-word-app] .spelling-word { min-height: 58px; }
+
+  .sequence-shell[data-word-app] .sequence-card--landscape {
+    margin-bottom: 0;
+    padding: 24px;
+  }
+
+  .sequence-shell[data-word-app] .sequence-layout { gap: 24px; }
+
+  .sequence-shell[data-word-app] .sequence-reading {
+    margin: 1em 0;
+    padding: 12px 14px;
+  }
+
+  .sequence-shell[data-word-app] .sequence-question {
+    margin: 1em 0;
+    font-size: 1.4rem;
+  }
+
+  .sequence-shell[data-word-app] .sequence-feedback {
+    min-height: 54px;
+    margin: 1em 0;
+  }
+
+  .sequence-shell[data-word-app] .source-pair--generated-landscape {
+    height: auto;
+    margin-bottom: 46px;
+    aspect-ratio: 3 / 2;
+  }
+
+  .sequence-shell[data-word-app] .source-pair--generated-landscape img {
+    height: 100%;
+  }
+}

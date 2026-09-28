@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Level B Week 1 — Page 2 of 6</title>
+  <link rel="stylesheet" href="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/navigation/gp-navigation.css?v=20260917-compact-pages">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="lesson.css?v=20260918-week1-games3">
+  <link rel="stylesheet" href="completion-overlay.css">
+</head>
+<body>
+  <gp-navigation
+    data-main-href="../../index.html"
+    data-week-href="../#card-literacy"
+    data-previous-href="page-01.html#lesson-focus"
+    data-next-href="page-02.html#lesson-focus"
+  ></gp-navigation>
+
+  <main class="b-literacy b-video-activity-page">
+    <section class="b-video-card" id="lesson-focus" aria-label="Where are the bees conversation videos">
+      <div class="b-video-shell">
+        <video
+          id="b-week1-video"
+          class="b-week1-video"
+          controls
+          playsinline
+          preload="metadata"
+          poster="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/literacy/week-1/conversation-garden-3d-v2.png"
+          src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/media/literacy/week-1-video/flowers.mp4"
+          aria-label="There are bees near the flowers video"
+        ></video>
+        <button id="b-week1-play" class="b-video-play" type="button" aria-label="Play There are bees near the flowers video">▶</button>
+      </div>
+      <p id="b-week1-now-playing" class="b-video-now-playing" aria-live="polite">There are bees near the flowers.</p>
+    </section>
+
+    <section class="b-video-choices" aria-label="Choose a conversation">
+      <button class="b-video-choice is-active" type="button" data-game="flowers" data-video="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/media/literacy/week-1-video/flowers.mp4" data-label="There are bees near the flowers.">flowers</button>
+      <button class="b-video-choice orange" type="button" data-game="lamp" data-video="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/media/literacy/week-1-video/lamp.mp4" data-label="There are bees near the lamp.">lamp</button>
+      <button class="b-video-choice blue" type="button" data-game="trees" data-video="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/media/literacy/week-1-video/trees.mp4" data-label="There are bees near the trees.">trees</button>
+      <button class="b-video-choice green" type="button" data-game="bench" data-video="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/media/literacy/week-1-video/bench.mp4" data-label="There are bees near the bench.">bench</button>
+      <button class="b-video-choice purple" type="button" data-game="grass" data-video="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/media/literacy/week-1-video/grass.mp4" data-label="There are bees near the grass.">grass</button>
+    </section>
+  </main>
+
+  <div class="b-activity-modal" id="b-activity-modal" hidden>
+    <section class="b-activity-dialog" role="dialog" aria-modal="true" aria-labelledby="b-activity-title">
+      <header class="b-activity-header">
+        <div><span>Garden Challenge</span><h2 id="b-activity-title"></h2></div>
+        <div class="b-activity-header-actions">
+          <button type="button" data-watch-video>Watch Video ▶</button>
+          <button type="button" class="b-activity-close" data-close-game aria-label="Close activity">×</button>
+        </div>
+      </header>
+      <div class="b-activity-prompt-row">
+        <p class="b-activity-prompt"></p>
+        <button class="b-activity-hear" type="button" data-hear-prompt aria-label="Hear the instruction">🔊</button>
+      </div>
+      <div class="b-activity-stage"></div>
+      <p class="b-activity-status" aria-live="polite" aria-atomic="true"></p>
+    </section>
+  </div>
+
+  <div class="activity-completion-overlay" data-completion hidden role="dialog" aria-modal="true" aria-label="Activity complete">
+    <div class="activity-completion-frame">
+      <button class="activity-completion-close" data-close-completion type="button" aria-label="Close celebration">×</button>
+      <video class="activity-completion-video" playsinline preload="metadata" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/literacy/week-1/good-job.mp4" aria-label="Good job"></video>
+      <p class="b-completion-sentence"></p>
+      <div class="activity-completion-actions">
+        <button class="activity-completion-retry" data-try-again type="button">↻ Try Again</button>
+        <button class="activity-completion-retry b-completion-watch" data-watch-video type="button">Watch Video ▶</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="lesson.js?v=20260917-compact-pages"></script>
+  <script defer src="video-activity.js?v=20260918-week1-games6"></script>
+<script type="module" src="/LevelC_M8/apps/activity-focus.js?v=20260923-center-all-v2"></script></body>
+</html>

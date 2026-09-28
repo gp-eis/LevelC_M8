@@ -1,0 +1,48 @@
+.b-video-activity-page{width:min(1120px,calc(100% - 28px))}
+.b-week3-video{display:block;width:100%;height:100%;object-fit:cover;background:#fff1c8}
+.b-video-shell{aspect-ratio:16/9}
+.b-video-choices{margin-bottom:clamp(30px,5vw,60px)}
+
+.w3-game{background:linear-gradient(145deg,#b8ecff,#fff4ba 72%,#ffd19b);overflow:hidden}
+.w3-game>*{position:absolute;z-index:2}
+.w3-game .b-game-sparkles{inset:0;z-index:30;pointer-events:none}
+.w3-stage-sheet{top:0;left:50%;height:100%;aspect-ratio:1;transform:translateX(-50%);background-image:var(--sheet);background-repeat:no-repeat;background-size:200% 200%;filter:saturate(1.04);transition:filter .2s ease}
+.w3-stage-sheet .w3-hit{position:absolute;z-index:3}
+.w3-stage-sheet.stage-0{background-position:0 0}.w3-stage-sheet.stage-1{background-position:100% 0}.w3-stage-sheet.stage-2{background-position:0 100%}.w3-stage-sheet.stage-3{background-position:100% 100%}
+.w3-game.is-changing .w3-stage-sheet{filter:saturate(1.12) brightness(1.05)}
+.w3-hit{border:5px dashed #fff;border-radius:28px;background:#fff2;box-shadow:0 0 0 8px #ffd43b8c,0 8px 18px #204c6f3b;cursor:pointer;animation:w3-pulse .7s infinite alternate;touch-action:none}
+.w3-hit:hover,.w3-hit:focus-visible{outline:none;background:#fff5;box-shadow:0 0 0 8px #45b5ff99,0 8px 18px #204c6f55}
+.w3-hit.is-done{opacity:0;pointer-events:none}.w3-wrong{animation:w3-shake .38s!important;background:#ff5b5b55!important;box-shadow:0 0 0 8px #ff3b3b99!important}
+.w3-controls{left:50%;bottom:2.5%;display:flex;gap:12px;align-items:center;justify-content:center;transform:translateX(-50%);z-index:20!important}
+.w3-action{min-width:92px;min-height:48px;padding:8px 16px;border:4px solid #fff;border-radius:999px;background:linear-gradient(#68caff,#2389db);box-shadow:0 6px 0 #1762a1;color:#fff;font:900 1rem/1 var(--font-friendly);cursor:pointer;transition:transform .15s ease,filter .15s ease}
+.w3-action:hover,.w3-action:focus-visible{outline:4px solid #fff8;outline-offset:2px;filter:brightness(1.08);transform:translateY(-2px)}
+.w3-action:disabled{opacity:.45;cursor:default;transform:none}.w3-action.gold{background:linear-gradient(#ffd65c,#f49a12);box-shadow:0 6px 0 #b66a08}.w3-action.green{background:linear-gradient(#7dde70,#35aa48);box-shadow:0 6px 0 #237a34}.w3-action.purple{background:linear-gradient(#c29cff,#8456dc);box-shadow:0 6px 0 #5b3b9b}
+.w3-progress{left:50%;top:3%;display:flex;gap:8px;transform:translateX(-50%);z-index:20!important}.w3-progress span{display:grid;width:31px;height:31px;place-items:center;border:3px solid #fff;border-radius:50%;background:#8fb7cc;color:#fff;font:900 .9rem var(--font-friendly);box-shadow:0 4px 0 #51788d}.w3-progress span.is-on{background:#ffb51b;box-shadow:0 4px 0 #ba6b00;transform:scale(1.08)}
+
+/* Toast: full generated scene changes after each action. */
+.toast-game .bread-hit{top:46%;height:34%}.toast-game .bread-hit.one{left:4%;width:28%}.toast-game .bread-hit.two{left:23%;top:48%;width:31%;height:36%}.toast-game .lever-hit{left:75%;top:31%;width:14%;height:40%;display:none}.toast-game.ready-lever .lever-hit{display:block}
+
+/* Tea catch: the cup itself moves and visibly fills. */
+.tea-catch-game{background:linear-gradient(#87dcff 0 68%,#f6c882 68% 100%)}
+.tea-cloud{inset:0;background:radial-gradient(circle at 15% 20%,#fff9 0 8%,transparent 8.5%),radial-gradient(circle at 83% 16%,#fff8 0 9%,transparent 9.5%);pointer-events:none}
+.tea-cup{left:50%;bottom:4%;width:25%;aspect-ratio:1;transform:translateX(-50%);border:0;background-color:transparent;background-image:var(--cup-sheet);background-size:200% 200%;background-repeat:no-repeat;cursor:grab;touch-action:none;filter:drop-shadow(0 9px 8px #28557555);z-index:12!important}.tea-cup:active{cursor:grabbing}.tea-cup.stage-0{background-position:0 0}.tea-cup.stage-1{background-position:100% 0}.tea-cup.stage-2{background-position:0 100%}.tea-cup.stage-3{background-position:100% 100%}
+.tea-drop{width:6.5%;aspect-ratio:.72;border:4px solid #fff;border-radius:55% 45% 62% 38%/63% 42% 58% 37%;background:radial-gradient(circle at 35% 28%,#fff7 0 10%,transparent 11%),linear-gradient(145deg,#ffe37a,#f09a00);box-shadow:0 6px 0 #b96900,0 0 18px #ffe768;transform:rotate(45deg);z-index:10!important}.tea-drop::after{content:'🍯';position:absolute;inset:0;display:grid;place-items:center;transform:rotate(-45deg);font-size:clamp(16px,2.8vw,28px)}
+.tea-arrow{bottom:4%;width:58px;min-width:58px;height:58px;padding:0;font-size:1.6rem;z-index:21!important}.tea-arrow.left{left:4%}.tea-arrow.right{right:4%}.tea-caught{left:50%;top:5%;transform:translateX(-50%);padding:8px 15px;border:4px solid #fff;border-radius:999px;background:#244d7dcc;color:#fff;font:900 1rem var(--font-friendly);z-index:20!important}
+
+/* Cake, pancakes, and chicken use full generated stage changes. */
+.cake-game{background:linear-gradient(145deg,#ddc9ff,#fff0bd)}
+.cake-layer-hit{height:17%;border-radius:50%;background:#fff1;box-shadow:0 0 0 6px #c99bff88,0 7px 14px #50346d44}.cake-layer-hit::after{content:attr(data-layer);position:absolute;left:50%;bottom:-14px;display:grid;width:36px;height:36px;place-items:center;transform:translateX(-50%);border:4px solid #fff;border-radius:50%;background:linear-gradient(#ffcf55,#ee9010);box-shadow:0 4px 0 #a85b07;color:#fff;font:900 1rem var(--font-friendly)}.cake-layer-hit.one{left:3%;top:61%;width:34%}.cake-layer-hit.two{left:31%;top:70%;width:38%}.cake-layer-hit.three{left:66%;top:61%;width:32%}.cake-layer-hit.is-used{opacity:.42;pointer-events:none;box-shadow:0 0 0 6px #48c96d99}.cake-layer-hit.is-used::after{content:'✓';background:linear-gradient(#75dc78,#31a84c);box-shadow:0 4px 0 #207535}
+.cake-stack-piece{position:absolute;left:27%;width:46%;height:12%;border:4px solid #fff7;border-radius:50% 50% 22% 22%;background:linear-gradient(#fff4c6 0 28%,#ffc944 29% 48%,#d97812 88%);box-shadow:0 5px 0 #a85611,0 9px 12px #5c330844;animation:w3-pop .42s;z-index:5}.cake-stack-piece.piece-1{top:34%}.cake-stack-piece.piece-2{top:25%}.cake-stack-piece.piece-3{top:16%}.cake-game.final-cake .cake-layer-hit,.cake-game.final-cake .cake-stack-piece{display:none}
+.pancake-game{background:linear-gradient(145deg,#ffd7a5,#fff0ba)}
+.pancake-game .pan-hit{left:31%;top:38%;width:21%;height:35%}.pancake-game .honey-hit{left:68%;top:45%;width:19%;height:38%;display:none;align-items:center;justify-content:center;flex-direction:column;padding:5px;background:#fff9}.pancake-game.ready-honey .honey-hit{display:flex}.pancake-game .honey-hit img{display:block;width:76%;height:72%;object-fit:contain;filter:drop-shadow(0 6px 5px #80500055);pointer-events:none}.pancake-game .honey-hit span{padding:3px 9px;border-radius:999px;background:#f4a40d;color:#fff;font:900 .9rem var(--font-friendly);box-shadow:0 3px 0 #a76100;pointer-events:none}
+.chicken-game{background:linear-gradient(145deg,#c6f2c8,#fff0b5)}
+.chicken-game .plate-hit{left:50%;top:52%;width:34%;height:42%;transform:translateX(-50%)}
+
+@keyframes w3-pulse{to{transform:scale(1.05);filter:brightness(1.08)}}
+@keyframes w3-shake{25%,75%{transform:translateX(-9px)}50%{transform:translateX(9px)}}
+@keyframes w3-pop{0%{transform:scale(.4)}70%{transform:scale(1.12)}100%{transform:scale(1)}}
+
+@media(max-width:720px){
+  .b-video-activity-page{width:calc(100% - 14px)}.b-video-choice{min-height:48px;border-width:3px;border-radius:16px}.b-video-choices{gap:7px}
+  .w3-hit{border-width:3px;border-radius:16px;box-shadow:0 0 0 5px #ffd43b8c}.w3-action{min-width:70px;min-height:40px;padding:6px 10px;border-width:3px;font-size:.78rem}.w3-controls{gap:7px}.w3-progress span{width:25px;height:25px;font-size:.72rem}.tea-arrow{width:44px;min-width:44px;height:44px;font-size:1.2rem}.tea-caught{padding:5px 9px;border-width:3px;font-size:.76rem}.tea-cup{width:28%}
+}

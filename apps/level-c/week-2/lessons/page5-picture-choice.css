@@ -1,0 +1,18 @@
+.moon-picture-card{padding:24px;border:7px solid #fff;border-radius:38px;background:linear-gradient(145deg,#fffdf5,#f2f8ff);box-shadow:0 11px 0 #87bdd3,0 20px 36px #244b6925}
+.moon-picture-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(320px,.75fr);gap:24px;align-items:center}
+.moon-source-picture{overflow:hidden;aspect-ratio:3/2;margin:0;border:5px solid #fff;border-radius:26px;background:#122b64;box-shadow:0 7px 0 #bfddea}
+.moon-source-picture img{display:block;width:100%;height:100%;object-fit:contain;background:#f7efd9}
+.moon-sentence-panel{display:flex;flex-direction:column;gap:15px;padding:22px 18px;border:4px solid #e0c7b5;border-radius:28px;background:#fff7e9;text-align:center;box-shadow:0 7px 0 #cfad94}
+.moon-sentence-panel h2{margin:0;color:#274c72;font:900 clamp(1.35rem,2.7vw,2rem)/1.35 var(--font-display)}
+.moon-sentence-panel h2 strong{color:#287dcc}
+.moon-question-progress{align-self:center;padding:8px 16px;border-radius:999px;background:#ffd552;color:#654600;font-weight:900}
+.moon-picture-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.moon-picture-choice{position:relative;min-width:0;overflow:hidden;aspect-ratio:1;border:6px solid #fff;border-radius:22px;background:#122553;box-shadow:0 6px 0 #a9cbdc;cursor:pointer}
+.moon-picture-choice img{display:block;width:100%;height:100%;object-fit:cover}
+.moon-picture-choice:hover,.moon-picture-choice:focus-visible{outline:5px solid #ffb33b;outline-offset:2px;transform:translateY(-2px)}
+.moon-picture-choice.is-wrong{animation:wrong-shake .42s ease;outline:6px solid #ef6b6b}
+.moon-picture-choice.is-correct{outline:7px solid #369fe8;outline-offset:2px;box-shadow:0 7px 0 #176da9}
+.moon-picture-choice.is-correct::after{content:"✓";position:absolute;right:7px;bottom:7px;display:grid;place-items:center;width:36px;height:36px;border:4px solid #fff;border-radius:50%;background:#2b9ce8;color:#fff;font-weight:900}
+.moon-picture-feedback{min-height:32px;margin:0;color:#3d6680;font-weight:900}
+@media(max-width:800px){.moon-picture-card{padding:10px;border-width:5px;border-radius:26px}.moon-picture-layout{grid-template-columns:1fr;gap:18px}.moon-source-picture{border-width:4px;border-radius:20px}.moon-sentence-panel{padding:16px 12px}.moon-picture-grid{gap:10px}.moon-picture-choice{border-width:4px;border-radius:17px}}
+@media(max-width:420px){.moon-picture-grid{gap:8px}.moon-picture-choice{border-radius:14px}.moon-sentence-panel{gap:12px}}
