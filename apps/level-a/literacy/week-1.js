@@ -1,4 +1,4 @@
-import {revealNextAction,hideNextAction} from "../assets/navigation/gp-navigation.js?v=20260902-4";
+import {revealNextAction,hideNextAction} from "../assets/navigation/gp-navigation.js?v=20260902-4&deploy=20260929-resource-fix-1";
 const challenges=[
  {page:2,title:"Which sport are they playing?",prompt:"Look at the court and racket. Choose the sport.",choices:["soccer","basketball","golf","tennis"],answer:"tennis",good:"Goal! The racket and net show tennis."},
  {page:3,title:"Find one missing first letter",prompt:"Supplemental check: Which letter completes _occer?",choices:["b","v","s","p"],answer:"s",good:"Super! S makes soccer."},

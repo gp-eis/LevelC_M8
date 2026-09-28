@@ -1,6 +1,6 @@
-import './us-english-speech.js?v=20260928-1';
-import './gp-sounds.js?v=20260911-1';
-import '/LevelC_M8/apps/activity-focus.js?v=20260923-center-all-v2';
+import './us-english-speech.js?v=20260928-1&deploy=20260929-resource-fix-1';
+import './gp-sounds.js?v=20260911-1&deploy=20260929-resource-fix-1';
+import '/LevelC_M8/apps/activity-focus.js?v=20260923-center-all-v2&deploy=20260929-resource-fix-1';
 
 class GpNavigation extends HTMLElement {
   connectedCallback() {
@@ -224,7 +224,7 @@ function addLiteracyToolReturn() {
   link.className = 'primary literacy-tool-return';
   link.href = target.href;
   link.textContent = `← Back to Page ${pageNumber}`;
-  link.style.cssText = 'display:inline-flex;margin:0 0 22px;';
+  link.style.css?deploy=20260929-resource-fix-1Text = 'display:inline-flex;margin:0 0 22px;';
   document.querySelector('main')?.prepend(link);
 }
 
@@ -290,15 +290,15 @@ export function hideNextAction(button) {
 }
 
 if (/\/phonics(?:\/|\.html)/i.test(location.pathname)) {
-  import("/LevelC_M8/apps/phonics-player.js?v=20260922-v2");
+  import("/LevelC_M8/apps/phonics-player.js?v=20260922-v2&deploy=20260929-resource-fix-1");
 }
 
 if (/\/level-a\/literacy\/tpr\.html$/i.test(location.pathname)) {
   const style = document.createElement("link");
   style.rel = "stylesheet";
-      style.href = "/LevelC_M8/apps/week-song-player.css?v=20260927-2";
+      style.href = "/LevelC_M8/apps/week-song-player.css?v=20260927-2&deploy=20260929-resource-fix-1";
   document.head.append(style);
-      import("/LevelC_M8/apps/week-song-player.js?v=20260927-4");
+      import("/LevelC_M8/apps/week-song-player.js?v=20260927-4&deploy=20260929-resource-fix-1");
 }
 
 if (/\/level-a\/literacy\//i.test(location.pathname) && !/\/tpr\.html$/i.test(location.pathname)) {

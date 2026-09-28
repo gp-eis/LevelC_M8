@@ -1,4 +1,4 @@
-@import url("../../week-1/lessons/section-polish.css?v=20260921");
+@import url("../../week-1/lessons/section-polish.css?v=20260921&deploy=20260929-resource-fix-1");
 
 .w3-reading{width:min(1200px,calc(100% - 28px));margin:auto;padding:10px 0 60px;scroll-margin-top:76px}
 .w3-reading .sequence-heading{margin:4px auto 10px}.w3-reading .sequence-heading h1{margin:0;font-size:clamp(2rem,4vw,3.25rem)}

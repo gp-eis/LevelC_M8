@@ -1,4 +1,4 @@
-import { revealNextAction, hideNextAction } from "../../../assets/navigation/gp-navigation.js?v=20260902-8";
+import { revealNextAction, hideNextAction } from "../../../assets/navigation/gp-navigation.js?v=20260902-8&deploy=20260929-resource-fix-1";
 
 const stops = [
   {
