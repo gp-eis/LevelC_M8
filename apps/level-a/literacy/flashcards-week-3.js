@@ -4,35 +4,35 @@
     "id": "run",
     "label": "Run",
     "phrase": "run",
-    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-3/run-flashcard-v1.png",
+    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-3/run-flashcard-v1.png?asset=10bfa0eab4e6",
     "sentence": "Soccer players run."
   },
   {
     "id": "pass",
     "label": "Pass",
     "phrase": "pass",
-    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-3/pass-flashcard-v1.png",
+    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-3/pass-flashcard-v1.png?asset=5d5ac07bc28b",
     "sentence": "Soccer players pass."
   },
   {
     "id": "tackle",
     "label": "Tackle",
     "phrase": "tackle",
-    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-3/tackle-flashcard-v1.png",
+    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-3/tackle-flashcard-v1.png?asset=ffdc045c5ec2",
     "sentence": "Soccer players tackle."
   },
   {
     "id": "kick",
     "label": "Kick",
     "phrase": "kick",
-    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-3/kick-flashcard-v1.png",
+    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-3/kick-flashcard-v1.png?asset=5dfaa04c53b4",
     "sentence": "Soccer players kick."
   },
   {
     "id": "jump",
     "label": "Jump",
     "phrase": "jump",
-    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-3/jump-flashcard-v1.png",
+    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-3/jump-flashcard-v1.png?asset=b933411261f4",
     "sentence": "Soccer players jump."
   }
 ];

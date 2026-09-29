@@ -1,4 +1,4 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><title>Opening phonics game</title><meta name="viewport" content="width=device-width,initial-scale=1"></head><body><a id="game-link" href="phonics.html">Open Phonics Games</a><script>
 const params=new URLSearchParams(location.search),routes={find:'phonics-find-word.html',build:'phonics-build-word.html',maze:'phonics-letter-maze.html',match:'phonics-picture-match.html'};
 const target=new URL(routes[params.get('game')]||'phonics.html',location.href);target.searchParams.set('from',params.get('from')==='phonics'?'phonics':'games');const week=Number(params.get('week'));target.searchParams.set('week',Number.isInteger(week)&&week>=1&&week<=4?week:1);document.querySelector('#game-link').href=target.href;location.replace(target.href);
-</script><script type="module" src="/LevelC_M8/apps/activity-focus.js?v=20260923-center-all-v2&deploy=20260929-level-c-live-refresh-11"></script></body></html>
+</script><script type="module" src="/LevelC_M8/apps/activity-focus.js?v=20260923-center-all-v2&deploy=20260929-level-ac-reading-13"></script></body></html>

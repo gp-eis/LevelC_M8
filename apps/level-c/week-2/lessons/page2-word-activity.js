@@ -1,4 +1,4 @@
-import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20260929-level-c-live-refresh-11";
+import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20260929-level-ac-reading-13";
 
 const app = document.querySelector("[data-word-app]");
 let voice = null;
@@ -18,10 +18,10 @@ const puzzleColors = [
 ];
 const validWords = new Set(["mane", "eyes", "wings"]);
 const spellingRows = [
-  { word: "mane", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-clues/horse-mane-v1.png", alt: "A horse's mane", choices: ["mane", "mane", "mena", "mane"] },
-  { word: "chest", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-clues/horse-chest-v1.png", alt: "A horse's chest", choices: ["chest", "chest", "chset", "chest"] },
-  { word: "wings", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-clues/bee-wings-v1.png", alt: "A bee's wings", choices: ["wings", "wings", "swing", "wings"] },
-  { word: "legs", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-clues/bee-legs-v1.png", alt: "A bee's six legs", choices: ["legs", "legs", "lges", "legs"] }
+  { word: "mane", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-clues/horse-mane-v1.png?asset=93f7a43bb76a", alt: "A horse's mane", choices: ["mane", "mane", "mena", "mane"] },
+  { word: "chest", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-clues/horse-chest-v1.png?asset=73e9a9167627", alt: "A horse's chest", choices: ["chest", "chest", "chset", "chest"] },
+  { word: "wings", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-clues/bee-wings-v1.png?asset=13be78e56f17", alt: "A bee's wings", choices: ["wings", "wings", "swing", "wings"] },
+  { word: "legs", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-clues/bee-legs-v1.png?asset=f96ca157fa1c", alt: "A bee's six legs", choices: ["legs", "legs", "lges", "legs"] }
 ];
 
 function shuffled(items) {
@@ -59,7 +59,7 @@ function completionOverlay() {
   overlay.id = "level-c-literacy-completion";
   overlay.className = "activity-completion-overlay";
   overlay.hidden = true;
-  overlay.innerHTML = `<div class="activity-completion-frame" role="dialog" aria-modal="true" aria-label="Good job"><button class="activity-completion-close" type="button" aria-label="Close">×</button><video class="activity-completion-video" playsinline preload="auto" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/video/shared/pow-wow-you-did-it.mp4"></video><button class="activity-completion-play" type="button" hidden>▶</button><div class="activity-completion-actions"><button class="activity-completion-retry" type="button">↻ Try Again</button></div></div>`;
+  overlay.innerHTML = `<div class="activity-completion-frame" role="dialog" aria-modal="true" aria-label="Good job"><button class="activity-completion-close" type="button" aria-label="Close">×</button><video class="activity-completion-video" playsinline preload="auto" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/video/shared/pow-wow-you-did-it.mp4?asset=0883de99e126"></video><button class="activity-completion-play" type="button" hidden>▶</button><div class="activity-completion-actions"><button class="activity-completion-retry" type="button">↻ Try Again</button></div></div>`;
   document.body.append(overlay);
   const video = overlay.querySelector("video");
   const play = overlay.querySelector(".activity-completion-play");
@@ -142,7 +142,7 @@ if (app) {
       { sentence: "The horse has a wide ___.", options: ["hoof", "chest"], correct: 1 }
     ];
     let questionIndex = 0;
-    const imagePath = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-horse-bee-v2-four-wings.png";
+    const imagePath = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-horse-bee-v2-four-wings.png?asset=9228d1b44fac";
     stage.innerHTML = `<section class="sequence-card sequence-card--landscape"><div class="sequence-layout"><div class="source-pair source-pair--generated-landscape"><img src="${imagePath}" alt="A horse and a bee in a flower meadow"><div class="scene-text-grid scene-text-grid--2"><section class="scene-text-card"><strong>HORSE</strong><span>Wow! Look at that!!</span><span>Horses run!</span><span>Beautiful mane.</span><span>Strong hoof.</span><span>Wide chest.</span><span>Handsome muzzle.</span></section><section class="scene-text-card"><strong>BEE</strong><span>Amazing! The bee flies.</span><span>One abdomen.</span><span>Two antennae.</span><span>Four wings.</span><span>Five eyes.</span><span>Six legs.</span></section></div><span class="scene-badge">Part <b>1</b></span><span class="scene-zoom-hint" aria-hidden="true">🔍 Move to magnify</span><span class="scene-magnifier" aria-hidden="true"></span></div><div class="sequence-copy"><span class="tag">1. Look, read, and circle</span><h2>Question <span id="part-one-number">1</span> of 2</h2><p class="sequence-reading">Look closely at the horse and the bee. Choose the correct word.</p><button class="hear-question-btn" id="part-one-hear" type="button">🔊 Hear the question</button><p class="sequence-question" id="part-one-question"></p><div class="sequence-choices" id="part-one-choices"></div><p class="sequence-feedback" id="part-one-feedback" aria-live="polite"></p><button class="part-one-next" id="part-one-next" type="button" hidden></button></div></div></section>`;
     const frame = stage.querySelector(".source-pair");
     const magnifier = stage.querySelector(".scene-magnifier");
@@ -201,9 +201,9 @@ if (app) {
     let pendingMatch = null;
     const shuffledColumns = columns.map((column, columnIndex) => shuffled(column.map((chunk, chunkIndex) => ({ chunk, color: puzzleColors[columnIndex][chunkIndex] }))));
     const shuffledClues = shuffled([
-      { word: "mane", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-clues/horse-mane-v1.png", alt: "Close-up of a horse's mane" },
-      { word: "wings", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-clues/bee-wings-v1.png", alt: "Close-up of a bee's wings" },
-      { word: "eyes", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-clues/bee-eyes-v1.png", alt: "Close-up of a bee's eyes" }
+      { word: "mane", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-clues/horse-mane-v1.png?asset=93f7a43bb76a", alt: "Close-up of a horse's mane" },
+      { word: "wings", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-clues/bee-wings-v1.png?asset=13be78e56f17", alt: "Close-up of a bee's wings" },
+      { word: "eyes", image: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-02-clues/bee-eyes-v1.png?asset=cc709afd9dd2", alt: "Close-up of a bee's eyes" }
     ]);
     stage.innerHTML = `<section class="word-book-board stage-panel"><section class="book-task match-task"><div class="book-task__heading"><span>2</span><div><h2>Match the letters to make the words.</h2><p>Build a word, then connect it to the correct picture.</p></div><button class="hear-question-btn" id="hear-match" type="button">🔊 Listen</button></div><div class="match-layout" id="match-layout"><svg class="match-picture-lines" id="match-picture-lines" aria-hidden="true"></svg><div class="chunk-board" id="chunk-board"><svg class="chunk-lines" id="chunk-lines" aria-hidden="true"></svg>${shuffledColumns.map((column, columnIndex) => `<div class="chunk-column" data-column="${columnIndex}">${column.map(item => `<button class="letter-chunk letter-chunk--${item.color}" type="button" data-chunk="${item.chunk}">${item.chunk}</button>`).join("")}</div>`).join("")}</div><aside class="match-clue-strip" aria-label="Picture clues"><span class="paper-tape" aria-hidden="true"></span>${shuffledClues.map(clue => `<figure data-word="${clue.word}" role="button" tabindex="0" aria-label="Connect the word to ${clue.alt}"><img src="${clue.image}" alt="${clue.alt}"><figcaption>${clue.word}</figcaption></figure>`).join("")}</aside></div><p class="word-build-feedback" id="word-build-feedback" aria-live="polite">Build a word, then tap its matching picture.</p></section></section>`;
 

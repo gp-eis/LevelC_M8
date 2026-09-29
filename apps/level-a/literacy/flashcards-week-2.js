@@ -1,10 +1,10 @@
 (() => {
   const cards=[
-    {id:'gym',label:'Gym',phrase:'equipment',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-2/gym-flashcard-v1.png',sentence:'At the gym.'},
-    {id:'bike',label:'Bike',phrase:'a bike',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-2/bike-flashcard-v1.png',sentence:'At the gym. I use a bike.'},
-    {id:'dumbbells',label:'Dumbbells',phrase:'dumbbells',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-2/dumbbells-flashcard-v1.png',sentence:'At the gym. I use dumbbells.'},
-    {id:'barbell',label:'Barbell',phrase:'a barbell',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-2/barbell-flashcard-v1.png',sentence:'At the gym. I use a barbell.'},
-    {id:'bench',label:'Bench',phrase:'a bench',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-2/bench-flashcard-v1.png',sentence:'At the gym. I use a bench.'}
+    {id:'gym',label:'Gym',phrase:'equipment',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-2/gym-flashcard-v1.png?asset=9a9ba5f8de65',sentence:'At the gym.'},
+    {id:'bike',label:'Bike',phrase:'a bike',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-2/bike-flashcard-v1.png?asset=7db49e6d3dee',sentence:'At the gym. I use a bike.'},
+    {id:'dumbbells',label:'Dumbbells',phrase:'dumbbells',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-2/dumbbells-flashcard-v1.png?asset=3221c26eaf38',sentence:'At the gym. I use dumbbells.'},
+    {id:'barbell',label:'Barbell',phrase:'a barbell',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-2/barbell-flashcard-v1.png?asset=76724f6b46be',sentence:'At the gym. I use a barbell.'},
+    {id:'bench',label:'Bench',phrase:'a bench',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-2/bench-flashcard-v1.png?asset=d70e4685895c',sentence:'At the gym. I use a bench.'}
   ];
   const byId=id=>cards.find(card=>card.id===id),random=()=>cards[Math.floor(Math.random()*cards.length)];
   const shuffle=list=>[...list].map(value=>({value,sort:Math.random()})).sort((a,b)=>a.sort-b.sort).map(({value})=>value);

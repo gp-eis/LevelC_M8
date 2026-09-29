@@ -13,7 +13,7 @@
   const completion = document.querySelector('[data-completion]');
   const completionVideo = completion?.querySelector('video');
   const completionSentence = completion?.querySelector('.b-completion-sentence');
-  const beeAsset = 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/media/literacy/week-1-activities/bee-mascot-3d-v1.png';
+  const beeAsset = 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/media/literacy/week-1-activities/bee-mascot-3d-v1.png?asset=e7f5fff546f5';
   const boardRoot = 'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/media/literacy/week-1-activities/';
 
   if (!video || !player || !playButton || !nowPlaying || !modal || !dialog || !stage || !completion || !choices.length) return;

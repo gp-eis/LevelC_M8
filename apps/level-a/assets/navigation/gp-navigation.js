@@ -1,6 +1,6 @@
-import './us-english-speech.js?v=20260928-1&deploy=20260929-level-c-live-refresh-11';
-import './gp-sounds.js?v=20260911-1&deploy=20260929-level-c-live-refresh-11';
-import '/LevelC_M8/apps/activity-focus.js?v=20260923-center-all-v2&deploy=20260929-level-c-live-refresh-11';
+import './us-english-speech.js?v=20260928-1&deploy=20260929-level-ac-reading-13';
+import './gp-sounds.js?v=20260911-1&deploy=20260929-level-ac-reading-13';
+import '/LevelC_M8/apps/activity-focus.js?v=20260923-center-all-v2&deploy=20260929-level-ac-reading-13';
 
 class GpNavigation extends HTMLElement {
   connectedCallback() {
@@ -54,7 +54,7 @@ class GpNavigation extends HTMLElement {
     const pageMain = document.querySelector("main");
     if (pageMain && !pageMain.id) pageMain.id = "gp-main-content";
     const mainTarget = pageMain?.id || "gp-main-content";
-    const logoHref = new URL("https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/ui/giiip-eis-logo.webp", import.meta.url).href;
+    const logoHref = new URL("https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/ui/giiip-eis-logo.webp?asset=693f36046438", import.meta.url).href;
     if (!document.querySelector(".site-logo-bar")) {
       const logoBar = document.createElement("div");
       logoBar.className = "site-logo-bar";
@@ -328,15 +328,15 @@ export function hideNextAction(button) {
 }
 
 if (/\/phonics(?:\/|\.html)/i.test(location.pathname)) {
-  import("/LevelC_M8/apps/phonics-player.js?v=20260922-v2&deploy=20260929-level-c-live-refresh-11");
+  import("/LevelC_M8/apps/phonics-player.js?v=20260922-v2&deploy=20260929-level-ac-reading-13");
 }
 
 if (/\/level-a\/literacy\/tpr\.html$/i.test(location.pathname)) {
   const style = document.createElement("link");
   style.rel = "stylesheet";
-      style.href = "/LevelC_M8/apps/week-song-player.css?v=20260927-2&deploy=20260929-level-c-live-refresh-11";
+      style.href = "/LevelC_M8/apps/week-song-player.css?v=20260927-2&deploy=20260929-level-ac-reading-13";
   document.head.append(style);
-      import("/LevelC_M8/apps/week-song-player.js?v=20260927-4&deploy=20260929-level-c-live-refresh-11");
+      import("/LevelC_M8/apps/week-song-player.js?v=20260927-4&deploy=20260929-level-ac-reading-13");
 }
 
 if (/\/level-a\/literacy\//i.test(location.pathname) && !/(?:tpr|conversation|flashcards(?:-week-[1-4])?)\.html$/i.test(location.pathname)) {
@@ -366,3 +366,5 @@ if (/\/level-a\/literacy\//i.test(location.pathname) && !/(?:tpr|conversation|fl
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", addWeekSongLink, { once: true });
   else addWeekSongLink();
 }
+
+import("/LevelC_M8/apps/lesson-video-player.js?v=20260929-2&deploy=20260929-level-ac-reading-13");

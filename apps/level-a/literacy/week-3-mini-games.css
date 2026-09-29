@@ -10,7 +10,7 @@
 .w3-game-footer{min-height:48px;margin-top:10px}.w3-game-footer p{margin:0;text-align:center;font-size:clamp(12px,1.8vw,16px);font-weight:800}.w3-game-footer button{background:linear-gradient(#ffbd3d,#ef8b00);box-shadow:0 5px 0 #aa6600;white-space:nowrap}
 .w3-art{object-fit:contain;filter:drop-shadow(0 7px 5px #153b472d);pointer-events:none;user-select:none}
 .w3-stars{height:38px;display:flex;justify-content:center;gap:12px;flex-shrink:0}.w3-stars img{height:100%;width:38px;filter:grayscale(1);opacity:.4}.w3-stars img.earned{filter:drop-shadow(0 3px 2px #c17f3f);opacity:1}
-.w3-field{position:relative;flex:1;min-height:0;width:100%;border:4px solid white;border-radius:22px;box-sizing:border-box;overflow:hidden;background:#9fdc8d url('https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/literacy/week-3-games/field.png') center/cover;isolation:isolate}
+.w3-field{position:relative;flex:1;min-height:0;width:100%;border:4px solid white;border-radius:22px;box-sizing:border-box;overflow:hidden;background:#9fdc8d url('https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/literacy/week-3-games/field.png?asset=95543697506b') center/cover;isolation:isolate}
 .w3-controls{height:52px;flex-shrink:0;display:flex;align-items:center;justify-content:center;gap:18px;font-weight:800}.w3-controls button{min-width:110px}
 .w3-cones{position:absolute;display:flex;justify-content:space-around;left:10%;right:6%;bottom:2%;height:22%}.w3-cones img{width:14%;height:100%;transition:filter .2s}.w3-cones img.passed{filter:drop-shadow(0 0 12px #ffec57)}
 .w3-runner{position:absolute;left:8%;bottom:15%;height:76%;width:23%;transform:translateX(-20%);transition:left .18s}

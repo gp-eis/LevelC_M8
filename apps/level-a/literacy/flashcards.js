@@ -1,10 +1,10 @@
 (() => {
   const cards=[
-    {id:'ball-sports',label:'Ball sports',phrase:'ball sports',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-1/ball-sports-flashcard-v2.png',sentence:'I like ball sports.'},
-    {id:'soccer',label:'Soccer',phrase:'soccer',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-1/soccer-flashcard-v2.png',sentence:'I like soccer.'},
-    {id:'basketball',label:'Basketball',phrase:'basketball',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-1/basketball-flashcard-v2.png',sentence:'I like basketball.'},
-    {id:'baseball',label:'Baseball',phrase:'baseball',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-1/baseball-flashcard-v2.png',sentence:'I like baseball.'},
-    {id:'volleyball',label:'Volleyball',phrase:'volleyball',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-1/volleyball-flashcard-v2.png',sentence:'I like volleyball.'}
+    {id:'ball-sports',label:'Ball sports',phrase:'ball sports',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-1/ball-sports-flashcard-v2.png?asset=e5c63a00214b',sentence:'I like ball sports.'},
+    {id:'soccer',label:'Soccer',phrase:'soccer',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-1/soccer-flashcard-v2.png?asset=31087110e170',sentence:'I like soccer.'},
+    {id:'basketball',label:'Basketball',phrase:'basketball',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-1/basketball-flashcard-v2.png?asset=d33ed2f093a1',sentence:'I like basketball.'},
+    {id:'baseball',label:'Baseball',phrase:'baseball',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-1/baseball-flashcard-v2.png?asset=9cc1efc62fdc',sentence:'I like baseball.'},
+    {id:'volleyball',label:'Volleyball',phrase:'volleyball',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-1/volleyball-flashcard-v2.png?asset=77f33c6b923a',sentence:'I like volleyball.'}
   ];
   const byId=id=>cards.find(card=>card.id===id),random=()=>cards[Math.floor(Math.random()*cards.length)];
   const shuffle=list=>[...list].map(value=>({value,sort:Math.random()})).sort((a,b)=>a.sort-b.sort).map(({value})=>value);

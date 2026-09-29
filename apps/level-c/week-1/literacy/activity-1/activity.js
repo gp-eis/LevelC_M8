@@ -1,4 +1,4 @@
-import { hideNextAction, revealNextAction } from "../../../assets/navigation/gp-navigation.js?v=20260917-c&deploy=20260929-level-c-live-refresh-11";
+import { hideNextAction, revealNextAction } from "../../../assets/navigation/gp-navigation.js?v=20260917-c&deploy=20260929-level-ac-reading-13";
 
 const stops = [
   { id:"park", icon:"🌳", title:"Park Patrol", pages:"2–3", image:"physical-page-02.png", alt:"Book page 2 showing five numbered animals in a park", reading:"The children are walking in the park. They see many animals. Look at what each animal is doing.", questions:[

@@ -11,22 +11,22 @@ const pathWeek=location.pathname.match(/week-([1-4])/i)?.[1];
 const requestedWeek=new URLSearchParams(location.search).get('week')||pathWeek||'1';
 const weekTwoSlides=[
   ...weekOneSlides.slice(0,3),
-  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-2/04-hold-on.png',alt:'The teacher shows a child how to hold the swing tightly with both hands.'},
-  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-2/05-push-me.png',alt:'A child politely asks the teacher to push the swing, and they get ready.'},
+  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-2/04-hold-on.png?asset=19ac6b422cce',alt:'The teacher shows a child how to hold the swing tightly with both hands.'},
+  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-2/05-push-me.png?asset=fbd6527b0ae8',alt:'A child politely asks the teacher to push the swing, and they get ready.'},
   weekOneSlides[5]
 ];
 const weekThreeSlides=[
   ...weekOneSlides.slice(0,2),
-  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-3/03-want-slide.png',alt:'The teacher asks what the children want to do, and a child says he wants to go down the slide.'},
-  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-3/04-climb-steps.png',alt:'The teacher tells a child to climb the steps and hold the handrail.'},
-  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-3/05-feet-first.png',alt:'The teacher shows a child how to sit down and go down the slide feet first.'},
+  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-3/03-want-slide.png?asset=13188481642e',alt:'The teacher asks what the children want to do, and a child says he wants to go down the slide.'},
+  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-3/04-climb-steps.png?asset=d40f383f9710',alt:'The teacher tells a child to climb the steps and hold the handrail.'},
+  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-3/05-feet-first.png?asset=39a33691b52d',alt:'The teacher shows a child how to sit down and go down the slide feet first.'},
   weekOneSlides[5]
 ];
 const weekFourSlides=[
   ...weekOneSlides.slice(0,2),
-  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-4/03-want-sandbox.png',alt:'The teacher asks what the children want to do, and a child says she wants to play in the sandbox.'},
-  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-4/04-fill-bucket.png',alt:'A child asks to use the bucket, and the teacher tells her to fill it with sand.'},
-  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-4/05-sandcastle.png',alt:'The child turns the bucket over, lifts it up, and proudly shows her sandcastle.'},
+  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-4/03-want-sandbox.png?asset=66a13ea7de4b',alt:'The teacher asks what the children want to do, and a child says she wants to play in the sandbox.'},
+  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-4/04-fill-bucket.png?asset=8840ac1a4c2c',alt:'A child asks to use the bucket, and the teacher tells her to fill it with sand.'},
+  {src:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-4/05-sandcastle.png?asset=06acd8289386',alt:'The child turns the bucket over, lifts it up, and proudly shows her sandcastle.'},
   weekOneSlides[5]
 ];
 const slides=requestedWeek==='2'?weekTwoSlides:requestedWeek==='3'?weekThreeSlides:requestedWeek==='4'?weekFourSlides:weekOneSlides;
@@ -48,7 +48,7 @@ const videoSlot=document.querySelector('.conversation-video-slot');
 document.querySelector('.conversation-card')?.setAttribute('aria-label',`Week ${requestedWeek} conversation video and picture gallery`);
 videoSlot.classList.add('has-video');
 videoSlot.setAttribute('aria-label',`Week ${requestedWeek} Month 8 conversation video`);
-videoSlot.innerHTML=`<video class="conversation-video" controls playsinline preload="metadata" aria-label="Month 8 conversation video for Week ${requestedWeek}"><source src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/month8-conversation.mp4" type="video/mp4">Your browser does not support the video element.</video>`;
+videoSlot.innerHTML=`<video class="conversation-video" controls playsinline preload="metadata" aria-label="Month 8 conversation video for Week ${requestedWeek}"><source src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/month8-conversation.mp4?asset=dc7836c6131e" type="video/mp4">Your browser does not support the video element.</video>`;
 let current=0;
 let lastTrigger=null;
 const render=()=>{const slide=slides[current];modalImage.src=slideSrc(slide);modalImage.alt=slide.alt;counter.textContent=`${current+1} of ${slides.length}`};

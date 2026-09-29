@@ -4,35 +4,35 @@
     "id": "sportswear",
     "label": "Sportswear",
     "phrase": "sportswear",
-    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-4/sportswear-flashcard-v1.png",
+    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-4/sportswear-flashcard-v1.png?asset=28ff347bdac5",
     "sentence": "I need sportswear."
   },
   {
     "id": "sneakers",
     "label": "Sneakers",
     "phrase": "sneakers",
-    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-4/sneakers-flashcard-v1.png",
+    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-4/sneakers-flashcard-v1.png?asset=5495d38ef308",
     "sentence": "I need sneakers."
   },
   {
     "id": "swimsuit",
     "label": "Swimsuit",
     "phrase": "a swimsuit",
-    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-4/swimsuit-flashcard-v1.png",
+    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-4/swimsuit-flashcard-v1.png?asset=2be9d4e31f19",
     "sentence": "I need a swimsuit."
   },
   {
     "id": "helmet",
     "label": "Helmet",
     "phrase": "a helmet",
-    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-4/helmet-flashcard-v1.png",
+    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-4/helmet-flashcard-v1.png?asset=26451ecf91f5",
     "sentence": "I need a helmet."
   },
   {
     "id": "socks",
     "label": "Socks",
     "phrase": "socks",
-    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-4/socks-flashcard-v1.png",
+    "image": "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/flashcards/week-4/socks-flashcard-v1.png?asset=bb22b876cab7",
     "sentence": "I need socks."
   }
 ];

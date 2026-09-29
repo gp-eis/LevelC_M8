@@ -27,10 +27,10 @@ export const gameItems = [
 export const natureItems = gameItems.map(item => ({ ...item, icon: "⭐", place: item.group }));
 
 export const phonicsWords = [
-  {id:"car",word:"car",before:"c",team:"ar",after:"",image:"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/words/car.png",sentence:"The car is red."},
-  {id:"star",word:"star",before:"st",team:"ar",after:"",image:"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/words/star.png",sentence:"The star is bright."},
-  {id:"fork",word:"fork",before:"f",team:"or",after:"k",image:"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/words/fork.png",sentence:"This is a fork."},
-  {id:"horse",word:"horse",before:"h",team:"or",after:"se",image:"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/words/horse.png",sentence:"The horse is brown."}
+  {id:"car",word:"car",before:"c",team:"ar",after:"",image:"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/words/car.png?asset=2077c6ea551b",sentence:"The car is red."},
+  {id:"star",word:"star",before:"st",team:"ar",after:"",image:"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/words/star.png?asset=759c2f7681a4",sentence:"The star is bright."},
+  {id:"fork",word:"fork",before:"f",team:"or",after:"k",image:"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/words/fork.png?asset=1ccbf993a6f8",sentence:"This is a fork."},
+  {id:"horse",word:"horse",before:"h",team:"or",after:"se",image:"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/phonics/words/horse.png?asset=3c008eee26c6",sentence:"The horse is brown."}
 ];
 
 export function shuffle(items){

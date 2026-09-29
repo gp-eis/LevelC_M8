@@ -1,4 +1,4 @@
-import {playCorrectSound,playWrongSound} from '../../assets/navigation/gp-sounds.js?deploy=20260929-level-c-live-refresh-11';
+import {playCorrectSound,playWrongSound} from '../../assets/navigation/gp-sounds.js?deploy=20260929-level-ac-reading-13';
 const animals=['tiger','cat','puma','cheetah'],img=name=>`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-4/cats/${name}-v1.png`;let stage=Math.min(3,Math.max(1,Number(new URLSearchParams(location.search).get('stage'))||1));const root=document.querySelector('[data-cat-game]');
 const speak=text=>{if(!('speechSynthesis'in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-US';u.rate=.82;u.pitch=1.06;speechSynthesis.speak(u)};
 const sound=correct=>correct?playCorrectSound():playWrongSound(),shuffle=array=>[...array].sort(()=>Math.random()-.5);
@@ -20,5 +20,5 @@ function part3(){shell(`<h2>3. Choose the missing words</h2><p class="stage-help
 function unlock(final=false){completedStages.add(stage);root.querySelector(`.game-progress a[data-stage="${stage}"]`)?.classList.add('done');const button=root.querySelector('.next-part');button.hidden=false;button.textContent=final?'Finish! ⭐':'Next part →'}
 function center(){requestAnimationFrame(()=>root.querySelector('.game-stage')?.scrollIntoView({behavior:'smooth',block:'center'}))}
 function bindNext(final=false){root.querySelector('.next-part').onclick=()=>{if(final){celebrate();return}selectStage(stage+1)}}
-function celebrate(){const modal=document.createElement('div');modal.className='celebrate';modal.innerHTML='<div><button aria-label="Close">×</button><video src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/video/shared/pow-wow-you-did-it.mp4" autoplay controls playsinline></video></div>';document.body.append(modal);modal.querySelector('button').onclick=()=>modal.remove();modal.querySelector('video').play().catch(()=>{})}
+function celebrate(){const modal=document.createElement('div');modal.className='celebrate';modal.innerHTML='<div><button aria-label="Close">×</button><video src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/video/shared/pow-wow-you-did-it.mp4?asset=0883de99e126" autoplay controls playsinline></video></div>';document.body.append(modal);modal.querySelector('button').onclick=()=>modal.remove();modal.querySelector('video').play().catch(()=>{})}
 render();

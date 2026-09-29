@@ -1,5 +1,5 @@
-import '../../assets/navigation/gp-navigation.js?v=20260915-literacy&deploy=20260929-level-c-live-refresh-11';
-import '../../assets/navigation/gp-sounds.js?deploy=20260929-level-c-live-refresh-11';
+import '../../assets/navigation/gp-navigation.js?v=20260915-literacy&deploy=20260929-level-ac-reading-13';
+import '../../assets/navigation/gp-sounds.js?deploy=20260929-level-ac-reading-13';
 const pages=['page-01.html','video-activity.html','page-02.html','page-03.html','page-04.html','page-05.html'];
 const file=location.pathname.split('/').pop(), index=pages.indexOf(file), tool=['tpr.html','flashcards.html','conversation.html'].includes(file);
 const main=document.querySelector('main');

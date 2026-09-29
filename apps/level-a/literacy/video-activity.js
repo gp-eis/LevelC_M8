@@ -148,7 +148,7 @@
         <div class="locker-shelf" data-locker-shelf></div>
       </div>
       <div class="sports-object-grid">
-        ${objects.map((item) => `<button type="button" class="sports-object ${item.correct ? 'is-ball' : 'is-decoy'}" data-object="${item.id}" data-correct="${item.correct}" aria-label="${item.label}">${item.correct ? ballMarkup(item.id) : item.id === 'trophy' ? '<img src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/ui/sport-trophy-3d.webp" alt="">' : '<img class="sport-cleats-img" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/games/week-1/running-cleats-3d-v2.png" alt="">'}<span>${item.label}</span></button>`).join('')}
+        ${objects.map((item) => `<button type="button" class="sports-object ${item.correct ? 'is-ball' : 'is-decoy'}" data-object="${item.id}" data-correct="${item.correct}" aria-label="${item.label}">${item.correct ? ballMarkup(item.id) : item.id === 'trophy' ? '<img src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/ui/sport-trophy-3d.webp?asset=5189718f8f4f" alt="">' : '<img class="sport-cleats-img" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/games/week-1/running-cleats-3d-v2.png?asset=ca0e1aa91e5f" alt="">'}<span>${item.label}</span></button>`).join('')}
       </div>`;
     let packed = 0;
     const shelf = stage.querySelector('[data-locker-shelf]');
@@ -178,7 +178,7 @@
       <div class="soccer-field">
         <div class="soccer-goal" aria-hidden="true"><span class="goal-roof"></span><span class="goal-side"></span><span class="goal-net"></span><strong>GOAL!</strong></div>
         <div class="soccer-ball-wrap">${ballMarkup('soccer')}</div>
-        ${[1, 2, 3].map((number) => `<button type="button" class="route-marker marker-${number}${number === 1 ? ' is-current' : ''}" data-route="${number}" aria-label="Cone ${number}"><img src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/games/week-1/training-cone-3d-v2.png" alt=""><span>${number}</span></button>`).join('')}
+        ${[1, 2, 3].map((number) => `<button type="button" class="route-marker marker-${number}${number === 1 ? ' is-current' : ''}" data-route="${number}" aria-label="Cone ${number}"><img src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/games/week-1/training-cone-3d-v2.png?asset=7012c24a154e" alt=""><span>${number}</span></button>`).join('')}
         <button type="button" class="route-marker goal-marker" data-route="4" aria-label="Goal"><span>⚽</span></button>
       </div>`;
     let expected = 1;
@@ -208,7 +208,7 @@
     stage.innerHTML = `
       <div class="basketball-court">
         <div class="basketball-hoop" aria-hidden="true"><span class="hoop-post"></span><span class="backboard"><i></i></span><span class="rim"></span><span class="net"></span></div>
-        <img class="basketball-player-3d" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/games/week-1/regular/basketball-dribble-girl-v1.png" alt="Girl playing basketball">
+        <img class="basketball-player-3d" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/games/week-1/regular/basketball-dribble-girl-v1.png?asset=17b15a8191e9" alt="Girl playing basketball">
         <div class="basketball-ball-wrap">${ballMarkup('basketball')}</div>
         <div class="shot-glow" aria-hidden="true"></div>
       </div>
@@ -316,7 +316,7 @@
       <div class="volleyball-court">
         <div class="volleyball-net" aria-hidden="true"><span></span></div>
         <div class="volley-action-card player-left">
-          <img class="volley-player-3d" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/games/week-1/regular/volleyball-bump-girl-v1.png" alt="Girl demonstrating a volleyball move">
+          <img class="volley-player-3d" src="https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/games/week-1/regular/volleyball-bump-girl-v1.png?asset=8d8abde613aa" alt="Girl demonstrating a volleyball move">
           <span class="volley-action-label" aria-live="polite">Ready!</span>
         </div>
         <span class="volley-motion volley-motion-one" aria-hidden="true"></span>
