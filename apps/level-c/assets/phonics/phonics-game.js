@@ -3,7 +3,7 @@ import {
   phonicsSets,
   shuffle,
   weekFocus,
-} from "./word-data.js?deploy=20260929-asset-fix-5";
+} from "./word-data.js?deploy=20260929-level-c-live-refresh-11";
 
 const app = document.querySelector("#game-app");
 const gameType = document.body.dataset.game;
@@ -11,6 +11,12 @@ const week = getWeekNumber();
 const phonicsWords = phonicsSets[week];
 const focus = weekFocus[week];
 const focusTeams = [...new Set(phonicsWords.map((word) => word.team))];
+const phonemeAudio = {
+  ar: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/phonics-arcade/assets/audio/level-c/ar.mp3",
+  or: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/phonics-arcade/assets/audio/level-c/or.mp3",
+  er: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/phonics-arcade/assets/audio/level-c/er-ir.mp3",
+  ir: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/phonics-arcade/assets/audio/level-c/er-ir.mp3",
+};
 const iconRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/ui/game-list/phonics";
 const titles = {
   missing: [`${iconRoot}/missing-vowel-team.png`, "What's Missing?"],
@@ -36,6 +42,14 @@ function speak(text) {
     || voices.find((voice) => /^en[-_]US$/i.test(voice.lang))
     || null;
   window.speechSynthesis.speak(utterance);
+}
+
+function playPhoneme(team) {
+  const source = phonemeAudio[team];
+  if (!source) return;
+  const audio = new Audio(source);
+  audio.volume = .98;
+  audio.play().catch(() => {});
 }
 
 if (app && titles[gameType]) {
@@ -126,9 +140,11 @@ if (app && titles[gameType]) {
       button.className = "team-choice";
       button.textContent = team;
       button.setAttribute("aria-label", `Choose ${team.split("").join(" ")}`);
-      button.addEventListener("click", () =>
-        team === item.team ? finish(button, item, update) : wrong(button),
-      );
+      button.addEventListener("click", () => {
+        playPhoneme(team);
+        if (team === item.team) finish(button, item, update);
+        else wrong(button);
+      });
       grid.append(button);
     });
     stage.append(grid);

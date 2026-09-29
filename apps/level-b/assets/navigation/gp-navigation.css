@@ -27,6 +27,12 @@
 
 .gp-navigation__links,
 .gp-navigation__stepper { display: flex; align-items: center; gap: 9px; }
+.gp-navigation__context {
+  border-color: #47bdae !important;
+  background: linear-gradient(180deg, #7ce0d2, #2ec4b6) !important;
+  color: #104f49 !important;
+  box-shadow: 0 5px 0 #138b80 !important;
+}
 .site-logo-bar {
   position: relative;
   z-index: 20;

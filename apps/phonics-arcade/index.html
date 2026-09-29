@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="google" content="notranslate">
   <title>GP Friends Phonics Arcade</title>
-  <link rel="stylesheet" href="/LevelC_M8/apps/level-a/games/phonics-m7-core.css?v=20260908-1&deploy=20260929-asset-fix-5">
-  <link rel="stylesheet" href="/LevelC_M8/apps/level-a/assets/navigation/gp-navigation.css?v=20260917-compact-pages&deploy=20260929-asset-fix-5">
-  <link rel="stylesheet" href="arcade.css?v=20260927-falling-top-v9&deploy=20260929-asset-fix-5">
-  <script type="module" src="/LevelC_M8/apps/level-a/assets/navigation/gp-navigation.js?v=20260923-center-all-v9&deploy=20260929-asset-fix-5"></script>
+  <link rel="stylesheet" href="/LevelC_M8/apps/level-a/games/phonics-m7-core.css?v=20260908-1&deploy=20260929-level-c-live-refresh-11">
+  <link rel="stylesheet" href="/LevelC_M8/apps/level-a/assets/navigation/gp-navigation.css?v=20260917-compact-pages&deploy=20260929-level-c-live-refresh-11">
+  <link rel="stylesheet" href="arcade.css?v=20260927-falling-top-v9&deploy=20260929-level-c-live-refresh-11">
+  <script type="module" src="/LevelC_M8/apps/level-a/assets/navigation/gp-navigation.js?v=20260923-center-all-v9&deploy=20260929-level-c-live-refresh-11"></script>
 </head>
 <body>
   <gp-navigation id="arcade-navigation"></gp-navigation>
@@ -25,12 +25,12 @@
             : `/LevelC_M8/apps/level-c/week-${week}/games/phonics.html`;
       const navigation = document.querySelector("#arcade-navigation");
       navigation.setAttribute("data-main-href", `/LevelC_M8/apps/level-${level}/index.html`);
-      navigation.setAttribute("data-week-href", level === "a" ? `/LevelC_M8/apps/level-a/week-${week}.html#games-card` : `/LevelC_M8/apps/level-${level}/week-${week}/`);
+      navigation.setAttribute("data-week-href", level === "a" ? `/LevelC_M8/apps/level-a/week-${week}.html#games-card` : `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-${level}/week-${week}`);
       navigation.setAttribute("data-section-href", section);
       navigation.setAttribute("data-trail", `Level ${level.toUpperCase()} · Month 8 · Week ${week} · Phonics`);
     })();
   </script>
   <main id="arcade" class="arcade" aria-live="polite"></main>
-  <script type="module" src="arcade.js?v=20260927-falling-top-v9&deploy=20260929-asset-fix-5"></script>
+  <script type="module" src="arcade.js?v=20260929-falling-audio-sequence-v2&deploy=20260929-level-c-live-refresh-11"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-import { getContent, shuffle } from "./content.js?deploy=20260929-asset-fix-5";
+import { getContent, shuffle } from "./content.js?deploy=20260929-level-c-live-refresh-11";
 
 const params = new URLSearchParams(location.search);
 const level = ["a", "b", "c"].includes(params.get("level")) ? params.get("level") : "a";
@@ -80,7 +80,7 @@ document.body.classList.toggle("game-falling", game === "falling");
 document.body.style.setProperty("--scene", `url("${theme.scene}")`);
 const navigation = document.querySelector("#arcade-navigation");
 const mainHref = `/LevelC_M8/apps/level-${level}/index.html`;
-const weekHref = level === "a" ? `/LevelC_M8/apps/level-a/week-${week}.html#games-card` : `/LevelC_M8/apps/level-${level}/week-${week}/`;
+const weekHref = level === "a" ? `/LevelC_M8/apps/level-a/week-${week}.html#games-card` : `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-${level}/week-${week}`;
 navigation.setAttribute("data-main-href", mainHref);
 navigation.setAttribute("data-week-href", weekHref);
 navigation.setAttribute("data-section-href", safeReturn());
@@ -92,6 +92,16 @@ const instructions = {
 };
 let muted = false;
 let speechId = 0;
+const levelCPhonemeAudio = {
+  ar: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/phonics-arcade/assets/audio/level-c/ar.mp3",
+  or: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/phonics-arcade/assets/audio/level-c/or.mp3",
+  er: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/phonics-arcade/assets/audio/level-c/er-ir.mp3",
+  ir: "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/phonics-arcade/assets/audio/level-c/er-ir.mp3",
+};
+
+function recordedPhoneme(sound) {
+  return level === "c" ? levelCPhonemeAudio[sound.toLowerCase()] || "" : "";
+}
 
 function safeReturn() {
   const requested = params.get("return");
@@ -117,6 +127,13 @@ function speak(text, rate = .82) {
 
 function playSound(sound) {
   if (muted) return;
+  const phonemeSource = recordedPhoneme(sound);
+  if (phonemeSource) {
+    const audio = new Audio(phonemeSource);
+    audio.volume = .98;
+    audio.play().catch(() => tone(220, .08));
+    return;
+  }
   if (/^[a-z]$/i.test(sound)) {
     const audio = new Audio(`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/audio/phonics-m7/letters/${sound.toLowerCase()}.mp3`);
     audio.volume = .95;
@@ -126,6 +143,24 @@ function playSound(sound) {
 
 function playSoundFully(sound) {
   if (muted) return Promise.resolve();
+  const phonemeSource = recordedPhoneme(sound);
+  if (phonemeSource) {
+    const audio = new Audio(phonemeSource);
+    audio.volume = .98;
+    return new Promise(resolve => {
+      let settled = false;
+      const finish = () => {
+        if (settled) return;
+        settled = true;
+        clearTimeout(fallback);
+        resolve();
+      };
+      const fallback = setTimeout(finish, 5000);
+      audio.addEventListener("ended", finish, { once: true });
+      audio.addEventListener("error", finish, { once: true });
+      audio.play().catch(() => { tone(220, .08); finish(); });
+    });
+  }
   if (/^[a-z]$/i.test(sound)) {
     const audio = new Audio(`https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/audio/phonics-m7/letters/${sound.toLowerCase()}.mp3`);
     audio.volume = .95;
@@ -200,7 +235,6 @@ function frame(stageMarkup) {
   document.title = `${gameNames[game]} — ${content.levelName} Week ${week}`;
   app.innerHTML = `
     <div class="page game-home-anchor-container">
-      <a class="baseline-home" href="${safeReturn()}">← Phonics Games</a>
       <header class="game-heading center">
         <div class="page-title-with-icon">
           <img class="page-title-icon" src="${gameIconImages[game]}" alt="">
@@ -273,7 +307,7 @@ function renderFalling() {
     button.type = "button"; button.className = `falling-tile${token.length > 1 ? " team" : ""}`; button.textContent = token;
     button.style.left = `${3 + Math.random() * 86}%`; button.style.setProperty("--speed", `${4.9 + Math.random() * 1.8}s`);
     button.addEventListener("animationend", () => button.remove());
-    button.addEventListener("click", () => {
+    button.addEventListener("click", async () => {
       if (!running || button.dataset.used === "true") return;
       button.dataset.used = "true";
       button.disabled = true;
@@ -285,13 +319,17 @@ function renderFalling() {
         button.style.top = `${buttonRect.top - zoneRect.top}px`;
         button.classList.add("wrong"); tone(220); feedback("Try another letter!", "try"); setTimeout(() => button.remove(), 520); return;
       }
-      button.classList.add("correct"); tone(660); playSound(currentExpected);
+      button.classList.add("correct"); tone(660);
       document.querySelectorAll("#word-slots span")[tokenIndex].classList.add("filled"); tokenIndex += 1;
+      const wordComplete = tokenIndex === item.tokens.length;
       feedback("Great catch!", "good"); burst(button.getBoundingClientRect().x, button.getBoundingClientRect().y); setTimeout(() => button.remove(), 300);
-      if (tokenIndex === item.tokens.length) {
-        running = false; clearInterval(timer); speak(item.word);
+      if (wordComplete) {
+        running = false; clearInterval(timer);
+        await playSoundFully(currentExpected);
+        await new Promise(resolve => setTimeout(resolve, 140));
+        speak(item.word);
         setTimeout(() => { round += 1; if (round === rounds.length) finish("You caught every sound and built every word!"); else { loadRound(); running = true; timer = setInterval(spawn, 720); spawn(); } }, 1100);
-      }
+      } else playSound(currentExpected);
     });
     zone.append(button);
   }
@@ -323,7 +361,9 @@ function renderBasket() {
     if (group !== item.group) { tone(220); playSound(item.group); feedback(`Good try. Listen for ${item.group}.`, "try"); return; }
     tone(660); burst(button.getBoundingClientRect().x + 60, button.getBoundingClientRect().y + 70);
     document.querySelector(`#collected-${group}`).insertAdjacentHTML("beforeend", `<img src="${item.image}" alt="${item.word}">`);
-    feedback(`Yes! ${item.word} belongs with ${group}.`, "good"); speak(`${item.word}. ${group}.`); index += 1;
+    feedback(`Yes! ${item.word} belongs with ${group}.`, "good");
+    if (level === "c") playSound(group); else speak(`${item.word}. ${group}.`);
+    index += 1;
     setTimeout(() => index === pool.length ? finish("You sorted every picture by its phonics sound!") : show(), 850);
   }
   row.querySelectorAll(".basket").forEach(button => {

@@ -1,5 +1,5 @@
-import './us-english-speech.js?v=20260928-1&deploy=20260929-asset-fix-5';
-import '/LevelC_M8/apps/activity-focus.js?v=20260923-center-all-v2&deploy=20260929-asset-fix-5';
+import './us-english-speech.js?v=20260928-1&deploy=20260929-level-c-live-refresh-11';
+import '/LevelC_M8/apps/activity-focus.js?v=20260923-center-all-v2&deploy=20260929-level-c-live-refresh-11';
 
 class GpNavigation extends HTMLElement {
   connectedCallback() {
@@ -8,6 +8,57 @@ class GpNavigation extends HTMLElement {
     let sectionHref = this.dataset.sectionHref || weekHref;
     let previousHref = this.dataset.previousHref || "";
     let nextHref = this.dataset.nextHref || "";
+    const current = new URL(window.location.href);
+    const path = current.pathname.toLowerCase();
+    const params = current.searchParams;
+    const isGamesPage = /\/level-b\/games\//.test(path);
+    const isPhonicsList = /\/level-b\/games\/phonics\.html$/.test(path);
+    const isPhonicsGame = /\/level-b\/games\/phonics-[^/]+\.html$/.test(path);
+    const isGamesList = /\/level-b\/games\/(?:index|week-[2-4])\.html$/.test(path);
+    const weekFromQuery = params.get("week")?.match(/^[1-4]$/)?.[0];
+    const weekFromTrail = (this.dataset.trail || "").match(/Week\s+([1-4])/i)?.[1];
+    const weekFromHref = (this.dataset.weekHref || "").match(/week-([1-4])/i)?.[1];
+    const week = weekFromQuery || weekFromTrail || weekFromHref || "1";
+    const origin = params.get("from") === "phonics" ? "phonics" : "games";
+    const gamesHref = week === "1" ? "index.html" : `week-${week}.html`;
+    let contextHref = "";
+    let contextLabel = "";
+    const conversationMatch = path.match(/\/level-b\/week-([1-4])\/literacy\/conversation\.html$/);
+    if (conversationMatch) {
+      const literacyPages = {
+        1: ["page-01.html", "video-activity.html", "page-02.html", "page-03.html", "page-04.html", "page-05.html"],
+        2: ["page-01.html", "video-activity.html", "page-12.html", "page-13.html", "page-14.html", "page-15.html"],
+        3: ["page-01.html", "video-activity.html", "page-22.html", "page-23.html", "page-24.html", "page-25.html"],
+        4: ["page-01.html", "video-activity.html", "page-32.html", "page-33.html", "page-34.html", "page-35.html"]
+      }[Number(conversationMatch[1])];
+      const directory = path.slice(0, path.lastIndexOf("/") + 1);
+      let target = new URL("page-01.html#lesson-focus", current);
+      try {
+        const requested = new URL(params.get("return") || target.href, current);
+        const file = requested.pathname.split("/").pop();
+        if (requested.origin === current.origin && requested.pathname.slice(0, requested.pathname.lastIndexOf("/") + 1).toLowerCase() === directory && literacyPages.includes(file)) {
+          target = requested;
+        }
+      } catch (_) { /* Keep the safe opening-page fallback. */ }
+      if (!target.hash) target.hash = "lesson-focus";
+      const pageIndex = Math.max(0, literacyPages.indexOf(target.pathname.split("/").pop()));
+      contextHref = target.href;
+      contextLabel = `Back to Page ${pageIndex + 1}`;
+    } else if (isPhonicsList) {
+      contextHref = origin === "phonics" ? `../week-${week}/phonics/#lesson-focus` : gamesHref;
+      contextLabel = origin === "phonics" ? "Phonics Lesson" : "All Games";
+    } else if (isPhonicsGame) {
+      contextHref = `phonics.html?week=${week}&from=${origin}`;
+      contextLabel = "Phonics Games";
+    } else if (isGamesPage && !isGamesList) {
+      contextHref = gamesHref;
+      contextLabel = "All Games";
+    }
+    if (contextHref) {
+      sectionHref = contextHref;
+      previousHref = "";
+      nextHref = "";
+    }
     const logoHref = new URL("https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-b/assets/ui/giiip-eis-logo.webp", import.meta.url).href;
     const isLiteracyPage = /\/week-[1-4]\/literacy\//.test(window.location.pathname);
     const focusHref = href => href && !href.includes("#") ? `${href}#lesson-focus` : href;
@@ -43,11 +94,16 @@ class GpNavigation extends HTMLElement {
       <div class="gp-navigation__links">
         <a class="gp-navigation__main" href="${mainHref}" aria-label="Main Home"><span class="gp-navigation__icon" aria-hidden="true">🏠</span><span class="gp-navigation__label"><span class="gp-navigation__full">Main Home</span><span class="gp-navigation__short">Main</span></span></a>
         <a href="${weekHref}" aria-label="Week Home"><span class="gp-navigation__icon" aria-hidden="true">📅</span><span class="gp-navigation__label"><span class="gp-navigation__full">Week Home</span><span class="gp-navigation__short">Week</span></span></a>
+        ${contextHref ? `<a class="gp-navigation__context" href="${sectionHref}" aria-label="${contextLabel}" title="${contextLabel}"><span class="gp-navigation__icon" aria-hidden="true">←</span><span class="gp-navigation__label"><span class="gp-navigation__full">${contextLabel}</span><span class="gp-navigation__short">Back</span></span></a>` : ""}
       </div>
       <div class="gp-navigation__stepper">
         ${previousHref ? `<a class="gp-navigation__previous" href="${previousHref}" aria-label="Previous page"><span aria-hidden="true">←</span><span>Previous</span></a>` : ""}
         ${nextHref ? `<a class="gp-navigation__next" href="${nextHref}" aria-label="Next page"><span>Next</span><span aria-hidden="true">→</span></a>` : ""}
       </div>`;
+
+    if (contextHref) {
+      document.querySelectorAll("main .baseline-home, main .match-home, main .game-list-back").forEach(element => element.remove());
+    }
 
     if (window.location.hash === "#lesson-focus") {
       const centerLesson = () => {
@@ -89,13 +145,13 @@ export function hideNextAction(button) {
 }
 
 if (/\/phonics(?:\/|\.html)/i.test(location.pathname)) {
-  import("/LevelC_M8/apps/phonics-player.js?v=20260922-v2&deploy=20260929-asset-fix-5");
+  import("/LevelC_M8/apps/phonics-player.js?v=20260922-v2&deploy=20260929-level-c-live-refresh-11");
 }
 
 if (/\/level-b\/week-[1-4]\/literacy\/tpr\.html$/i.test(location.pathname)) {
   const style = document.createElement("link");
   style.rel = "stylesheet";
-      style.href = "/LevelC_M8/apps/week-song-player.css?v=20260927-2&deploy=20260929-asset-fix-5";
+      style.href = "/LevelC_M8/apps/week-song-player.css?v=20260927-2&deploy=20260929-level-c-live-refresh-11";
   document.head.append(style);
-      import("/LevelC_M8/apps/week-song-player.js?v=20260927-4&deploy=20260929-asset-fix-5");
+      import("/LevelC_M8/apps/week-song-player.js?v=20260927-4&deploy=20260929-level-c-live-refresh-11");
 }

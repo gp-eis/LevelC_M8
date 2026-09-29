@@ -6,7 +6,7 @@ const weekOneSlides=[
   {file:'05-play-in-sandbox.png',alt:'A child says she wants to play in the sandbox.'},
   {file:'06-clean-up.png',alt:'Playtime is over, so the teacher and children clean up and line up.'}
 ];
-const root='/LevelC_M8/apps/conversation/week-1/';
+const root='https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/conversation/week-1/';
 const pathWeek=location.pathname.match(/week-([1-4])/i)?.[1];
 const requestedWeek=new URLSearchParams(location.search).get('week')||pathWeek||'1';
 const weekTwoSlides=[

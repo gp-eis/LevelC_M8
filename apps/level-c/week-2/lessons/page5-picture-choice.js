@@ -1,5 +1,5 @@
-import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20260929-asset-fix-5";
-import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260921-sounds-tools&deploy=20260929-asset-fix-5";
+import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20260929-level-c-live-refresh-11";
+import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260921-sounds-tools&deploy=20260929-level-c-live-refresh-11";
 
 const app = document.querySelector("[data-moon-picture]");
 const nextAction = document.querySelector("#sequence-next");

@@ -16,7 +16,7 @@
   const words = vocabulary[week].map(id => ({
     id, label: id[0].toUpperCase() + id.slice(1), word: lowercase ? id : id.toUpperCase(),
     suffix: lowercase ? id.slice(1) : id.slice(1).toUpperCase(), sentence: 'I see the ' + id + '.',
-    image: '../assets/media/phonics/week-' + week + '/elements/' + id + '-3d-v1.png'
+    image: `https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/phonics/week-${week}/elements/${id}-3d-v1.png`
   }));
   window.PHONICS_WEEK = { week, upper, lower: upper.toLowerCase(), target, lowercase, words };
   window.configurePhonicsWeek = () => {

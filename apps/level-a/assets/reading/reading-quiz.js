@@ -1,4 +1,4 @@
-import '../navigation/gp-sounds.js?deploy=20260929-asset-fix-5';
+import '../navigation/gp-sounds.js?deploy=20260929-level-c-live-refresh-11';
 
 const tone = (right) => {
   const AudioContext = window.AudioContext || window.webkitAudioContext;
