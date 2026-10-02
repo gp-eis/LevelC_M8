@@ -4,7 +4,7 @@ if (!document.querySelector(`#${stylesheetId}`)) {
   const link = document.createElement("link");
   link.id = stylesheetId;
   link.rel = "stylesheet";
-  link.href = "/LevelC_M8/apps/phonics-player.css?v=20260922-v2&deploy=20260929-level-ac-reading-13";
+  link.href = "/LevelC_M8/apps/phonics-player.css?v=20260922-v2&deploy=20261003-level-c-tpr-and-lesson-tools-v11";
   document.head.append(link);
 }
 

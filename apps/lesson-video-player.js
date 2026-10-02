@@ -8,7 +8,7 @@ function addStyles() {
   if (document.querySelector('link[data-gp-centered-video-style]')) return;
   const link = document.createElement("link");
   link.rel = "stylesheet";
-  link.href = "/LevelC_M8/apps/lesson-video-player.css?v=20260929-2&deploy=20260929-level-ac-reading-13";
+  link.href = "/LevelC_M8/apps/lesson-video-player.css?v=20261001-c-opening&deploy=20261003-level-c-tpr-and-lesson-tools-v11";
   link.dataset.gpCenteredVideoStyle = "true";
   document.head.append(link);
 }
@@ -19,6 +19,10 @@ function installPlayer(video) {
 
   const shell = document.createElement("div");
   shell.className = "gp-centered-video-shell";
+  if (video.classList.contains("literacy-opening-video") && video.closest(".media-stage")) {
+    video.closest(".media-stage").classList.add("gp-opening-video-stage");
+    video.closest(".media-card")?.classList.add("gp-opening-video-card");
+  }
   video.before(shell);
   shell.append(video);
 

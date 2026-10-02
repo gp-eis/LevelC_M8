@@ -10,6 +10,57 @@
   width: 100%;
 }
 
+/* C's opening videos use the same single, full-width video card as A/B.
+   Do not apply the old placeholder stage's size/padding to the play wrapper. */
+.media-card.gp-opening-video-card {
+  padding: 22px;
+  border: 5px solid rgba(255, 255, 255, .95);
+  border-radius: 34px;
+  background: linear-gradient(155deg, #fff, #f5fbff);
+  box-shadow: 0 10px 0 rgba(30, 111, 217, .12), 0 18px 30px rgba(30, 58, 95, .13);
+}
+
+.media-stage.gp-opening-video-stage {
+  display: block;
+  min-height: 0 !important;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  aspect-ratio: auto;
+  background: none;
+}
+
+.gp-opening-video-stage > .gp-centered-video-shell {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+
+.gp-opening-video-stage .literacy-opening-video {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-height: min(72vh, 720px);
+  object-fit: contain;
+  border: 7px solid #fff;
+  border-radius: 30px;
+  background: #071525;
+  box-shadow: 0 9px 0 #162b48, 0 18px 26px rgba(30, 58, 95, .2);
+}
+
+@media (max-width: 760px) {
+  .media-card.gp-opening-video-card { padding: 16px; }
+}
+
+@media (max-width: 520px) {
+  .media-card.gp-opening-video-card { border-radius: 25px; }
+  .gp-opening-video-stage .literacy-opening-video {
+    border-width: 5px;
+    border-radius: 24px;
+  }
+}
+
 .gp-centered-video-play {
   position: absolute;
   z-index: 8;

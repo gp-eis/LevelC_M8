@@ -1,6 +1,6 @@
-import './us-english-speech.js?v=20260928-1&deploy=20260929-level-ac-reading-13';
-import './gp-sounds.js?v=20260911-1&deploy=20260929-level-ac-reading-13';
-import '/LevelC_M8/apps/activity-focus.js?v=20260923-center-all-v2&deploy=20260929-level-ac-reading-13';
+import './us-english-speech.js?v=20260928-1&deploy=20261003-level-c-tpr-and-lesson-tools-v11';
+import './gp-sounds.js?v=20260911-1&deploy=20261003-level-c-tpr-and-lesson-tools-v11';
+import '/LevelC_M8/apps/activity-focus.js?v=20260923-center-all-v2&deploy=20261003-level-c-tpr-and-lesson-tools-v11';
 
 class GpNavigation extends HTMLElement {
   connectedCallback() {
@@ -328,15 +328,15 @@ export function hideNextAction(button) {
 }
 
 if (/\/phonics(?:\/|\.html)/i.test(location.pathname)) {
-  import("/LevelC_M8/apps/phonics-player.js?v=20260922-v2&deploy=20260929-level-ac-reading-13");
+  import("/LevelC_M8/apps/phonics-player.js?v=20260922-v2&deploy=20261003-level-c-tpr-and-lesson-tools-v11");
 }
 
 if (/\/level-a\/literacy\/tpr\.html$/i.test(location.pathname)) {
   const style = document.createElement("link");
   style.rel = "stylesheet";
-      style.href = "/LevelC_M8/apps/week-song-player.css?v=20260927-2&deploy=20260929-level-ac-reading-13";
+      style.href = "/LevelC_M8/apps/week-song-player.css?v=20260927-2&deploy=20261003-level-c-tpr-and-lesson-tools-v11";
   document.head.append(style);
-      import("/LevelC_M8/apps/week-song-player.js?v=20260927-4&deploy=20260929-level-ac-reading-13");
+      import("/LevelC_M8/apps/week-song-player.js?v=20260927-4&deploy=20261003-level-c-tpr-and-lesson-tools-v11");
 }
 
 if (/\/level-a\/literacy\//i.test(location.pathname) && !/(?:tpr|conversation|flashcards(?:-week-[1-4])?)\.html$/i.test(location.pathname)) {
@@ -367,4 +367,4 @@ if (/\/level-a\/literacy\//i.test(location.pathname) && !/(?:tpr|conversation|fl
   else addWeekSongLink();
 }
 
-import("/LevelC_M8/apps/lesson-video-player.js?v=20260929-2&deploy=20260929-level-ac-reading-13");
+import("/LevelC_M8/apps/lesson-video-player.js?v=20260929-2&deploy=20261003-level-c-tpr-and-lesson-tools-v11");

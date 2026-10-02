@@ -1,4 +1,4 @@
-import {revealNextAction,hideNextAction} from "../assets/navigation/gp-navigation.js?v=20260902-4&deploy=20260929-level-ac-reading-13";
+import {revealNextAction,hideNextAction} from "../assets/navigation/gp-navigation.js?v=20260902-4&deploy=20261003-level-c-tpr-and-lesson-tools-v11";
 const challenges=[
  {page:2,title:"Which sport are they playing?",prompt:"Look at the court and racket. Choose the sport.",choices:["soccer","basketball","golf","tennis"],answer:"tennis",good:"Goal! The racket and net show tennis."},
  {page:3,title:"Find one missing first letter",prompt:"Supplemental check: Which letter completes _occer?",choices:["b","v","s","p"],answer:"s",good:"Super! S makes soccer."},

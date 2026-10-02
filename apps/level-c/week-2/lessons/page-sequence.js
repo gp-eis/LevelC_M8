@@ -1,5 +1,5 @@
-import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260917-c&deploy=20260929-level-ac-reading-13";
-import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20260929-level-ac-reading-13";
+import { hideNextAction, revealNextAction } from "../../assets/navigation/gp-navigation.js?v=20260917-c&deploy=20261003-level-c-tpr-and-lesson-tools-v11";
+import { playCorrectSound, playWrongSound } from "../../assets/navigation/gp-sounds.js?v=20260921-1&deploy=20261003-level-c-tpr-and-lesson-tools-v11";
 
 const page = Number(document.body.dataset.page);
 const pages = [2, 3, 4, 5];

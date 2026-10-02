@@ -2,8 +2,8 @@ const game=document.body.dataset.game;
 const board=document.querySelector('#game-board');
 const status=document.querySelector('#game-status');
 const reset=document.querySelector('#game-reset');
-document.head.insertAdjacentHTML('beforeend','<link rel="stylesheet" href="game-remediation.css?v=20260907-phonics2&deploy=20260929-level-ac-reading-13">');
-document.head.insertAdjacentHTML('beforeend','<link rel="stylesheet" href="game-pointer.css?deploy=20260929-level-ac-reading-13">');
+document.head.insertAdjacentHTML('beforeend','<link rel="stylesheet" href="game-remediation.css?v=20260907-phonics2&deploy=20261003-level-c-tpr-and-lesson-tools-v11">');
+document.head.insertAdjacentHTML('beforeend','<link rel="stylesheet" href="game-pointer.css?deploy=20261003-level-c-tpr-and-lesson-tools-v11">');
 const sports=[
   {name:'soccer',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/games/week-1/regular/soccer-kick-boy-v2.png?asset=0251bf34f7b7',clue:'I kick a ball toward a goal.'},
   {name:'basketball',image:'https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-a/assets/media/games/week-1/regular/basketball-dribble-girl-v1.png?asset=17b15a8191e9',clue:'I bounce a ball and shoot at a hoop.'},

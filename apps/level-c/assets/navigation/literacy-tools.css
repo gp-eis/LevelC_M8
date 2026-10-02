@@ -1,0 +1,27 @@
+/* All literacy weeks use Week 1's labeled, wrapping lesson buttons. */
+body main :is(.week-tools, .w3-tools) {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px !important;
+  margin: 14px auto 4px !important;
+}
+
+body main :is(.week-tools, .w3-tools) .pill-btn {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0 !important;
+  min-height: 50px !important;
+  max-width: 100%;
+  padding: 10px 23px !important;
+  font-size: 16px !important;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+body main :is(.week-tools, .w3-tools) .tool-label {
+  display: inline !important;
+  margin-left: 4px;
+}
