@@ -10,9 +10,11 @@ export const gameItems = [
 export function shuffle(items) { const copy = [...items]; for (let index = copy.length - 1; index > 0; index -= 1) { const other = Math.floor(Math.random() * (index + 1)); [copy[index], copy[other]] = [copy[other], copy[index]]; } return copy; }
 // Memory and wheel review Speech Book; matching games retain the literacy deck.
 export const speechMeta = { topic: "Moon Phases", wheelIcon: "🌙" };
-export const speechItems = [
+const speechGameRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/games/cutouts/speech/";
+const speechCards = [
   {"id":"full-moon","label":"full moon","sentence":"It is a full moon. It looks like a bright circle.","image":"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-05-choices/full-moon-v2.png?asset=95f249cdd0c4"},
   {"id":"new-moon","label":"new moon","sentence":"It is a new moon. We cannot see the moon.","image":"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-05-choices/new-moon-v2.png?asset=00ab518f47d2"},
   {"id":"waxing-moon","label":"waxing moon","sentence":"It is a waxing moon. The bright part is getting bigger.","image":"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-05-choices/waxing-moon-v2.png?asset=f966d054cb74"},
   {"id":"waning-moon","label":"waning moon","sentence":"It is a waning moon. The bright part is getting smaller.","image":"https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/literacy/week-2/page-05-choices/waning-moon-v2.png?asset=d2b96c0f493b"},
 ];
+export const speechItems = speechCards.map(item => ({ ...item, gameImage: speechGameRoot + item.id + "-v1.png" }));

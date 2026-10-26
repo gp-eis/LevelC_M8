@@ -86,6 +86,7 @@
     item("midday","midday","It is midday when it is twelve o’clock in the day.",C + "flashcards/week-2/literacy/midday-v1.png"),
     item("midnight","midnight","It is midnight when it is twelve o’clock at night.",C + "flashcards/week-2/literacy/midnight-v1.png"),
   ]};
+  for (const week of [3, 4]) lessons.c[week].items.forEach(entry => { entry.image = C + 'games/cutouts/speech/' + entry.id + '-v1.png'; });
   const params = new URLSearchParams(location.search);
   const level = (params.get('level') || 'a').toLowerCase();
   const week = Math.max(1, Math.min(4, Number(params.get('week')) || 1));
