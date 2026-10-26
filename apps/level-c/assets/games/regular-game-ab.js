@@ -1,17 +1,18 @@
 const query = new URLSearchParams(location.search);
 const mode = query.get("game") || "memory";
-const { gameItems, gameMeta, shuffle } = await import(new URL(document.body.dataset.gameData || "./game-data.js?deploy=20261003-level-c-tpr-and-lesson-tools-v11", document.baseURI).href);
+const { gameItems, gameMeta: literacyMeta, speechItems, speechMeta, shuffle } = await import(new URL(document.body.dataset.gameData || "./game-data.js?deploy=20261026-c-speech-games", document.baseURI).href);
+const gameMeta = (mode === "memory" || mode === "wheel") && speechMeta ? { ...literacyMeta, ...speechMeta } : literacyMeta;
 const app = document.querySelector("#game-app");
 const iconRoot = "https://pub-aa69c309a877446c857c4f2564279578.r2.dev/language-m8/apps/level-c/assets/ui/game-list";
 const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
 const literacyItems = gameItems.filter(item => item.literacy !== false);
-const memoryWheelItems = gameItems.filter(item => item.gameImage || item.image);
+const memoryWheelItems = (speechItems || gameItems).filter(item => item.gameImage || item.image);
 let voice = null;
 
 if (mode === "wheel" && !window.SpinWheelBonus) {
   await new Promise(resolve => {
     const script = document.createElement("script");
-    script.src = "/LevelC_M8/apps/level-b/games/spin-wheel-bonus.js?v=20260907-1&deploy=20261003-level-c-tpr-and-lesson-tools-v11";
+    script.src = "/LevelC_M8/apps/level-b/games/spin-wheel-bonus.js?v=20260907-1&deploy=20261026-c-speech-games";
     script.onload = script.onerror = resolve;
     document.head.append(script);
   });

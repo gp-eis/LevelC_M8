@@ -73,6 +73,19 @@
     }
   };
 
+  // Level C Weeks 3–4 arcade games review the Speech Book deck.
+  lessons.c[3] = { title: 'Moon Phases', items: [
+    item("full-moon","full moon","It is a full moon. It looks like a bright circle.",C + "literacy/week-2/page-05-choices/full-moon-v2.png"),
+    item("new-moon","new moon","It is a new moon. We cannot see the moon.",C + "literacy/week-2/page-05-choices/new-moon-v2.png"),
+    item("waxing-moon","waxing moon","It is a waxing moon. The bright part is getting bigger.",C + "literacy/week-2/page-05-choices/waxing-moon-v2.png"),
+    item("waning-moon","waning moon","It is a waning moon. The bright part is getting smaller.",C + "literacy/week-2/page-05-choices/waning-moon-v2.png"),
+  ]};
+  lessons.c[4] = { title: 'Times of the Day', items: [
+    item("sunrise","sunrise","When the sun rises in the morning, it is sunrise.",C + "literacy/week-2/page-04-clues/sunrise.png"),
+    item("sunset","sunset","When the sun sets in the evening, it is sunset.",C + "literacy/week-2/page-04-clues/evening.png"),
+    item("midday","midday","It is midday when it is twelve o’clock in the day.",C + "flashcards/week-2/literacy/midday-v1.png"),
+    item("midnight","midnight","It is midnight when it is twelve o’clock at night.",C + "flashcards/week-2/literacy/midnight-v1.png"),
+  ]};
   const params = new URLSearchParams(location.search);
   const level = (params.get('level') || 'a').toLowerCase();
   const week = Math.max(1, Math.min(4, Number(params.get('week')) || 1));
